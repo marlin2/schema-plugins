@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:variable name="keywordThe">
-		<xsl:value-of select="'urn:marine.csiro.au:keywords'"/>
+		<xsl:value-of select="'urn:marlin.csiro.au:keywords'"/>
 	</xsl:variable>
 
 	<xsl:variable name="regionThe">
@@ -46,7 +46,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="projectThe">
-		<xsl:value-of select="'urn:marine.csiro.au:projectregister'"/>
+		<xsl:value-of select="'urn:marlin.csiro.au:projectregister'"/>
 	</xsl:variable>
 
 	<xsl:variable name="projectTheTitle">
@@ -54,7 +54,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="sourceThe">
-		<xsl:value-of select="'urn:marine.csiro.au:sourceregister'"/>
+		<xsl:value-of select="'urn:marlin.csiro.au:sourceregister'"/>
 	</xsl:variable>
 
 	<xsl:variable name="sourceTheTitle">
@@ -62,7 +62,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="globalProjectThe">
-		<xsl:value-of select="'urn:marine.csiro.au:globalprojectregister'"/>
+		<xsl:value-of select="'urn:marlin.csiro.au:globalprojectregister'"/>
 	</xsl:variable>
 
 	<xsl:variable name="globalProjectTheTitle">
@@ -70,7 +70,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="surveyThe">
-		<xsl:value-of select="'urn:marine.csiro.au:surveyregister'"/>
+		<xsl:value-of select="'urn:marlin.csiro.au:surveyregister'"/>
 	</xsl:variable>
 
 	<xsl:variable name="surveyTheTitle">

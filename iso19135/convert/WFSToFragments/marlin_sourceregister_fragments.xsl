@@ -37,7 +37,7 @@
 				</xsl:attribute>
 			</xsl:if>
 
-			<xsl:variable name="uuid" select="'urn:marine.csiro.au:sourceregister'"/>
+			<xsl:variable name="uuid" select="'urn:marlin.csiro.au:sourceregister'"/>
 
 			<record uuid="{$uuid}">
 				<replacementGroup id="register_item">
@@ -65,7 +65,7 @@
 						<gco:Integer><xsl:value-of select="app:source_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marine.csiro.au:source:',app:source_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:source:',app:source_id)"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>

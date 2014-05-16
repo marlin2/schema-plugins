@@ -40,10 +40,10 @@
 			<xsl:variable name="uuid">
 				<xsl:choose>
 					<xsl:when test="gml:featureMember/app:MarlinProjects">
-						<xsl:value-of select="'urn:marine.csiro.au:projectregister'"/>
+						<xsl:value-of select="'urn:marlin.csiro.au:projectregister'"/>
 					</xsl:when>
 					<xsl:when test="gml:featureMember/app:MarlinGlobalProjects">
-						<xsl:value-of select="'urn:marine.csiro.au:globalprojectregister'"/>
+						<xsl:value-of select="'urn:marlin.csiro.au:globalprojectregister'"/>
 					</xsl:when>
 				</xsl:choose>
 			</xsl:variable>
@@ -74,7 +74,7 @@
 						<gco:Integer><xsl:value-of select="app:project_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marine.csiro.au:project:',app:project_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:project:',app:project_id)"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
@@ -128,7 +128,7 @@
 						<gco:Integer><xsl:value-of select="app:global_project_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marine.csiro.au:globalproject:',app:global_project_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:globalproject:',app:global_project_id)"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>

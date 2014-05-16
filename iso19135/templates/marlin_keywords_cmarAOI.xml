@@ -5,7 +5,7 @@
                  xmlns:gnreg="http://geonetwork-opensource.org/register"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 uuid="urn:marine.csiro.au:keywords:cmarAOI"
+                 uuid="urn:marlin.csiro.au:keywords:cmarAOI"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
       <gco:CharacterString>MarLIN Areas Of Interest Thesaurus</gco:CharacterString>
@@ -16,7 +16,7 @@
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
          <gmd:linkage>
-            <gmd:URL>http://geonetwork-dev-hba.it.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marine.csiro.au:keywords:cmarAOI</gmd:URL>
+            <gmd:URL>http://geonetwork-dev-hba.it.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:keywords:cmarAOI</gmd:URL>
          </gmd:linkage>
       </gmd:CI_OnlineResource>
    </grg:uniformResourceIdentifier>
