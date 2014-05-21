@@ -64,7 +64,9 @@
 						<gco:Integer><xsl:value-of select="app:source_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<xsl:value-of select="app:source_name"/>
+						<gco:CharacterString>
+							<xsl:value-of select="app:source_name"/>
+						</gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
