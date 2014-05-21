@@ -61,7 +61,7 @@
         </xsl:call-template>
 
         <span class="madeBy">
-          <xsl:value-of select="/root/gui/strings/changeDate"/><xsl:value-of select="grg:version/grg:RE_Version/grg:versionDate/gco:Date|grg:dateOfLastChange/gco:Date"/>
+          <xsl:value-of select="concat(/root/gui/strings/changeDate,' ',grg:version/grg:RE_Version/grg:versionDate/gco:Date|grg:dateOfLastChange/gco:Date)"/>
         </span>
 
       </xsl:with-param>

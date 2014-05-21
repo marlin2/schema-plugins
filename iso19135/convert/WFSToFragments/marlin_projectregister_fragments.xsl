@@ -74,7 +74,7 @@
 						<gco:Integer><xsl:value-of select="app:project_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:project:',app:project_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="app:project_name"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
@@ -83,7 +83,7 @@
 						<gco:Date>2012-06-30</gco:Date>
 					</grg:dateAccepted>
 					<grg:definition>
-						<gco:CharacterString><xsl:value-of select="app:project_name"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat(app:project_description,' (Start: ',app:project_start_year,' End: ',app:project_end_year,') ',app:project_full_description)"/></gco:CharacterString>
 					</grg:definition>
 					<grg:fieldOfApplication>
 						<grg:RE_FieldOfApplication>
@@ -128,7 +128,7 @@
 						<gco:Integer><xsl:value-of select="app:global_project_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:globalproject:',app:global_project_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="app:global_project_full_name"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>

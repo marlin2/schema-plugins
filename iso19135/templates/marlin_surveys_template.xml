@@ -8,15 +8,15 @@
                  uuid="urn:marlin.csiro.au:surveyregister"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>MarLIN Survey Codes Register</gco:CharacterString>
+      <gco:CharacterString>MarLIN Survey Names Register</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
-      <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Survey codes and descriptions</gco:CharacterString>
+      <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Survey names and descriptions</gco:CharacterString>
    </grg:contentSummary>
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
          <gmd:linkage>
-            <gmd:URL>http://geonetwork-dev-hba.it.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:surveyregister</gmd:URL>
+            <gmd:URL>http://marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:surveyregister</gmd:URL>
          </gmd:linkage>
       </gmd:CI_OnlineResource>
    </grg:uniformResourceIdentifier>

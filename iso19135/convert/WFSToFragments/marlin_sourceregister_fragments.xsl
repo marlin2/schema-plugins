@@ -65,7 +65,7 @@
 						<gco:Integer><xsl:value-of select="app:source_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:source:',app:source_id)"/></gco:CharacterString>
+						<xsl:value-of select="app:source_name"/>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
@@ -73,18 +73,21 @@
 					<grg:dateAccepted>
 						<gco:Date>2012-06-30</gco:Date>
 					</grg:dateAccepted>
+					<xsl:variable name="desc">
+						<xsl:choose>
+							<xsl:when test="normalize-space(app:source_description)!=''">
+								<xsl:value-of select="app:source_description"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="None"/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
 					<grg:definition>
 						<gco:CharacterString>
-							<xsl:value-of select="concat(app:source_type,': ',app:source_name)"/>
+							<xsl:value-of select="concat('Type: ',app:source_type,' Description: ',$desc)"/>
 						</gco:CharacterString>
 					</grg:definition>
-					<xsl:if test="normalize-space(app:source_description)!=''">
-						<grg:description>
-							<gco:CharacterString>
-								<xsl:value-of select="app:source_description"/>
-							</gco:CharacterString>
-						</grg:description>
-					</xsl:if>
 					<grg:fieldOfApplication>
 						<grg:RE_FieldOfApplication>
 							<grg:name>

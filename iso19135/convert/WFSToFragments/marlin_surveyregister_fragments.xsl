@@ -65,7 +65,7 @@
 						<gco:Integer><xsl:value-of select="app:survey_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat('urn:marlin.csiro.au:survey:',app:survey_id)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="app:survey_name"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
@@ -74,7 +74,7 @@
 						<gco:Date>2012-06-30</gco:Date>
 					</grg:dateAccepted>
 					<grg:definition>
-						<gco:CharacterString><xsl:value-of select="concat(app:source_name,': ',app:survey_name)"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat(app:source_name,': ',app:survey_description)"/></gco:CharacterString>
 					</grg:definition>
 					<grg:fieldOfApplication>
 						<grg:RE_FieldOfApplication>
