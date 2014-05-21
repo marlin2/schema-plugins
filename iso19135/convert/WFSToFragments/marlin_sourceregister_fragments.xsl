@@ -58,6 +58,16 @@
 	<xsl:template name="addSourceRegisterItem">
 		<xsl:param name="keywordUuid"/>
 
+<gml:featureMember><app:MarlinSources gml:id="urn:marlin.csiro.au:source:228"><app:source_id>228</app:source_id><app:source_name>GISS-ER, USA (NASA)</app:source_name><app:source_type>Model</app:source_type><app:source_description>NASA Goddard Institute for Space Studies (NASA/GISS) global climate model version E-R (2004) is a global coupled model representing atmosphere, land surface, oceans and sea ice. GISS-ER: ModelE20/Russell 4x5xL20. Model components consist of:
+
+Atmospheric and sea ice model:
+
+GISS ModelE (Schmidt et al, 2005, J. Clim, accepted)
+
+Ocean models:
+
+GISS-ModelE-R - Russell et al (1995; 2000)</app:source_description></app:MarlinSources>
+</gml:featureMember>
 		<fragment id="register_item" uuid="{$keywordUuid}" title="{substring(concat(app:source_type,': ',normalize-space(app:source_name)),1,200)}">
 			<grg:containedItem>
 				<gnreg:RE_RegisterItem>
@@ -79,7 +89,7 @@
 								<xsl:value-of select="app:source_description"/>
 							</xsl:when>
 							<xsl:otherwise>
-								<xsl:value-of select="None"/>
+								<xsl:value-of select="'None'"/>
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
