@@ -51,15 +51,18 @@
           <xsl:with-param name="title"
             select="/root/gui/schemas/iso19139/strings/understandResource"/>
           <xsl:with-param name="content">
-            <xsl:apply-templates mode="block"
+           <xsl:apply-templates mode="block"
               select="
                 gmd:identificationInfo/*/gmd:citation/*/gmd:date[1]
                 |gmd:identificationInfo/*/gmd:language
 								|gmd:identificationInfo/*/gmd:citation/*/gmd:edition
-                |gmd:topicCategory
-                |gmd:identificationInfo/*/gmd:descriptiveKeywords
-                |gmd:identificationInfo/*/gmd:graphicOverview[1]
-                "> </xsl:apply-templates>
+                |gmd:topicCategory"></xsl:apply-templates>
+            <xsl:apply-templates mode="block-mcp"
+                select="gmd:identificationInfo/*/gmd:descriptiveKeywords">
+					  </xsl:apply-templates>
+            <xsl:apply-templates mode="block"
+              select="gmd:identificationInfo/*/gmd:graphicOverview[1]">
+					  </xsl:apply-templates>
 						<!-- process mcp:EX_Extent -->
 						<xsl:apply-templates mode="block-mcp" select="gmd:identificationInfo/*/gmd:extent/*/gmd:geographicElement"/>
 						<!-- process mcp:taxonomicElement -->
@@ -208,5 +211,64 @@
       </xsl:with-param>
     </xsl:call-template>
 	</xsl:template>
+
+  <xsl:template mode="block-mcp" match="gmd:identificationInfo/*/gmd:descriptiveKeywords/gmd:MD_Keywords">
+    <xsl:call-template name="simpleElementSimpleGUI">
+      <xsl:with-param name="title">
+        <xsl:call-template name="getTitle">
+          <xsl:with-param name="name" select="name(.)"/>
+          <xsl:with-param name="schema" select="$schema"/>
+        </xsl:call-template>
+        
+        <xsl:if test="gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString">
+          (<xsl:value-of
+            select="gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString"/>)
+        </xsl:if>
+      </xsl:with-param>
+      <xsl:with-param name="helpLink">
+        <xsl:call-template name="getHelpLink">
+          <xsl:with-param name="schema" select="$schema"/>
+          <xsl:with-param name="name" select="name(.)"/>
+        </xsl:call-template>
+      </xsl:with-param>
+      <xsl:with-param name="content">
+        <xsl:for-each select="gmd:keyword">
+          <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+          
+          
+          <xsl:choose>
+            <xsl:when test="gmx:Anchor">
+							<!-- 
+							For the moment, exclude the href to the thesaurus entry 
+              <a href="{gmx:Anchor/@xlink:href}"><xsl:value-of select="if (gmx:Anchor/text()) then gmx:Anchor/text() else gmx:Anchor/@xlink:href"/></a>
+							-->
+							<xsl:value-of select="gmx:Anchor/text()"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:call-template name="translatedString">
+                <xsl:with-param name="schema" select="$schema"/>
+                <xsl:with-param name="langId">
+                  <xsl:call-template name="getLangId">
+                    <xsl:with-param name="langGui" select="/root/gui/language"/>
+                    <xsl:with-param name="md" select="ancestor-or-self::*[name(.)='gmd:MD_Metadata' or @gco:isoType='gmd:MD_Metadata']" />
+                  </xsl:call-template>
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:otherwise>
+          </xsl:choose>
+          
+        </xsl:for-each>
+        
+        
+        <xsl:variable name="type" select="gmd:type/gmd:MD_KeywordTypeCode/@codeListValue"/>
+        <xsl:if test="$type">
+          (<xsl:value-of
+            select="/root/gui/schemas/*[name(.)='iso19139.mcp']/codelists/codelist[@name = 'gmd:MD_KeywordTypeCode']/
+            entry[code = $type]/label"/>)
+        </xsl:if>
+        
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
 
 </xsl:stylesheet>
