@@ -374,7 +374,14 @@
 		<entry>
 			<code>dataSource</code>
 			<label>Data Source</label>
-			<description>Keyword identifies data source eg. model, or aggregated/derived data.</description>
+			<description>Keyword identifies data source type eg. model, or aggregated/derived data.</description>
+		</entry>
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- MCP -->
+		<entry>
+			<code>source</code>
+			<label>Source</label>
+			<description>Keyword identifies named data source eg. ship with name R.V. Investigator.</description>
 		</entry>
 	</codelist>
 	<!-- ==================================================== -->
