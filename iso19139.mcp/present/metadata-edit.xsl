@@ -67,20 +67,31 @@
 	<xsl:template name="iso19139.mcpCompleteTab">
 		<xsl:param name="tabLink"/>
 
-		<xsl:if test="/root/gui/env/metadata/enableIsoView = 'true'">
-      <xsl:call-template name="mainTab">
-        <xsl:with-param name="title" select="/root/gui/strings/byGroup"/>
-        <xsl:with-param name="default">mcpCore</xsl:with-param>
-        <xsl:with-param name="menu">
-          <item label="mcpMinimum">mcpMinimum</item>
-          <item label="mcpCore">mcpCore</item>
-          <item label="mcpAll">mcpAll</item>
-        </xsl:with-param>
-      </xsl:call-template>
-     </xsl:if>
+    <xsl:call-template name="mainTab">
+      <xsl:with-param name="title" select="'Minimum Elements'"/>
+      <xsl:with-param name="default">mcpMinimum</xsl:with-param>
+      <xsl:with-param name="menu">
+        <item label="mcpMinimum">mcpMinimum</item>
+      </xsl:with-param>
+    </xsl:call-template>
 
+    <xsl:call-template name="mainTab">
+      <xsl:with-param name="title" select="'Core Elements'"/>
+      <xsl:with-param name="default">mcpCore</xsl:with-param>
+      <xsl:with-param name="menu">
+        <item label="mcpCore">mcpCore</item>
+      </xsl:with-param>
+    </xsl:call-template>
 
+    <xsl:call-template name="mainTab">
+      <xsl:with-param name="title" select="'All Elements'"/>
+      <xsl:with-param name="default">mcpAll</xsl:with-param>
+      <xsl:with-param name="menu">
+        <item label="mcpAll">mcpAll</item>
+      </xsl:with-param>
+    </xsl:call-template>
 
+		<!-- Disable - packages aren't well understood anyway
     <xsl:if test="/root/gui/config/metadata-tab/advanced">
       <xsl:call-template name="mainTab">
         <xsl:with-param name="title" select="/root/gui/strings/byPackage"/>
@@ -103,6 +114,7 @@
         </xsl:with-param>
       </xsl:call-template>
     </xsl:if>
+		-->
 	</xsl:template>
 
 	<!-- ==================================================================== -->
