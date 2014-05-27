@@ -29,6 +29,7 @@
 	<xsl:variable name="dcurl" select="/root/gui/schemas/iso19139.mcp/strings/dataCommonsUrl"/>
 	<xsl:variable name="ccurl" select="/root/gui/schemas/iso19139.mcp/strings/creativeCommonsUrl"/>
 
+    
 	<!-- main template - the way into processing iso19139.mcp -->
   <xsl:template match="metadata-iso19139.mcp" name="metadata-iso19139.mcp">
     <xsl:param name="schema"/>
@@ -2393,6 +2394,78 @@
 				<xsl:call-template name="iso19139.mcp-brief"/>
 		</metadata>
 	</xsl:template>
+
+  <!-- 
+  Widget editor based on edition of an XML snippet. Note: we are overriding the
+	a template with this match in iso19139/present/metadata-edit.xsl hence
+	the large priority value. We do this so that we can constrain the
+	keywords/terms to be added in anchor mode only. 
+  -->
+  <xsl:template match="gmd:MD_Keywords" mode="snippet-editor" priority="10000">
+    <xsl:param name="schema"/>
+    <xsl:param name="edit"/>
+    
+    <!-- 
+        TODO : multilingual md
+       
+    -->
+    <!-- Create a div which contains the JSON configuration 
+    * thesaurus: thesaurus to use
+    * keywords: list of keywords in the element
+    * transformations: list of transformations
+    * transformation: current transformation
+    -->
+    
+    <!-- Single quote are escaped inside keyword. -->
+    <xsl:variable name="listOfKeywords" select="replace(replace(string-join(gmd:keyword/*[1], '#,#'), '''', '\\'''), '#', '''')"/>
+    
+    <!-- Get current transformation mode based on XML fragement analysis -->
+    <xsl:variable name="transformation" select="if (count(descendant::gmd:keyword/gmx:Anchor) > 0) then 'to-iso19139-keyword-with-anchor' 
+      else if (@xlink:href) then 'to-iso19139-keyword-as-xlink' 
+      else 'to-iso19139-keyword'"/>
+    
+    <!-- Define the list of transformation mode available.
+    -->
+    <xsl:variable name="parentName" select="name(..)"/>
+   
+	 	<!--
+    <xsl:variable name="listOfTransformations">'to-iso19139-keyword', 'to-iso19139-keyword-with-anchor', 'to-iso19139-keyword-as-xlink'</xsl:variable>
+			Force Anchor mode!
+		-->
+  	<xsl:variable name="listOfTransformations">'to-iso19139-keyword-with-anchor'</xsl:variable>
+
+    <!-- Create custom widget: 
+      * '' for item selector, 
+      * 'combo' for simple combo, 
+      * 'list' for selection list, 
+      * 'multiplelist' for multiple selection list
+      -->
+    <xsl:variable name="widgetMode" select="''"/>
+    
+    <!-- Retrieve the thesaurus identifier from the thesaurus citation. The thesaurus 
+    identifier should be defined in the citation identifier. By default, GeoNetwork
+    define it in a gmx:Anchor. Retrieve the first child of the code which might be a
+    gco:CharacterString. 
+    -->
+    <xsl:variable name="thesaurusName" select="gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString"></xsl:variable>
+    <xsl:variable name="thesaurusId" select="if (gmd:thesaurusName/gmd:CI_Citation/
+      gmd:identifier/gmd:MD_Identifier/gmd:code/*[1]) then gmd:thesaurusName/gmd:CI_Citation/
+      gmd:identifier/gmd:MD_Identifier/gmd:code/*[1] else /root/gui/thesaurus/thesauri/thesaurus[title=$thesaurusName]/key"/>
+    
+    
+    <!-- The element identifier in the metadocument-->
+    <xsl:variable name="elementRef" select="../geonet:element/@ref"/>
+    
+    <xsl:call-template name="snippet-editor">
+      <xsl:with-param name="elementRef" select="$elementRef"/>
+      <xsl:with-param name="widgetMode" select="$widgetMode"/>
+      <xsl:with-param name="thesaurusId" select="$thesaurusId"/>
+      <xsl:with-param name="listOfKeywords" select="$listOfKeywords"/>
+      <xsl:with-param name="listOfTransformations" select="$listOfTransformations"/>
+      <xsl:with-param name="transformation" select="$transformation"/>
+    </xsl:call-template>
+    
+  </xsl:template>
 
 	<!-- match everything else and do nothing - leave that to iso19139 mode -->
 	<xsl:template mode="iso19139.mcp" match="*|@*"/> 
