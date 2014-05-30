@@ -60,7 +60,9 @@
 	<field name="mcp:CI_Responsibility">
 		<suggest name="mcp:role"/>
 		<suggest name="mcp:extent"/>
+		<!--
 		<suggest name="mcp:party"/>
+		-->
 	</field>
 
 	<field name="mcp:CI_Organisation">
