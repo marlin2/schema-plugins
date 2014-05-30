@@ -91,7 +91,7 @@
 
 			<!-- gmd:party/CI_Organisation -->
 
-			<fragment id="person_organisation" uuid="urn:marlin.csiro.au:person:{app:person_id}_person_organisation" title="{concat(app:surname,'@',$org/app:MarlinOrganisations/app:organisation_name)}">
+			<fragment id="person_organisation" uuid="urn:marlin.csiro.au:person:{app:person_id}_person_organisation" title="{concat(app:surname,', ',app:given_names,'@',$org/app:MarlinOrganisations/app:organisation_name)}">
 				<mcp:CI_Organisation>
 
 					<!-- gmd:name organisation_name -->
