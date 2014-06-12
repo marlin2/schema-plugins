@@ -1,49 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:srv="http://www.isotc211.org/2005/srv/2.0/2013-06-24"
-  xmlns:mds="http://www.isotc211.org/2005/mds/1.0/2013-06-24"
-  xmlns:mcc="http://www.isotc211.org/2005/mcc/1.0/2013-06-24"
-  xmlns:mri="http://www.isotc211.org/2005/mri/1.0/2013-06-24"
-  xmlns:mrs="http://www.isotc211.org/2005/mrs/1.0/2013-06-24"
-  xmlns:mrd="http://www.isotc211.org/2005/mrd/1.0/2013-06-24"
-  xmlns:mco="http://www.isotc211.org/2005/mco/1.0/2013-06-24"
-  xmlns:msr="http://www.isotc211.org/2005/msr/1.0/2013-06-24"
-  xmlns:lan="http://www.isotc211.org/2005/lan/1.0/2013-06-24"
-  xmlns:gcx="http://www.isotc211.org/2005/gcx/1.0/2013-06-24"
-  xmlns:gex="http://www.isotc211.org/2005/gex/1.0/2013-06-24"
-  xmlns:dqm="http://www.isotc211.org/2005/dqm/1.0/2013-06-24"
-  xmlns:cit="http://www.isotc211.org/2005/cit/1.0/2013-06-24"
-  xmlns:gco="http://www.isotc211.org/2005/gco"
-  xmlns:gmx="http://www.isotc211.org/2005/gmx"
-  xmlns:gts="http://www.isotc211.org/2005/gts"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:gn="http://www.fao.org/geonetwork"
-  xmlns:gn-fn-core="http://geonetwork-opensource.org/xsl/functions/core" 
-  xmlns:gn-fn-metadata="http://geonetwork-opensource.org/xsl/functions/metadata"
-  xmlns:gn-fn-iso19139="http://geonetwork-opensource.org/xsl/functions/profiles/iso19139"
-  xmlns:exslt="http://exslt.org/common" exclude-result-prefixes="#all">
+                xmlns:grg="http://www.isotc211.org/2005/grg"
+                xmlns:gco="http://www.isotc211.org/2005/gco"
+                xmlns:gmx="http://www.isotc211.org/2005/gmx"
+                xmlns:gn="http://www.fao.org/geonetwork"
+                xmlns:gn-fn-core="http://geonetwork-opensource.org/xsl/functions/core"
+                xmlns:gn-fn-metadata="http://geonetwork-opensource.org/xsl/functions/metadata"
+                xmlns:gn-fn-iso19139="http://geonetwork-opensource.org/xsl/functions/profiles/iso19139"
+                xmlns:exslt="http://exslt.org/common" exclude-result-prefixes="#all">
 
   <xsl:include href="utility-tpl.xsl"/>
   <xsl:include href="layout-custom-fields.xsl"/>
 
   <!-- Visit all XML tree recursively -->
-  <xsl:template mode="mode-iso19115-3"
-                match="mds:*|mcc:*|mri:*|mrs:*|mrd:*|mco:*|msr:*|lan:*|
-                       gcx:*|gex:*|dqm:*|cit:*|srv:*|gts:*"
+  <xsl:template mode="mode-iso19135"
+                match="grg:*"
                 priority="2">
     <xsl:param name="schema" select="$schema" required="no"/>
     <xsl:param name="labels" select="$labels" required="no"/>
 
-    <xsl:apply-templates mode="mode-iso19115-3" select="*|@*">
+    <xsl:apply-templates mode="mode-iso19135" select="*|@*">
       <xsl:with-param name="schema" select="$schema"/>
       <xsl:with-param name="labels" select="$labels"/>
     </xsl:apply-templates>
     <!--&lt;!&ndash; Check if a layout-<schema_identifier> mode is defined-->
     <!--for current element. &ndash;&gt;-->
     <!--<xsl:variable name="profileElements">-->
-      <!--<xsl:apply-templates mode="mode-iso19115-3" select=".">-->
+      <!--<xsl:apply-templates mode="mode-iso19135" select=".">-->
         <!--<xsl:with-param name="schema" select="$schema"/>-->
         <!--<xsl:with-param name="labels" select="$labels"/>-->
       <!--</xsl:apply-templates>-->
@@ -61,13 +44,13 @@
   </xsl:template>
 
   <!-- Ignore all gn element -->
-  <xsl:template mode="mode-iso19115-3" match="gn:*|@gn:*|@*" priority="1000"/>
+  <xsl:template mode="mode-iso19135" match="gn:*|@gn:*|@*" priority="1000"/>
 
 
   <!-- Template to display non existing element ie. geonet:child element
 	of the metadocument. Display in editing mode only and if
   the editor mode is not flat mode. -->
-  <xsl:template mode="mode-iso19115-3" match="gn:child" priority="2000">
+  <xsl:template mode="mode-iso19135" match="gn:child" priority="2000">
     <xsl:param name="schema" select="$schema" required="no"/>
     <xsl:param name="labels" select="$labels" required="no"/>
 
@@ -97,7 +80,7 @@
       * and gmd:*: Match all elements having gmd child elements
       * and not(gco:CharacterString): Don't take into account those having gco:CharacterString (eg. multilingual elements)
   -->
-  <xsl:template mode="mode-iso19115-3" priority="200"
+  <xsl:template mode="mode-iso19135" priority="200"
                 match="*[name() = $editorConfig/editor/fieldsWithFieldset/name
                           or @gco:isoType = $editorConfig/editor/fieldsWithFieldset/name]|
                         *[namespace-uri(.) != $gnUri and $isFlatMode = false() and
@@ -138,7 +121,7 @@
         <!-- Process child of those element. Propagate schema
         and labels to all subchilds (eg. needed like iso19110 elements
         contains gmd:* child. -->
-        <xsl:apply-templates mode="mode-iso19115-3" select="*">
+        <xsl:apply-templates mode="mode-iso19135" select="*">
           <xsl:with-param name="schema" select="$schema"/>
           <xsl:with-param name="labels" select="$labels"/>
         </xsl:apply-templates>
@@ -147,7 +130,7 @@
   </xsl:template>
 
   <!-- Render simple element which usually match a form field -->
-  <xsl:template mode="mode-iso19115-3" priority="200"
+  <xsl:template mode="mode-iso19135" priority="200"
                 match="*[gco:CharacterString|gco:Integer|gco:Decimal|
        gco:Boolean|gco:Real|gco:Measure|gco:Length|gco:Distance|gco:Angle|gmx:FileName|
        gco:Scale|gco:RecordType|gmx:MimeFileType|gco:LocalName]">
@@ -156,7 +139,8 @@
 
     <xsl:variable name="elementName" select="name()"/>
 
-    <xsl:variable name="hasPTFreeText" select="count(cit:PT_FreeText) > 0"/>
+    <!--<xsl:variable name="hasPTFreeText" select="count(gmd:PT_FreeText) > 0"/>-->
+    <xsl:variable name="hasPTFreeText" select="false()"/>
 
     <xsl:variable name="isMultilingualElement"
                   select="$metadataIsMultilingual and
@@ -166,7 +150,7 @@
 
     <!-- For some fields, always display attributes.
     TODO: move to editor config ? -->
-    <xsl:variable name="forceDisplayAttributes" select="false()"/>
+    <xsl:variable name="forceDisplayAttributes" select="count(gmx:FileName) > 0"/>
 
     <!-- TODO: Support gmd:LocalisedCharacterString -->
     <xsl:variable name="theElement" select="gco:CharacterString|gco:Integer|gco:Decimal|
@@ -220,19 +204,23 @@
           <!-- Or the PT_FreeText element matching the main language -->
           <value ref="{$theElement/gn:element/@ref}" lang="{$metadataLanguage}"><xsl:value-of select="gco:CharacterString"/></value>
 
-          <!-- the existing translation -->
-          <xsl:for-each select="cit:PT_FreeText/cit:textGroup/cit:LocalisedCharacterString">
+          <!-- the existing translation
+          <xsl:for-each select="gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString">
             <value ref="{gn:element/@ref}" lang="{substring-after(@locale, '#')}"><xsl:value-of select="."/></value>
           </xsl:for-each>
+          FIXME
+          -->
 
           <!-- and create field for none translated language -->
           <xsl:for-each select="$metadataOtherLanguages/lang">
             <xsl:variable name="currentLanguageId" select="@id"/>
+            <!-- FIXME
             <xsl:if test="count($theElement/parent::node()/
-                            cit:PT_FreeText/cit:textGroup/
-                              cit:LocalisedCharacterString[@locale = concat('#',$currentLanguageId)]) = 0">
+                gmd:PT_FreeText/gmd:textGroup/
+                gmd:LocalisedCharacterString[@locale = concat('#',$currentLanguageId)]) = 0">
               <value ref="lang_{@id}_{$theElement/parent::node()/gn:element/@ref}" lang="{@id}"></value>
             </xsl:if>
+            -->
           </xsl:for-each>
         </values>
       </xsl:if>
@@ -262,7 +250,7 @@
 
 
 
-  <xsl:template mode="mode-iso19115-3" priority="200"
+  <xsl:template mode="mode-iso19135" priority="200"
                 match="*[gco:Date|gco:DateTime]">
     <xsl:param name="schema" select="$schema" required="no"/>
     <xsl:param name="labels" select="$labels" required="no"/>
@@ -278,10 +266,10 @@
   </xsl:template>
 
   <!--
-  <xsl:template mode="mode-iso19115-3" match="*|@*" priority="0"/>
+  <xsl:template mode="mode-iso19135" match="*|@*" priority="0"/>
 -->
   <!-- Codelists -->
-  <xsl:template mode="mode-iso19115-3" priority="200"
+  <xsl:template mode="mode-iso19135" priority="200"
                 match="*[*/@codeList]">
     <xsl:param name="schema" select="$schema" required="no"/>
     <xsl:param name="labels" select="$labels" required="no"/>
@@ -317,7 +305,7 @@
       <geonet:text value="biota"/>
       <geonet:text value="boundaries"/
   -->
-  <xsl:template mode="mode-iso19115-3"
+  <xsl:template mode="mode-iso19135"
                 match="*[gn:element/gn:text]"
                 priority="2000">
     <xsl:param name="schema" select="$schema" required="no"/>
