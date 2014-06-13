@@ -53,12 +53,6 @@ Stylesheet used to update metadata adding a reference to a parent record.
 		    gmd:featureType|
 		    gmd:featureAttribute"/>
 
-			<!-- copy elements from any profile that adds them to MD_Metadata -->
-      <xsl:for-each
-        select="*[namespace-uri()!='http://www.isotc211.org/2005/gmd' and namespace-uri()!='http://www.fao.org/geonetwork']">
-        <xsl:copy-of select="."/>
-      </xsl:for-each>
-
 		</xsl:copy>
 	</xsl:template>
 	
