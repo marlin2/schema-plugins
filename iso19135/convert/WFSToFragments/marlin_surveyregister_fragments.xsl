@@ -65,7 +65,16 @@
 						<gco:Integer><xsl:value-of select="app:survey_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="concat(app:survey_type,': ',app:survey_name)"/></gco:CharacterString>
+						<gco:CharacterString>
+							<xsl:choose>
+								<xsl:when test="normalize-space(app:survey_name)!=''">
+									<xsl:value-of select="concat(app:survey_type,': ',app:survey_name)"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="concat(app:survey_type,': ',app:survey_label)"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>

@@ -65,7 +65,7 @@
 					</grg:itemIdentifier>
 					<grg:name>
 						<gco:CharacterString>
-							<xsl:value-of select="app:source_name"/>
+							<xsl:value-of select="concat(app:source_type,': ',app:source_name)"/>
 						</gco:CharacterString>
 					</grg:name>
 					<grg:status>
