@@ -50,7 +50,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="projectTheTitle">
-		<xsl:value-of select="'MarLIN Project Register'"/>
+		<xsl:value-of select="'MarLIN Project List'"/>
 	</xsl:variable>
 
 	<xsl:variable name="sourceThe">
@@ -58,7 +58,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="sourceTheTitle">
-		<xsl:value-of select="'MarLIN Source Register'"/>
+		<xsl:value-of select="'MarLIN Source List'"/>
 	</xsl:variable>
 
 	<xsl:variable name="globalProjectThe">
@@ -66,7 +66,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="globalProjectTheTitle">
-		<xsl:value-of select="'MarLIN Global Project Register'"/>
+		<xsl:value-of select="'MarLIN Global Project List'"/>
 	</xsl:variable>
 
 	<xsl:variable name="surveyThe">
@@ -74,7 +74,7 @@
 	</xsl:variable>
 
 	<xsl:variable name="surveyTheTitle">
-		<xsl:value-of select="'MarLIN Survey Register'"/>
+		<xsl:value-of select="'MarLIN Survey List'"/>
 	</xsl:variable>
 
 </xsl:stylesheet>

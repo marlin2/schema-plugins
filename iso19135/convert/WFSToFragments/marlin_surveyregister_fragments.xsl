@@ -58,14 +58,14 @@
 	<xsl:template name="addSurveyRegisterItem">
 		<xsl:param name="keywordUuid"/>
 
-		<fragment id="register_item" uuid="{$keywordUuid}" title="{substring(concat(app:source_name,': ',normalize-space(app:survey_name)),1,200)}">
+		<fragment id="register_item" uuid="{$keywordUuid}" title="{substring(concat(app:source_name,': ',normalize-space(concat(app:survey_type,': ',app:survey_name))),1,200)}">
 			<grg:containedItem>
 				<gnreg:RE_RegisterItem>
 					<grg:itemIdentifier>
 						<gco:Integer><xsl:value-of select="app:survey_id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
-						<gco:CharacterString><xsl:value-of select="app:survey_name"/></gco:CharacterString>
+						<gco:CharacterString><xsl:value-of select="concat(app:survey_type,': ',app:survey_name)"/></gco:CharacterString>
 					</grg:name>
 					<grg:status>
 						<grg:RE_ItemStatus>valid</grg:RE_ItemStatus>
