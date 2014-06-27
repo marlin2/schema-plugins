@@ -5,13 +5,13 @@
                  xmlns:gnreg="http://geonetwork-opensource.org/register"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 uuid="urn:marine.csiro.au:globalprojectregister"
+                 uuid="urn:marlin.csiro.au:globalprojectregister"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>MarLIN Global Project Codes Register</gco:CharacterString>
+      <gco:CharacterString>CSIRO Global Project List</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
-      <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Global Project codes and descriptions</gco:CharacterString>
+      <gco:CharacterString>CSIRO Marine and Atmospheric Research List of Global Project codes and descriptions</gco:CharacterString>
    </grg:contentSummary>
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>

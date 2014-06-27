@@ -8,7 +8,7 @@
                  uuid="urn:marlin.csiro.au:keywords:standardDataType"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>MarLIN Standard Data Types Thesaurus</gco:CharacterString>
+      <gco:CharacterString>CSIRO Standard Data Types</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
       <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Standard Data Type keywords</gco:CharacterString>

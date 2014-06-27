@@ -8,7 +8,7 @@
                  uuid="urn:marlin.csiro.au:projectregister"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>MarLIN Project Register</gco:CharacterString>
+      <gco:CharacterString>CSIRO Project List</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
       <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Project names and descriptions</gco:CharacterString>
