@@ -201,8 +201,8 @@
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:purpose"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:status"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:pointOfContact" or="pointOfContact" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:resourceContactInfo" notDisplayedIfMissing="true"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:pointOfContact" notDisplayedIfMissing="true"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:resourceContactInfo" or="resourceContactInfo" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceMaintenance"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:graphicOverview"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceFormat"/>
@@ -239,8 +239,8 @@
           <field xpath="/mcp:MD_Metadata/mcp:revisionDate"/>
           <field xpath="/mcp:MD_Metadata/gmd:metadataStandardName"/>
           <field xpath="/mcp:MD_Metadata/gmd:metadataStandardVersion"/>
-          <field xpath="/mcp:MD_Metadata/gmd:contact" or="contact" in ="/mcp:MD_Metadata"/>
-          <field xpath="/mcp:MD_Metadata/mcp:metadataContactInfo" notDisplayedIfMissing="true"/>
+          <field xpath="/mcp:MD_Metadata/gmd:contact" notDisplayedIfMissing="true"/>
+          <field xpath="/mcp:MD_Metadata/mcp:metadataContactInfo" or="metadataContactInfo" in="/mcp:MD_Metadata"/>
           <!-- These are not often used in mcp so leave them out of the default
 					     mode
 					<field xpath="/mcp:MD_Metadata/gmd:dataSetURI" or="dataSetURI" in="/mcp:MD_Metadata"/> 
