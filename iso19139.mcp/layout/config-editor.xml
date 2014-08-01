@@ -202,7 +202,24 @@
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:status"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:pointOfContact" notDisplayedIfMissing="true"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:resourceContactInfo" or="resourceContactInfo" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:resourceContactInfo" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
+					<!-- always display an add action that will add a new 
+					     resourceContactInfo block with just the role and
+							 party in it -->
+          <action type="add" name="resourceContactInfo" or="resourceContactInfo" if="true()" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification">
+            <template>
+              <snippet>
+                <mcp:resourceContactInfo>
+									<mcp:CI_Responsibility>
+									  <mcp:role>
+											<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue=""/>
+										</mcp:role>
+										<mcp:party/>
+									</mcp:CI_Responsibility>
+                </mcp:resourceContactInfo>
+              </snippet>
+            </template>
+          </action>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceMaintenance"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:graphicOverview"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceFormat"/>
@@ -240,7 +257,24 @@
           <field xpath="/mcp:MD_Metadata/gmd:metadataStandardName"/>
           <field xpath="/mcp:MD_Metadata/gmd:metadataStandardVersion"/>
           <field xpath="/mcp:MD_Metadata/gmd:contact" notDisplayedIfMissing="true"/>
-          <field xpath="/mcp:MD_Metadata/mcp:metadataContactInfo" or="metadataContactInfo" in="/mcp:MD_Metadata"/>
+          <field xpath="/mcp:MD_Metadata/mcp:metadataContactInfo" in="/mcp:MD_Metadata"/>
+					<!-- always display an add action that will add a new 
+					     metadataContactInfo block with just the role and
+							 party in it -->
+          <action type="add" name="metadataContactInfo" or="metadataContactInfo" if="true()" in="/mcp:MD_Metadata">
+            <template>
+              <snippet>
+                <mcp:metadataContactInfo>
+									<mcp:CI_Responsibility>
+									  <mcp:role>
+											<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue=""/>
+										</mcp:role>
+										<mcp:party/>
+									</mcp:CI_Responsibility>
+                </mcp:metadataContactInfo>
+              </snippet>
+            </template>
+          </action>
           <!-- These are not often used in mcp so leave them out of the default
 					     mode
 					<field xpath="/mcp:MD_Metadata/gmd:dataSetURI" or="dataSetURI" in="/mcp:MD_Metadata"/> 
