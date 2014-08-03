@@ -214,7 +214,6 @@
 									  <mcp:role>
 											<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue=""/>
 										</mcp:role>
-										<mcp:party/>
 									</mcp:CI_Responsibility>
                 </mcp:resourceContactInfo>
               </snippet>
@@ -269,7 +268,6 @@
 									  <mcp:role>
 											<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue=""/>
 										</mcp:role>
-										<mcp:party/>
 									</mcp:CI_Responsibility>
                 </mcp:metadataContactInfo>
               </snippet>
