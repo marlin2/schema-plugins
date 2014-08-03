@@ -200,7 +200,7 @@
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:abstract"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:purpose"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:status"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:status" or="status" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:pointOfContact" notDisplayedIfMissing="true"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:resourceContactInfo" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
 					<!-- always display an add action that will add a new 
@@ -232,15 +232,45 @@
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:characterSet"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:topicCategory"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:environmentDescription"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:extent"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:extent" or="extent" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:supplementalInformation"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:samplingFrequency"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:sensor" notDisplayedIfMissing="true"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:sensorCalibrationProcess" notDisplayedIfMissing="true"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:dataParameters" or="dataParameters" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
         </section>
-        <section xpath="/mcp:MD_Metadata/gmd:distributionInfo"/>
-        <section xpath="/mcp:MD_Metadata/gmd:dataQualityInfo"/>
+        <section xpath="/mcp:MD_Metadata/gmd:distributionInfo" or="distributionInfo" in="/mcp:MD_Metadata"/>
+        <section xpath="/mcp:MD_Metadata/gmd:dataQualityInfo" or="dataQualityInfo" in="/mcp:MD_Metadata">
+					<field xpath="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope" or="scope" in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality"/>
+					<field xpath="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report" or="report" in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality"/>
+					<field xpath="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage" or="lineage" in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality"/>
+					<action type="add" name="dataQualityInfo" or="dataQualityInfo" if="true()" in="mcp:MD_Metadata">
+						<template>
+							<snippet>
+								<gmd:dataQualityInfo>
+									<gmd:DQ_DataQuality>
+										<gmd:scope>
+											<gmd:DQ_Scope>
+												<gmd:level>
+													<gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+												</gmd:level>
+											</gmd:DQ_Scope>
+										</gmd:scope>
+										<gmd:report/>
+										<gmd:lineage>
+											<gmd:LI_Lineage>
+												<gmd:statement>
+													<gco:CharacterString></gco:CharacterString>
+												</gmd:statement>
+											</gmd:LI_Lineage>
+										</gmd:lineage>
+									</gmd:DQ_DataQuality>
+								</gmd:dataQualityInfo>	
+							</snippet>
+						</template>
+					</action>
+				</section>
+        <section xpath="/mcp:MD_Metadata/gmd:referenceSystemInfo" or="referenceSystemInfo" in="/mcp:MD_Metadata"/>
         <section name="mcp:MD_Metadata">
           <field xpath="/mcp:MD_Metadata/gmd:fileIdentifier"/>
           <field xpath="/mcp:MD_Metadata/gmd:language" or="language" in="/mcp:MD_Metadata"/>
