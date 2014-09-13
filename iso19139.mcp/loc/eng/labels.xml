@@ -391,7 +391,9 @@ This is a link to an html description of a species name (or higher level ranks) 
 	<element name="gmd:name" context="gmd:MD_Format" id="285.0">
 	  <label>Name</label>
 		<description>Name of the data transfer format(s)</description>
-		<help>name of the data transfer format(s)</help>
+		<help>
+			<![CDATA[<p>Please select the <b>most appropriate</b> format or if not known then please select <b>'not yet ascertained'</b>.</p>]]>
+		</help>
 		<condition>mandatory</condition>
 		<helper rel="gmd:version">
 			<option value="not yet ascertained">not yet ascertained</option>
