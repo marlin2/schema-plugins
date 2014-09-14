@@ -220,7 +220,9 @@
             </template>
           </action>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceMaintenance"/>
+					<!-- Don't display.....
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:graphicOverview"/>
+					-->
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceFormat"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:descriptiveKeywords" or="descriptiveKeywords" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceSpecficUsage"/>
@@ -495,8 +497,53 @@
             </template>
         	</field>
 				</section>
-				<section xpath="/mcp:MD_Metadata/gmd:distributionInfo" or="distributionInfo" in="/mcp:MD_Metadata"/>
-				<section xpath="/mcp:MD_Metadata/gmd:referenceSystemInfo" or="referenceSystemInfo" in="/mcp:MD_Metadata"/>
+				<section name="gmd:distributionFormat">
+          <field name="distributionFormatNoTitle" templateModeOnly="true" isMissingLabel="notSpecified" xpath="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat" del="..">
+            <template>
+              <values>
+                <key label="distribution_name" xpath="gmd:MD_Format/gmd:name/gco:CharacterString" tooltip="gmd:name">
+                  <helper name="gmd:name" context="gmd:MD_Format"></helper>
+                </key>
+                <key label="distribution_version" xpath="gmd:MD_Format/gmd:version/gco:CharacterString"/>
+              </values>
+              <snippet>
+                <gmd:distributionFormat>
+                  <gmd:MD_Format>
+                    <gmd:name>
+                      <gco:CharacterString>{{distribution_name}}</gco:CharacterString>
+                    </gmd:name>
+                    <gmd:version>
+                      <gco:CharacterString>{{distribution_version}}</gco:CharacterString>
+                    </gmd:version>
+                    <gn:copy select="gmd:amendmentNumber"/>
+                    <gn:copy select="gmd:specification"/>
+                    <gn:copy select="gmd:fileDecompressionTechnique"/>
+                    <gn:copy select="gmd:formatDistributor"/>
+                  </gmd:MD_Format>
+                </gmd:distributionFormat>
+              </snippet>
+            </template>
+        	</field>
+					<action type="add" if="count(mcp:MD_Metadata/gmd:distributionInfo)>0" name="distributionFormat" or="distributionFormat" in="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution">
+						<template>
+							<snippet>
+                <gmd:distributionFormat>
+                  <gmd:MD_Format>
+                    <gmd:name>
+                      <gco:CharacterString/>
+                    </gmd:name>
+                    <gmd:version>
+                      <gco:CharacterString/>
+                    </gmd:version>
+                  </gmd:MD_Format>
+                </gmd:distributionFormat>
+							</snippet>
+						</template>
+					</action>
+				</section>
+				<section name="coordSystem">
+					<field xpath="/mcp:MD_Metadata/gmd:referenceSystemInfo" or="referenceSystemInfo" in="/mcp:MD_Metadata"/>
+				</section>
         <section name="mcp:MD_Metadata">
           <field xpath="/mcp:MD_Metadata/gmd:fileIdentifier"/>
           <field xpath="/mcp:MD_Metadata/gmd:language" or="language" in="/mcp:MD_Metadata"/>

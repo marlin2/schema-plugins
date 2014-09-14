@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <strings>
+	<distribution_name>Name</distribution_name>
+	<distribution_version>Version</distribution_version>
+	<notSpecified>Not specified</notSpecified>
+	<coordSystem>Spatial Reference System</coordSystem>
 	<clear>Clear</clear>
 	<contact>Contact</contact>
 	<distributionOnlineInfo>Distribution and On-line Resource(s)</distributionOnlineInfo>
