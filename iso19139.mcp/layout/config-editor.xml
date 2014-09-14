@@ -195,7 +195,7 @@
   <views>
     <view name="default">
       <tab id="default" default="true" mode="flat">
-        <section name="gmd:identificationInfo">
+        <section name="resourceInfo">
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:abstract"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:purpose"/>
@@ -238,6 +238,36 @@
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:sensor" notDisplayedIfMissing="true"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:sensorCalibrationProcess" notDisplayedIfMissing="true"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/mcp:dataParameters" or="dataParameters" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
+				</section>
+        <section name="gmd:lineage">
+          <field name="lineage"
+            xpath="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement"/>
+          <action type="add" name="lineage" or="statement"
+                  in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage">
+            <template>
+              <snippet>
+                <gmd:statement>
+                  <gco:CharacterString></gco:CharacterString>
+                </gmd:statement>
+              </snippet>
+            </template>
+          </action>
+          <action type="add" name="lineage" or="lineage"
+                  in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality">
+            <template>
+              <snippet>
+                <gmd:lineage>
+                  <gmd:LI_Lineage>
+                    <gmd:statement>
+                      <gco:CharacterString></gco:CharacterString>
+                    </gmd:statement>
+                  </gmd:LI_Lineage>
+                </gmd:lineage>
+              </snippet>
+            </template>
+          </action>
+				</section>
+        <section name="gmd:dataQualityInfo">
 
 					<!-- Data Quality Section -->
 
@@ -464,35 +494,7 @@
               </snippet>
             </template>
         	</field>
-
-          <field name="lineage"
-            xpath="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement"/>
-
-          <action type="add" name="lineage" or="statement"
-                  in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage">
-            <template>
-              <snippet>
-                <gmd:statement>
-                  <gco:CharacterString></gco:CharacterString>
-                </gmd:statement>
-              </snippet>
-            </template>
-          </action>
-          <action type="add" name="lineage" or="lineage"
-                  in="/mcp:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality">
-            <template>
-              <snippet>
-                <gmd:lineage>
-                  <gmd:LI_Lineage>
-                    <gmd:statement>
-                      <gco:CharacterString></gco:CharacterString>
-                    </gmd:statement>
-                  </gmd:LI_Lineage>
-                </gmd:lineage>
-              </snippet>
-            </template>
-          </action>
-        </section>
+				</section>
 				<section xpath="/mcp:MD_Metadata/gmd:distributionInfo" or="distributionInfo" in="/mcp:MD_Metadata"/>
 				<section xpath="/mcp:MD_Metadata/gmd:referenceSystemInfo" or="referenceSystemInfo" in="/mcp:MD_Metadata"/>
         <section name="mcp:MD_Metadata">

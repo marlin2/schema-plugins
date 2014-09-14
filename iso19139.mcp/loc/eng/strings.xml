@@ -4,7 +4,8 @@
 	<contact>Contact</contact>
 	<distributionOnlineInfo>Distribution and On-line Resource(s)</distributionOnlineInfo>
 	<deprecatedTimeStrings>Deprecated - use time elements above</deprecatedTimeStrings>
-	<lineage>Lineage</lineage>
+	<resourceInfo>Resource Info</resourceInfo>
+	<lineage>Statement</lineage>
 	<metadataInfo>Metadata Info</metadataInfo>
 	<referenceSystemInfo>Reference System Info</referenceSystemInfo>
 	<spatialExtentTab>Spatial Extent</spatialExtentTab>
