@@ -234,8 +234,13 @@ This is a link to an html description of a species name (or higher level ranks) 
 		<description>Information about spatial, vertical, temporal and taxonomic extent</description>
 	</element>
 	<!-- ==================================================== -->
-	<element name="mcp:contactInfo" id="9102.0">
-		<label>Contact Information</label>
+	<element name="mcp:contactInfo" context="mcp:CI_Individual" id="9102.0">
+		<label>Individual Contact Information</label>
+		<description>Address of the responsible party</description>
+	</element>
+	<!-- ==================================================== -->
+	<element name="mcp:contactInfo" context="mcp:CI_Organisation" id="9102.1">
+		<label>Organisation Contact Information</label>
 		<description>Address of the responsible party</description>
 	</element>
 	<!-- ==================================================== -->
