@@ -295,12 +295,12 @@ This is a link to an html description of a species name (or higher level ranks) 
 	</element>
 	<!-- ==================================================== -->
 	<element name="mcp:name" id="9114.0" context="mcp:CI_Organisation">
-		<label>Name</label>
+		<label>Organisation Name</label>
 		<description>Organisation Name</description>
 	</element>
 	<!-- ==================================================== -->
 	<element name="mcp:name" id="9115.0" context="mcp:CI_Individual">
-		<label>Name</label>
+		<label>Individual Name</label>
 		<description>Individual Name</description>
 	</element>
 	<!-- ==================================================== -->
