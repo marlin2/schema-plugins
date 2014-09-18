@@ -49,13 +49,6 @@
       <gmd:status>
         <gmd:MD_ProgressCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue=""/>
       </gmd:status>
-			<gmd:descriptiveKeywords>
-        <gmd:MD_Keywords>
-            <gmd:type>
-                <gmd:MD_KeywordTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue=""/>
-            </gmd:type>
-        </gmd:MD_Keywords>
-    	</gmd:descriptiveKeywords>
       <gmd:spatialRepresentationType>
         <gmd:MD_SpatialRepresentationTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue=""/>
       </gmd:spatialRepresentationType>
