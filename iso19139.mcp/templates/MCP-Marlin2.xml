@@ -167,12 +167,4 @@
   <mcp:revisionDate>
     <gco:DateTime>2012-11-12T01:32:29</gco:DateTime>
   </mcp:revisionDate>
-      <mcp:metadataContactInfo>
-        <mcp:CI_Responsibility>
-          <mcp:role>
-            <gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue=""/>
-          </mcp:role>
-					<mcp:party/>
-        </mcp:CI_Responsibility>
-      </mcp:metadataContactInfo>
 </mcp:MD_Metadata>
