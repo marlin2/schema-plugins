@@ -19,22 +19,20 @@
 
   <!-- Form field type configuration. Default is text. -->
   <fields>
-    <for name="mrl:abstract" use="textarea"/>
-    <for name="gmd:checkPointDescription" use="textarea"/>
-    <for name="mrl:credit" use="textarea"/>
-    <for name="mrd:description" use="textarea"/>
-    <for name="gmd:evaluationMethodDescription" use="textarea"/>
-    <for name="gmd:explanation" use="textarea"/>
-    <for name="gmd:handlingDescription" use="textarea"/>
-    <for name="gmd:maintenanceNote" use="textarea"/>
-    <for name="gmd:measureDescription" use="textarea"/>
-    <for name="gmd:purpose" use="textarea"/>
-    <for name="gmd:orderingInstructions" use="textarea"/>
-    <for name="gmd:otherConstraints" use="textarea"/>
+    <for name="mri:abstract" use="textarea"/>
+    <for name="mri:credit" use="textarea"/>
+    <for name="cit:description" use="textarea"/>
+    <for name="mdq:evaluationMethodDescription" use="textarea"/>
+    <for name="mdq:explanation" use="textarea"/>
+    <for name="mco:handlingDescription" use="textarea"/>
+    <for name="mmi:maintenanceNote" use="textarea"/>
+    <for name="mdq:measureDescription" use="textarea"/>
+    <for name="mri:purpose" use="textarea"/>
+    <for name="mrd:orderingInstructions" use="textarea"/>
+    <for name="mco:otherConstraints" use="textarea"/>
     <for name="mrl:statement" use="textarea"/>
-    <for name="mrl:supplementalInformation" use="textarea"/>
-    <for name="gmd:specificUsage" use="textarea"/>
-    <for name="gmd:userNote" use="textarea"/>
+    <for name="mri:supplementalInformation" use="textarea"/>
+    <for name="mri:specificUsage" use="textarea"/>
     <for name="mco:useLimitation" use="textarea"/>
 
 
@@ -52,7 +50,7 @@
     <!-- gmx:FileName/@src attribute -->
     <for name="src" use="data-gn-logo-selector"/>
 
-    <for name="gmd:electronicMailAddress" use="email"/>
+    <for name="cit:electronicMailAddress" use="email"/>
 
     <for name="lan:language" use="data-gn-language-picker"/>
     <for name="lan:languageCode" use="data-gn-language-picker"/>
@@ -63,22 +61,53 @@
     <for name="mdb:referenceSystemInfo" addDirective="data-gn-crs-selector"/>
 
     <for name="mdb:contact" addDirective="data-gn-directory-entry-selector">
-      <directiveAttributes data-tag-name="cit:CI_Responsibility" data-param-name="cit:role/cit:CI_RoleCode/@codeListValue"/>
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="contact"
+              data-filter='{"_root": "cit:CI_Responsibility"}'
+              data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}"/>
     </for>
     <for name="mri:pointOfContact" addDirective="data-gn-directory-entry-selector">
-      <directiveAttributes data-tag-name="cit:CI_Responsibility" data-param-name="cit:role/cit:CI_RoleCode/@codeListValue"/>
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="contact"
+              data-filter='{"_root": "cit:CI_Responsibility"}'
+              data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}"/>
     </for>
     <for name="mrd:distributor" addDirective="data-gn-directory-entry-selector">
-      <directiveAttributes data-tag-name="cit:CI_Responsibility" data-param-name="cit:role/cit:CI_RoleCode/@codeListValue"/>
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="contact"
+              data-filter='{"_root": "cit:CI_Responsibility"}'
+              data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}"/>
     </for>
-    <for name="gmd:processor" addDirective="data-gn-directory-entry-selector">
-      <directiveAttributes data-tag-name="cit:CI_Responsibility" data-param-name="cit:role/cit:CI_RoleCode/@codeListValue"/>
+    <for name="mrl:processor" addDirective="data-gn-directory-entry-selector">
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="contact"
+              data-filter='{"_root": "cit:CI_Responsibility"}'
+              data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}"/>
     </for>
     <for name="cit:citedResponsibleParty" addDirective="data-gn-directory-entry-selector">
-      <directiveAttributes data-tag-name="cit:CI_Responsibility" data-param-name="cit:role/cit:CI_RoleCode/@codeListValue"/>
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="contact"
+              data-filter='{"_root": "cit:CI_Responsibility"}'
+              data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}"/>
     </for>
-    
-    <for name="gmd:descriptiveKeywords" addDirective="data-gn-thesaurus-selector"/>
+
+
+    <for name="cit:logo" addDirective="data-gn-directory-entry-selector">
+      <directiveAttributes
+              data-template-add-action="true"
+              data-template-type="logo"
+              data-filter='{"_root": "mcc:MD_BrowseGraphic"}'/>
+    </for>
+
+    <for name="mri:descriptiveKeywords" addDirective="data-gn-thesaurus-selector">
+      <directiveAttributes
+              data-transformation="to-iso19115-3-keyword"/>
+    </for>
   </fields>
 
 
@@ -130,7 +159,7 @@
     to restrict the list.
     -->
     <exclude>
-      <!-- TODO: Update list -->
+      <!-- TODO: Update namespace prefix -->
       <name>gmd:identifier</name>
       <name>gmd:metadataStandardName</name>
       <name>gmd:metadataStandardVersion</name>
@@ -189,7 +218,28 @@
   <views>
     <view name="default">
       <tab id="default" default="true" mode="flat">
-        <section xpath="/mdb:MD_Metadata/mdb:identificationInfo"/>
+        <section name="mdb:identificationInfo">
+					<field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:citation"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:abstract"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:purpose"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:credit" or="credit" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:status" or="status" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:pointOfContact" or="pointOfContact" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:resourceMaintenance"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:graphicOverview"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:resourceFormat"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:descriptiveKeywords" or="descriptiveKeywords" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:resourceSpecficUsage"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:resourceConstraints" or="resourceConstraints" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:associatedResource"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:spatialRepresentationType"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:spatialResolution"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:temporalResolution"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:topicCategory"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:environmentDescription"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:extent"/>
+          <field xpath="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:supplementalInformation" or="supplementalInformation" in="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification"/>		
+				</section>
         <section xpath="/mdb:MD_Metadata/mdb:distributionInfo"/>
         <section xpath="/mdb:MD_Metadata/mdb:dataQualityInfo"/>
         <section name="mdb:MD_Metadata">
@@ -212,6 +262,16 @@
           <field xpath="/mdb:MD_Metadata/mdb:metadataProfile"/>
         </section>
       </tab>
+
+      <!-- Elements that should not use the "flat" mode -->
+      <flatModeExceptions>
+        <for name="mri:descriptiveKeywords" />
+        <for name="mri:pointOfContact"/>
+        <for name="mrd:distributor"/>
+        <for name="mdb:contact"/>
+        <for name="mcc:processor"/>
+        <for name="cit:citedResponsibleParty"/>
+      </flatModeExceptions>
     </view>
     <view name="advanced">
       <tab id="identificationInfo" default="true">
@@ -244,8 +304,8 @@
       <tab id="contentInfo" toggle="true">
         <section xpath="/mdb:MD_Metadata/mdb:contentInfo" or="contentInfo" in="/mdb:MD_Metadata"/>
       </tab>
-      <tab id="portrayalCatalogueInfo" toggle="true">
-        <section xpath="/mdb:MD_Metadata/mdb:portrayalCatalogueInfo" or="portrayalCatalogueInfo"
+      <tab id="acquisitionInformation" toggle="true">
+        <section xpath="/mdb:MD_Metadata/mdb:acquisitionInformation" or="acquisitionInformation"
                  in="/mdb:MD_Metadata"/>
       </tab>
       <tab id="metadata">
