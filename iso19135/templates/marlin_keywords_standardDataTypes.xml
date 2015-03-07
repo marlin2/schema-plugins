@@ -5,7 +5,7 @@
                  xmlns:gnreg="http://geonetwork-opensource.org/register"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 uuid="urn:marlin.csiro.au:keywords:standardDataType"
+                 uuid="9eb3a60a-754a-4d31-8547-e86539809bb8"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
       <gco:CharacterString>CSIRO Standard Data Types</gco:CharacterString>

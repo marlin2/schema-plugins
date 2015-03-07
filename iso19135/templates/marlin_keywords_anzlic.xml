@@ -5,7 +5,7 @@
                  xmlns:gnreg="http://geonetwork-opensource.org/register"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 uuid="urn:marlin.csiro.au:keywords:anzlicSearch"
+                 uuid="1b1a6938-ff39-49e7-8331-639d9ea50db5"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
       <gco:CharacterString>MarLIN Extended ANZLIC Search Keywords Thesaurus</gco:CharacterString>
