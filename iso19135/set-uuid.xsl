@@ -14,7 +14,7 @@
 
 	<!-- ================================================================= -->
 	
-	<xsl:template match="gmd:MD_Metadata">
+	<xsl:template match="grg:RE_Register">
 		 <xsl:copy>
 		 		<xsl:copy-of select="@*[name()!='uuid']"/>
 				<xsl:attribute name="uuid">
