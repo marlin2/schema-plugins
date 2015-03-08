@@ -374,7 +374,7 @@
 		<entry>
 			<code>dataSource</code>
 			<label>Data Source</label>
-			<description>Keyword identifies data source eg. model, or aggregated/derived data.</description>
+			<description>Keyword identifies data source or type eg. model, or aggregated/derived data.</description>
 		</entry>
 	</codelist>
 	<!-- ==================================================== -->
