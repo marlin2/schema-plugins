@@ -135,7 +135,18 @@
 		<xsl:param name="about"/>
 		<xsl:param name="aboutScheme"/>
 
-		<skos:Concept rdf:about="{concat($about,':',grg:itemIdentifier/gco:Integer)}">
+		<xsl:variable name="conceptId">
+			<xsl:choose>
+				<xsl:when test="gnreg:itemIdentifier">
+					<xsl:value-of select="gnreg:itemIdentifier/gco:CharacterString"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="concat($about,':',grg:itemIdentifier/gco:Integer)"/>	
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<skos:Concept rdf:about="{$conceptId}">
 			<skos:prefLabel xml:lang="en"><xsl:value-of select="grg:name/gco:CharacterString"/></skos:prefLabel>
 			<skos:inScheme rdf:resource="{$aboutScheme}"/>
 
