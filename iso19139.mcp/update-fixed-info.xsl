@@ -521,7 +521,7 @@
 	<xsl:template name="addMetadataURLInternals">
 		<gmd:linkage>
 			<gmd:URL>
-				<xsl:value-of select="concat(/root/env/siteURL,'/metadata.show?uuid=',/root/env/uuid)"/>
+				<xsl:value-of select="concat(/root/env/siteURL,'/search?uuid=',/root/env/uuid)"/>
 			</gmd:URL>
 		</gmd:linkage>
 		<gmd:protocol>
