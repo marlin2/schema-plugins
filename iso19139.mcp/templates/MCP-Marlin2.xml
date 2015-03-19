@@ -18,6 +18,8 @@
   <gmd:hierarchyLevelName gco:nilReason="missing">
     <gco:CharacterString/>
   </gmd:hierarchyLevelName>
+	<gmd:contact gco:nilReason="missing">
+	</gmd:contact>
   <gmd:metadataStandardName>
     <gco:CharacterString>Australian Marine Community Profile of ISO 19115:2005/19139</gco:CharacterString>
   </gmd:metadataStandardName>
@@ -31,15 +33,7 @@
           <gmd:title>
             <gco:CharacterString>MarLIN2 Template</gco:CharacterString>
           </gmd:title>
-          <gmd:date>
-            <gmd:CI_Date>
-              <gmd:date>
-                <gco:DateTime/>
-              </gmd:date>
-              <gmd:dateType>
-                <gmd:CI_DateTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue=""/>
-              </gmd:dateType>
-            </gmd:CI_Date>
+          <gmd:date gco:nilReason="missing">
           </gmd:date>
         </gmd:CI_Citation>
       </gmd:citation>
