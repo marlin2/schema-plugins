@@ -219,7 +219,8 @@
     <view name="default">
       <tab id="default" default="true" mode="flat">
         <section name="resourceInfo">
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle" or="alternateTitle" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:abstract"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:purpose"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
