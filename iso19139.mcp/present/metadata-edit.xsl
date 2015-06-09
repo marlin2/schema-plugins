@@ -16,6 +16,49 @@
 
 	<xsl:variable name="mcpallgens" select="document('../schema/resources/Codelist/mcp-allgens.xml')"/>
 
+	<!-- Thesauri in marlin2 records have to be displayed in a manner that (supposedly) makes sense
+	     to the user ie. most important thesaurus first - this variable does that using thesaurus id
+			 the name is just a helper to identify the id 
+			 -->
+
+	<xsl:variable name="thesauri">
+					<thesauri>
+						<thesaurus>
+							<name>GCMD Keywords</name>
+							<id>http://gcmdservices.gsfc.nasa.gov/kms/concepts/concept_scheme/sciencekeywords</id>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Areas of Interest</name>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Global Project List</name>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Source List</name>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Survey List</name>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Standard Data Types</name>
+						</thesaurus>
+						<thesaurus>
+							<name>MCP Collection Methods</name>
+							<id>http://bluenet3.antcrc.utas.edu.au/mcp/collection_methods</id>
+						</thesaurus>
+						<thesaurus>
+							<name>MCP Geographic Extent Names</name>
+							<id>http://bluenet3.antcrc.utas.edu.au/mcp/geographic_extent_names</id>
+						</thesaurus>
+						<thesaurus>
+							<name>Australian National Species List</name>
+						</thesaurus>
+						<thesaurus>
+							<name>World Register of Marine Species</name>
+						</thesaurus>
+					</thesauri>
+	</xsl:variable>
+
 	<!-- If this option exists in config-gui.xml then mcp:metadataContactInfo and
 	     mcp:resourceContactInfo are preferred over gmd:contact and 
 			 gmd:pointOfContact -->
@@ -2394,13 +2437,16 @@
 				</xsl:apply-templates>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:for-each select="gmd:descriptiveKeywords">
-					<xsl:sort select="gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString"/>
-					<xsl:apply-templates mode="elementEP" select=".">
+				<xsl:variable name="theKeys" select="."/>
+				<!-- process keywords in order specified in variable $thesauri above -->
+				<xsl:for-each select="$thesauri/thesauri/thesaurus/name">
+					<xsl:variable name="currentThesaurus" select="."/>
+					<xsl:apply-templates mode="elementEP" select="$theKeys/gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString=$currentThesaurus]">
 						<xsl:with-param name="schema" select="$schema"/>
 						<xsl:with-param name="edit"   select="$edit"/>
 					</xsl:apply-templates>
 				</xsl:for-each>
+
 			</xsl:otherwise>
 		</xsl:choose>
 
