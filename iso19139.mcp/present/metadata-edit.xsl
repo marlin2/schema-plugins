@@ -25,36 +25,47 @@
 					<thesauri>
 						<thesaurus>
 							<name>GCMD Keywords</name>
-							<id>http://gcmdservices.gsfc.nasa.gov/kms/concepts/concept_scheme/sciencekeywords</id>
+							<id>geonetwork.thesaurus.external.theme.gcmd_keywords</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Areas of Interest</name>
+							<id>geonetwork.thesaurus.external.discipline.urn:marlin.csiro.au:keywords:cmarAOI</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Global Project List</name>
+							<id>geonetwork.thesaurus.external.project.urn:marlin.csiro.au:globalprojectregister</id>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Project List</name>
+							<id>geonetwork.thesaurus.external.project.urn:marlin.csiro.au:projectregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Source List</name>
+							<id>geonetwork.thesaurus.external.dataSource.urn:marlin.csiro.au:keywords:sourceregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Survey List</name>
+							<id>geonetwork.thesaurus.external.survey.urn:marlin.csiro.au:surveyregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
+							<id>geonetwork.thesaurus.external.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
-							<id>http://bluenet3.antcrc.utas.edu.au/mcp/collection_methods</id>
+							<id>geonetwork.thesaurus.external.theme.mcp_collection_methods</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Geographic Extent Names</name>
-							<id>http://bluenet3.antcrc.utas.edu.au/mcp/geographic_extent_names</id>
+							<id>geonetwork.thesaurus.external.place.mcp_regions</id>
 						</thesaurus>
 						<thesaurus>
 							<name>Australian National Species List</name>
+							<id>geonetwork.thesaurus.external.taxon.nsl_species_all</id>
 						</thesaurus>
 						<thesaurus>
-							<name>World Register of Marine Species</name>
+							<name>World Register of Marine Species - Algae</name>
+							<id>geonetwork.thesaurus.external.taxon.worms_algae_au</id>
 						</thesaurus>
 					</thesauri>
 	</xsl:variable>
@@ -2439,9 +2450,9 @@
 			<xsl:otherwise>
 				<xsl:variable name="theKeys" select="."/>
 				<!-- process keywords in order specified in variable $thesauri above -->
-				<xsl:for-each select="$thesauri/thesauri/thesaurus/name">
-					<xsl:variable name="currentThesaurus" select="."/>
-					<xsl:apply-templates mode="elementEP" select="$theKeys/gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title/gco:CharacterString=$currentThesaurus]">
+				<xsl:for-each select="$thesauri/thesauri/thesaurus">
+					<xsl:variable name="currentThesaurus" select="id"/>
+					<xsl:apply-templates mode="elementEP" select="$theKeys/gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gmx:Anchor=$currentThesaurus]">
 						<xsl:with-param name="schema" select="$schema"/>
 						<xsl:with-param name="edit"   select="$edit"/>
 					</xsl:apply-templates>
