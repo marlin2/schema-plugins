@@ -196,4 +196,24 @@
 
 	<resourceContactInfo>Resource Contact</resourceContactInfo>
 	<metadataContactInfo>Metadata Contact</metadataContactInfo>
+
+	<!-- new tabs in default mode -->
+  <resourceCitation>Citation</resourceCitation>
+  <resourceDescription>Description</resourceDescription>
+  <resourceKeywords>Keywords</resourceKeywords>
+  <resourceMaintenance>Maintenance</resourceMaintenance>
+  <constraints>Constraints</constraints>
+  <resourceConstraints>Resource Constraints</resourceConstraints>
+  <metadataConstraints>Metadata Constraints</metadataConstraints>
+  <contacts>Contacts</contacts>
+  <resourceContact>Resource Contacts</resourceContact>
+  <metadataContact>Metadata Contacts</metadataContact>
+  <resourceSpatial>Spatial</resourceSpatial>
+  <resourceExtents>Extents</resourceExtents>
+  <resourceType>Type</resourceType>
+  <resourceLineageTab>Lineage</resourceLineageTab>
+  <distribution>Distribution</distribution>
+  <dataParameters>Parameters</dataParameters>
+
+  <useAssociatedResources><span>Add an online resource for distribution using the "<i class="fa fa-link"></i><i class="icon-external-link"></i>Associated resources" panel at the right hand side of the form</span></useAssociatedResources>
 </strings>
