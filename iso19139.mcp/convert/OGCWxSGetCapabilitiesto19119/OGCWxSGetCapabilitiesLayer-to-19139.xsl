@@ -64,16 +64,6 @@
 		</xsl:variable>
 
 		<xsl:variable name="layermatch" select="$layermap/layers/layer/name[normalize-space()=$Name]"/>
-		<xsl:variable name="layerName">
-			<xsl:choose>
-				<xsl:when test="normalize-space($layermatch)">
-					<xsl:value-of select="concat('proxy:',substring-after($layermatch,':'))"/>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="$Name"/>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
 
 		<xsl:variable name="metadatasubtemplateurl" select="$layermap/layers/@metadatasubtemplateurl"/>
 
@@ -84,7 +74,7 @@
 
 		<xsl:message>LAYER FOUND:<xsl:value-of select="$Name"/></xsl:message>
 
-		<mcp:MD_Metadata>
+		<mcp:MD_Metadata gco:isoType="gmd:MD_Metadata">
 
 			<!--
 				- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -175,7 +165,7 @@
 				- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 			-->
 			<identificationInfo>
-				<mcp:MD_DataIdentification>
+				<mcp:MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
 					<xsl:apply-templates select="." mode="LayerDataIdentification">
 						<xsl:with-param name="Name" select="$Name" />
 						<xsl:with-param name="topic" select="$topic" />
@@ -259,14 +249,7 @@
 									</protocol>
 									<name>
 										<gco:CharacterString>
-											<xsl:choose>
-												<xsl:when test="normalize-space($layermatch)">
-													<xsl:value-of select="$layerName"/>
-												</xsl:when>
-												<xsl:otherwise>
-													<xsl:value-of select="$Name" />
-												</xsl:otherwise>
-											</xsl:choose>
+											<xsl:value-of select="$Name" />
 										</gco:CharacterString>
 									</name>
 									<description>
@@ -410,11 +393,11 @@
 		//wms:Layer[wms:Name=$Name]/wms:Style/wms:LegendURL|
 		//Layer[Name=$Name]/Style/LegendURL" priority="2">
 		
-		<xsl:call-template name="onlineResource">
-			<xsl:with-param name="name" select="concat(../Title|../wms:Title, ' (', name(.) ,')')"/>
-			<xsl:with-param name="url" select="wms:OnlineResource/@xlink:href|OnlineResource/@xlink:href"/>
-			<xsl:with-param name="protocol" select="wms:Format|Format"/>
-		</xsl:call-template>
+			<xsl:call-template name="onlineResource">
+				<xsl:with-param name="name" select="concat(../Title|../wms:Title, ' (', name(.) ,')')"/>
+				<xsl:with-param name="url" select="wms:OnlineResource/@xlink:href|OnlineResource/@xlink:href"/>
+				<xsl:with-param name="protocol" select="wms:Format|Format"/>
+			</xsl:call-template>
 		
 	</xsl:template>
 	

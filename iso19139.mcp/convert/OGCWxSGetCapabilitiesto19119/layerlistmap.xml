@@ -9,804 +9,804 @@
       </parent>
    </parents>
 	  <layer>
-      <name>ambis:ambis_12_mile</name>
+      <name>proxy:ambis:ambis_12_mile</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	 <!--
 	  <layer>
-      <name>ambis:ambis_ACZ</name>
+      <name>proxy:ambis:ambis_ACZ</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>ambis:ambis_EEZ</name>
+      <name>proxy:ambis:ambis_EEZ</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>ambis:ambis-AFMA</name>
+      <name>proxy:ambis:ambis-AFMA</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>ambis:ambis-Australian_Antarctica_Waters</name>
+      <name>proxy:ambis:ambis-Australian_Antarctica_Waters</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>ambis:ambis-Coastal_Waters</name>
+      <name>proxy:ambis:ambis-Coastal_Waters</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>ambis:ambis-CS_outside_EEZ</name>
+      <name>proxy:ambis:ambis-CS_outside_EEZ</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
 	  <layer>
-      <name>amrsma:Abalone_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Abalone_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Abrolhos_Islands_and_Mid_West_Trawl_Limited_Entry_Fishery_V2_re</name>
+      <name>proxy:amrsma:Abrolhos_Islands_and_Mid_West_Trawl_Limited_Entry_Fishery_V2_re</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Abrolhos_MW_Trawl_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Abrolhos_MW_Trawl_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:AHO_Port_Areas_20141015_reproj</name>
+      <name>proxy:amrsma:AHO_Port_Areas_20141015_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Beche_de_mer_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Beche_de_mer_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Boat_ramps_PPB_WP_region_reproj</name>
+      <name>proxy:amrsma:Boat_ramps_PPB_WP_region_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Broome_Prawn_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Broome_Prawn_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Broome_Prawn_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Broome_Prawn_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CAPAD_2010_marine_external_V2_reproj</name>
+      <name>proxy:amrsma:CAPAD_2010_marine_external_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:ci_ramps_reproj</name>
+      <name>proxy:amrsma:ci_ramps_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Cockburn_Sound_Crab_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Cockburn_Sound_Crab_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Cockburn_Sound_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Cockburn_Sound_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Cockburn_Sound_Line_and_Pot_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Cockburn_Sound_Line_and_Pot_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Cockburn_Sound_Mussel_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Cockburn_Sound_Mussel_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Cockles_and_Pipis_Fishery_IO_V2_reproj</name>
+      <name>proxy:amrsma:Cockles_and_Pipis_Fishery_IO_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_DolphinSanctuary_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_DolphinSanctuary_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_MarineParksGAB_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_MarineParksGAB_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_NpwsaReserves_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_NpwsaReserves_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_RockLobsterSanctuaries_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_RockLobsterSanctuaries_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_Sanctuaries_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_Sanctuaries_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_ShipwreckReserves_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_ShipwreckReserves_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNetwork_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNetwork_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNetworkPoints_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNetworkPoints_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNWSpecPurpArea_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWSpecPurpArea_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNWSpecPurpLine_reproj</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWSpecPurpLine_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNWZonePnt_reproj</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWZonePnt_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:CONSERVATION_StateMarineParkNWZoning_reproj2</name>
+      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWZoning_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Developing_Octopus_Fishery_I_V2_reproj</name>
+      <name>proxy:amrsma:Developing_Octopus_Fishery_I_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Esperance_Rock_Lobster_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Esperance_Rock_Lobster_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Exmouth_Gulf_Developing_Crab_Fishery_IOE_v2_reproj</name>
+      <name>proxy:amrsma:Exmouth_Gulf_Developing_Crab_Fishery_IOE_v2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Exmouth_Gulf_Prawn_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Exmouth_Gulf_Prawn_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Exmouth_Gulf_Prawn_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Exmouth_Gulf_Prawn_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Finfish_trapping_in_oceanic_waters_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:Finfish_trapping_in_oceanic_waters_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:FISH_HABITAT_PROTECTION_AREAS_reproj</name>
+      <name>proxy:amrsma:FISH_HABITAT_PROTECTION_AREAS_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Gascoyne_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Gascoyne_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Gippsland_ports</name>
+      <name>proxy:amrsma:Gippsland_ports</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_Rivers_Tributaries_V2_reproj</name>
+      <name>proxy:amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_Rivers_Tributaries_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_V2_reproj</name>
+      <name>proxy:amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:hmas_canberra_reproj</name>
+      <name>proxy:amrsma:hmas_canberra_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Invertebrates_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Invertebrates_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:ipa_declared_V2_reproj</name>
+      <name>proxy:amrsma:ipa_declared_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Kimberley_Gillnet_and_Barramundi_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:Kimberley_Gillnet_and_Barramundi_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Kimberley_Gillnet_and_Barramundi_Limited_Entry_Fishery_V2_repro</name>
+      <name>proxy:amrsma:Kimberley_Gillnet_and_Barramundi_Limited_Entry_Fishery_V2_repro</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Kimberley_Prawn_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Kimberley_Prawn_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Kimberley_Prawn_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Kimberley_Prawn_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Land_Hermit_Crab_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Land_Hermit_Crab_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:LANDSCAPE_MarineBioRegions_reproj2</name>
+      <name>proxy:amrsma:LANDSCAPE_MarineBioRegions_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Leatherjacket_Fish_Trapping_King_George_Sound_FBL_Condition_V2_</name>
+      <name>proxy:amrsma:Leatherjacket_Fish_Trapping_King_George_Sound_FBL_Condition_V2_</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Mackerel_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Mackerel_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Mandurah_to_Bunbury_Developing_Crab_Fishery_IOE_v2_reproj</name>
+      <name>proxy:amrsma:Mandurah_to_Bunbury_Developing_Crab_Fishery_IOE_v2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Marine_Aquarium_Fish_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Marine_Aquarium_Fish_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:marine_region</name>
+      <name>proxy:amrsma:marine_region</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:MSV_Boat_Ramps_coastal_reproj</name>
+      <name>proxy:amrsma:MSV_Boat_Ramps_coastal_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Mud_Crab_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Mud_Crab_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:national_native_title_register_reproj3</name>
+      <name>proxy:amrsma:national_native_title_register_reproj3</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Navaids_MGA55_reproj</name>
+      <name>proxy:amrsma:Navaids_MGA55_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Nickol_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Nickol_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Nickol_Bay_Prawn_Managed_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Nickol_Bay_Prawn_Managed_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:North_Coast_Shark_Fishing_Professional_Notice_1993_V2_reproj</name>
+      <name>proxy:amrsma:North_Coast_Shark_Fishing_Professional_Notice_1993_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Northern_Demersal_Scalefish_Managed_Fishery_Lines_V2_reproj</name>
+      <name>proxy:amrsma:Northern_Demersal_Scalefish_Managed_Fishery_Lines_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Northern_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Northern_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:nsw_wrecks_a1</name>
+      <name>proxy:amrsma:nsw_wrecks_a1</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Octopus_Fishery_FBL_Condition_20_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:Octopus_Fishery_FBL_Condition_20_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:off_pet_rel_2014</name>
+      <name>proxy:amrsma:off_pet_rel_2014</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Oil_and_Gas_Pipelines_of_Australia_reproj</name>
+      <name>proxy:amrsma:Oil_and_Gas_Pipelines_of_Australia_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Onslow_Prawn_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Onslow_Prawn_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Onslow_Prawn_Managed_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Onslow_Prawn_Managed_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Pilbara_Developing_Crab_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Pilbara_Developing_Crab_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Pilbara_Fish_Trawl_Interim_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Pilbara_Fish_Trawl_Interim_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Pilbara_Trap_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Pilbara_Trap_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Point_Maud_to_Tantabiddi_Closure_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:Point_Maud_to_Tantabiddi_Closure_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Port_of_Melbourne</name>
+      <name>proxy:amrsma:Port_of_Melbourne</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:port_of_melbourne_geo_reproj</name>
+      <name>proxy:amrsma:port_of_melbourne_geo_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:pp_channel_2001_reproj</name>
+      <name>proxy:amrsma:pp_channel_2001_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:pp_sgrass2000_reproj</name>
+      <name>proxy:amrsma:pp_sgrass2000_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:PPB_recreational_fishing_reefs_reproj</name>
+      <name>proxy:amrsma:PPB_recreational_fishing_reefs_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:ppmarina_reproj</name>
+      <name>proxy:amrsma:ppmarina_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Prohibition_on_Commercial_Fishing_by_Net_Exmouth_Gulf_Order_200</name>
+      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_by_Net_Exmouth_Gulf_Order_200</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Prohibition_on_Commercial_Fishing_for_Demersal_Scalefish_Pilbar</name>
+      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_for_Demersal_Scalefish_Pilbar</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Prohibition_on_Commercial_Fishing_South_West_Coast_Beach_Net_Or</name>
+      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_South_West_Coast_Beach_Net_Or</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Prohibition_on_Fishing_by_Line_From_Fishing_Boats_Pilbara_Water</name>
+      <name>proxy:amrsma:Prohibition_on_Fishing_by_Line_From_Fishing_Boats_Pilbara_Water</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Purse_Seine_Net_Development_Zone_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:Purse_Seine_Net_Development_Zone_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Seabirds_Victoria_point_edited_reproj</name>
+      <name>proxy:amrsma:Seabirds_Victoria_point_edited_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:SEAL_COLONIES_reproj</name>
+      <name>proxy:amrsma:SEAL_COLONIES_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Beach_Seine_and_Mesh_Net_Limited_Entry_Fishery_V2_rep</name>
+      <name>proxy:amrsma:Shark_Bay_Beach_Seine_and_Mesh_Net_Limited_Entry_Fishery_V2_rep</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Crab_Interim_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Shark_Bay_Crab_Interim_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Prawn_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Shark_Bay_Prawn_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Shark_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Scallop_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:Shark_Bay_Scallop_Fishery_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Shark_Bay_Scallop_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Shark_Bay_Scallop_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Deep_Sea_Crab_Fishery_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Deep_Sea_Crab_Fishery_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Estuarine_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Estuarine_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Herring_Trap_Net_Fishery_FBL_Condition_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Herring_Trap_Net_Fishery_FBL_Condition_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Salmon_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Salmon_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_Coast_Trawl_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:South_Coast_Trawl_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_West_Coast_Salmon_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:South_West_Coast_Salmon_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:South_West_Trawl_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:South_West_Trawl_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Southern_Demersal_Gillnet_and_Demersal_Longline_Managed_Fishery</name>
+      <name>proxy:amrsma:Southern_Demersal_Gillnet_and_Demersal_Longline_Managed_Fishery</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Specimen_Shell_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Specimen_Shell_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Trochus_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:Trochus_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:v_penguin2_edited_reproj</name>
+      <name>proxy:amrsma:v_penguin2_edited_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:v_ramsar_g_reproj</name>
+      <name>proxy:amrsma:v_ramsar_g_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Vasse_And_Wonnerup_Estuaries_Netting_Restrictions_Notice_1991_V</name>
+      <name>proxy:amrsma:Vasse_And_Wonnerup_Estuaries_Netting_Restrictions_Notice_1991_V</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:vca_port_areas_reproj</name>
+      <name>proxy:amrsma:vca_port_areas_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:vic_pier2_reproj</name>
+      <name>proxy:amrsma:vic_pier2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:WA_North_Coast_Shark_IOE_V2_reproj</name>
+      <name>proxy:amrsma:WA_North_Coast_Shark_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:wa_oil_and_gas_fields_reproj</name>
+      <name>proxy:amrsma:wa_oil_and_gas_fields_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:WA_petroleum_pipelines_reproj3</name>
+      <name>proxy:amrsma:WA_petroleum_pipelines_reproj3</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:wa_petroleum_titles_reproj2</name>
+      <name>proxy:amrsma:wa_petroleum_titles_reproj2</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:wa_petroleum_wells_reproj</name>
+      <name>proxy:amrsma:wa_petroleum_wells_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Warnbro_Sound_Crab_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:Warnbro_Sound_Crab_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Beach_Bait_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Beach_Bait_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Deep_Sea_Crustacean_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Deep_Sea_Crustacean_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Demersal_Gillnet_and_Demersal_Longline_Interim_Manag</name>
+      <name>proxy:amrsma:West_Coast_Demersal_Gillnet_and_Demersal_Longline_Interim_Manag</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Demersal_Scalefish_Interim_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Demersal_Scalefish_Interim_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Estuarine_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Estuarine_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Nearshore_Net_Fishery_IOE_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Nearshore_Net_Fishery_IOE_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Rock_Lobster_CEO_Notice_reproj</name>
+      <name>proxy:amrsma:West_Coast_Rock_Lobster_CEO_Notice_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Rock_Lobster_Managed_Fishery_V2_reproj</name>
+      <name>proxy:amrsma:West_Coast_Rock_Lobster_Managed_Fishery_V2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:West_Coast_Rock_Lobster_Managed_Fishery_Weighing_Points_V2_repr</name>
+      <name>proxy:amrsma:West_Coast_Rock_Lobster_Managed_Fishery_Weighing_Points_V2_repr</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:whale_logan2_reproj</name>
+      <name>proxy:amrsma:whale_logan2_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:Windy_Harbour_Augusta_Rock_Lobster_Limited_Entry_Fishery_V2_rep</name>
+      <name>proxy:amrsma:Windy_Harbour_Augusta_Rock_Lobster_Limited_Entry_Fishery_V2_rep</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:wp_moor_reproj</name>
+      <name>proxy:amrsma:wp_moor_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma:wp_sgrass99_reproj</name>
+      <name>proxy:amrsma:wp_sgrass99_reproj</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-aus:SeWPAC_MARINE_RESERVES_2012</name>
+      <name>proxy:amrsma-aus:SeWPAC_MARINE_RESERVES_2012</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:bsczsf</name>
+      <name>proxy:amrsma-fishery:bsczsf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:Christmas_and_Cocos_Islands</name>
+      <name>proxy:amrsma-fishery:Christmas_and_Cocos_Islands</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:csf</name>
+      <name>proxy:amrsma-fishery:csf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:esf</name>
+      <name>proxy:amrsma-fishery:esf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:etbf</name>
+      <name>proxy:amrsma-fishery:etbf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:himif</name>
+      <name>proxy:amrsma-fishery:himif</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:Jack_Mackerel</name>
+      <name>proxy:amrsma-fishery:Jack_Mackerel</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:mif</name>
+      <name>proxy:amrsma-fishery:mif</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:niodff</name>
+      <name>proxy:amrsma-fishery:niodff</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:npf</name>
+      <name>proxy:amrsma-fishery:npf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:nwstf</name>
+      <name>proxy:amrsma-fishery:nwstf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sbtf</name>
+      <name>proxy:amrsma-fishery:sbtf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess</name>
+      <name>proxy:amrsma-fishery:sess</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_cgs</name>
+      <name>proxy:amrsma-fishery:sess_cgs</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_cshs</name>
+      <name>proxy:amrsma-fishery:sess_cshs</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_cts</name>
+      <name>proxy:amrsma-fishery:sess_cts</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_ecdts</name>
+      <name>proxy:amrsma-fishery:sess_ecdts</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_gabts</name>
+      <name>proxy:amrsma-fishery:sess_gabts</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_gz</name>
+      <name>proxy:amrsma-fishery:sess_gz</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_sa_cws</name>
+      <name>proxy:amrsma-fishery:sess_sa_cws</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_tas_rls</name>
+      <name>proxy:amrsma-fishery:sess_tas_rls</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_vic_cws</name>
+      <name>proxy:amrsma-fishery:sess_vic_cws</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:sess_zones</name>
+      <name>proxy:amrsma-fishery:sess_zones</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:South_East_Non_Trawl</name>
+      <name>proxy:amrsma-fishery:South_East_Non_Trawl</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:South_East_Trawl</name>
+      <name>proxy:amrsma-fishery:South_East_Trawl</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:spf</name>
+      <name>proxy:amrsma-fishery:spf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ssjf</name>
+      <name>proxy:amrsma-fishery:ssjf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:stbf</name>
+      <name>proxy:amrsma-fishery:stbf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:strf</name>
+      <name>proxy:amrsma-fishery:strf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:Torres_Strait_Protected_Zone</name>
+      <name>proxy:amrsma-fishery:Torres_Strait_Protected_Zone</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_bdmf</name>
+      <name>proxy:amrsma-fishery:ts_bdmf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_cf</name>
+      <name>proxy:amrsma-fishery:ts_cf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_df</name>
+      <name>proxy:amrsma-fishery:ts_df</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_ff</name>
+      <name>proxy:amrsma-fishery:ts_ff</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_pf</name>
+      <name>proxy:amrsma-fishery:ts_pf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_psf</name>
+      <name>proxy:amrsma-fishery:ts_psf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_smf</name>
+      <name>proxy:amrsma-fishery:ts_smf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_trlf</name>
+      <name>proxy:amrsma-fishery:ts_trlf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_trochus</name>
+      <name>proxy:amrsma-fishery:ts_trochus</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:ts_turtle</name>
+      <name>proxy:amrsma-fishery:ts_turtle</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:tsf</name>
+      <name>proxy:amrsma-fishery:tsf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:wdtf</name>
+      <name>proxy:amrsma-fishery:wdtf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:wsf</name>
+      <name>proxy:amrsma-fishery:wsf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-fishery:wtbf</name>
+      <name>proxy:amrsma-fishery:wtbf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-nsw:scpz_Sydney</name>
+      <name>proxy:amrsma-nsw:scpz_Sydney</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-sa:active_leases</name>
+      <name>proxy:amrsma-sa:active_leases</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-sa:active_licences</name>
+      <name>proxy:amrsma-sa:active_licences</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-sa:application_licences</name>
+      <name>proxy:amrsma-sa:application_licences</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-sa:aquaculture_zones</name>
+      <name>proxy:amrsma-sa:aquaculture_zones</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:beach_seine_exmouth_gulf</name>
+      <name>proxy:amrsma-wa:beach_seine_exmouth_gulf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:catfish_lake_argyle</name>
+      <name>proxy:amrsma-wa:catfish_lake_argyle</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:CLOSURES_ALL_FISHING_ALL_YEAR</name>
+      <name>proxy:amrsma-wa:CLOSURES_ALL_FISHING_ALL_YEAR</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_gillnet_barra_kimberley</name>
+      <name>proxy:amrsma-wa:managed_fishery_gillnet_barra_kimberley</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_northern_demersal_scalefish_interim</name>
+      <name>proxy:amrsma-wa:managed_fishery_northern_demersal_scalefish_interim</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_prawn_exmouth_gulf</name>
+      <name>proxy:amrsma-wa:managed_fishery_prawn_exmouth_gulf</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_prawn_kimberely</name>
+      <name>proxy:amrsma-wa:managed_fishery_prawn_kimberely</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_trap_pilbara</name>
+      <name>proxy:amrsma-wa:managed_fishery_trap_pilbara</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:managed_fishery_trawl_pilbara</name>
+      <name>proxy:amrsma-wa:managed_fishery_trawl_pilbara</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:Perth_PZ_poly</name>
+      <name>proxy:amrsma-wa:Perth_PZ_poly</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:wa_aquaculture_licence</name>
+      <name>proxy:amrsma-wa:wa_aquaculture_licence</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>amrsma-wa:wa_pearling_lease</name>
+      <name>proxy:amrsma-wa:wa_pearling_lease</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>acef-default:marine_region</name>
+      <name>proxy:acef-default:marine_region</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>acef-default:ipa_declared_7aug13</name>
+      <name>proxy:acef-default:ipa_declared_7aug13</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>acef-default:commonwealth_marine_reserves_network_2012</name>
+      <name>proxy:acef-default:commonwealth_marine_reserves_network_2012</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>acef-default:Australian estuaries (NLWRA)</name>
+      <name>proxy:acef-default:Australian estuaries (NLWRA)</name>
       <parent/>
    </layer>
 	  <layer>
-      <name>acef-default:capad_marine_ext</name>
+      <name>proxy:acef-default:capad_marine_ext</name>
       <parent/>
    </layer>
 	 -->

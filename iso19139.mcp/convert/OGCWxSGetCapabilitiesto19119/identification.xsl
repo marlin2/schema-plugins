@@ -2,7 +2,7 @@
 
 <xsl:stylesheet version="2.0" xmlns    ="http://www.isotc211.org/2005/gmd"
 										xmlns:gco="http://www.isotc211.org/2005/gco"
-										xmlns:gmd="http://www.isotc211.org/gmd"
+										xmlns:gmd="http://www.isotc211.org/2005/gmd"
 										xmlns:gts="http://www.isotc211.org/2005/gts"
 										xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 										xmlns:srv="http://www.isotc211.org/2005/srv"
