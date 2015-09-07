@@ -559,6 +559,19 @@
 
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+		<xsl:variable name="abstract" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:abstract'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:choose>
+			<xsl:when test="count($abstract) > 0">
+		<xsl:copy-of select="$abstract"/>
+			</xsl:when>
+			<xsl:otherwise>
 		<abstract>
 			<gco:CharacterString>
 				<xsl:choose>
@@ -577,6 +590,8 @@
 				</xsl:choose>
 			</gco:CharacterString>
 		</abstract>
+			</xsl:otherwise>
+		</xsl:choose>
 
 		<!-- Add any credit xlink from the layer info to the record -->
 		<xsl:call-template name="addXlink">
@@ -587,15 +602,37 @@
 
 		<!--idPurp-->
 
+		<xsl:variable name="status" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:status'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:choose>
+			<xsl:when test="count($status) > 0">
+		<xsl:copy-of select="$status"/>
+			</xsl:when>
+			<xsl:otherwise>
 		<status>
 			<MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="completed" />
 		</status>
+			</xsl:otherwise>
+		</xsl:choose>
 
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		<!-- resMaint -->
 		<!-- graphOver -->
 		<!-- dsFormat-->
+		<!-- Add any descriptiveKeywords xlink from the layer info to the record -->
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'gmd:descriptiveKeywords'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
+
 		<xsl:for-each select="//Layer[Name=$Name]/KeywordList|keywords">
 			<descriptiveKeywords>
 				<MD_Keywords>
@@ -653,6 +690,12 @@
 			</descriptiveKeywords>
 		</xsl:for-each>
 		
+		<!-- Add any resourceConstraints xlink from the layer info to the record -->
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'gmd:resourceConstraints'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
 		
 		<xsl:choose>
 		 	<xsl:when test="//wfs:FeatureType">
@@ -666,6 +709,13 @@
 				</spatialRepresentationType>
 			</xsl:when>
 		</xsl:choose>
+		<!-- Add any spatialRepresentationType xlink from the layer info to the record -->
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'gmd:spatialRepresentationType'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
+
 		
 		<!-- TODO WCS -->
 		<xsl:variable name="minScale" select="//Layer[Name=$Name]/MinScaleDenominator
@@ -717,6 +767,13 @@
 			<MD_TopicCategoryCode><xsl:value-of select="$topic"/></MD_TopicCategoryCode>
 		</topicCategory>
 		
+		<!-- Add any topicCategory xlink from the layer info to the record -->
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'gmd:topicCategory'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
+
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<extent>
 				<EX_Extent>

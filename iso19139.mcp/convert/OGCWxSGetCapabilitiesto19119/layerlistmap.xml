@@ -7,6 +7,74 @@
          <!-- <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid> -->
          <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       </parent>
+      <parent prefix="awavea-interim:ww3.aus_4m.te"
+              uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
+              title="Mean Wave Energy Period Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+      </parent>
+      <parent prefix="awavea-interim:ww3.aus_4m.CgE"
+              uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
+              title="Mean Wave Energy Flux Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+      </parent>
+      <parent prefix="awavea-interim:ww3.aus_4m.dir"
+              uuid="0c7f01b0-9005-4aa6-a408-e823bee5c922"
+              title="Mean Wave Direction Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+      </parent>
+      <parent prefix="awavea-interim:ww3.aus_4m.hs"
+              uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
+              title="Mean Significant Wave Height Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+      </parent>
    </parents>
 	  <layer>
       <name>proxy:ambis:ambis_12_mile</name>
@@ -808,6 +876,216 @@
 	  <layer>
       <name>proxy:acef-default:capad_marine_ext</name>
       <parent/>
+   </layer>
+	 -->
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+	 <!--
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg01</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg02</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg03</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg04</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg05</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg06</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg07</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg08</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg09</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg10</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg11</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.CgE_avg12</name>
+      <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg01</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg02</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg03</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg04</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg05</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg06</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg07</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg08</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg09</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg10</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg11</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
+      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg01</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg02</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg03</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg04</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg05</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg06</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg07</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg08</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg09</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg10</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg11</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.hs_avg12</name>
+      <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg01</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg02</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg03</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg04</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg05</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg06</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg07</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg08</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg09</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg10</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg11</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
+   </layer>
+   <layer>
+      <name>awavea-interim:ww3.aus_4m.te_avg12</name>
+      <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
 	 -->
 </layers>

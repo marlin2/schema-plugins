@@ -17,7 +17,7 @@
 		<xsl:param name="parentmatch"/>
 		<xsl:param name="metadatasubtemplateurl"/>
 
-		<xsl:message>Looking for element <xsl:value-of select="$element"/></xsl:message>
+		<xsl:message>Looking for element <xsl:value-of select="$element"/> in <xsl:copy-of select="$parentmatch"/></xsl:message>
 		<xsl:for-each select="$parentmatch/xpathid[normalize-space()=$element]">
 			<xsl:if test="normalize-space()=$element">
 				<xsl:message>XLink URL: <xsl:value-of select="concat($metadatasubtemplateurl,../@uuid,@id)"/></xsl:message>
