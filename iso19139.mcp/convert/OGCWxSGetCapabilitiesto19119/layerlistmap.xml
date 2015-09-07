@@ -9,6 +9,8 @@
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.te"
               uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
+							data="http://waveatlas.marine.csiro.au/data/te/"
+							datasuffix=".nc"
               title="Mean Wave Energy Period Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -22,10 +24,12 @@
          <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
-         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.CgE"
               uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
+							data="http://waveatlas.marine.csiro.au/data/CgE/"
+							datasuffix=".nc"
               title="Mean Wave Energy Flux Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -39,10 +43,12 @@
          <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
-         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.dir"
-              uuid="0c7f01b0-9005-4aa6-a408-e823bee5c922"
+              uuid="cb26e551-272c-4814-aa28-27ed6624378d"
+							data="http://waveatlas.marine.csiro.au/data/dir/"
+							datasuffix=".nc"
               title="Mean Wave Direction Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -56,10 +62,12 @@
          <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
-         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.hs"
               uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
+							data="http://waveatlas.marine.csiro.au/data/hs/"
+							datasuffix=".nc"
               title="Mean Significant Wave Height Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -73,7 +81,7 @@
          <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
-         <xpathid id="#metadataContactInfo">gmd:metadataContactInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
    </parents>
 	  <layer>
@@ -878,11 +886,11 @@
       <parent/>
    </layer>
 	 -->
+	 <!--
    <layer>
       <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-	 <!--
    <layer>
       <name>awavea-interim:ww3.aus_4m.CgE_avg01</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
@@ -931,57 +939,59 @@
       <name>awavea-interim:ww3.aus_4m.CgE_avg12</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
+	 -->
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
+	 <!--
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg01</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg02</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg03</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg04</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg05</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg06</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg07</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg08</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg09</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg10</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg11</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
-      <parent>0c7f01b0-9005-4aa6-a408-e823bee5c922</parent>
+      <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
       <name>awavea-interim:ww3.aus_4m.hs_avg</name>

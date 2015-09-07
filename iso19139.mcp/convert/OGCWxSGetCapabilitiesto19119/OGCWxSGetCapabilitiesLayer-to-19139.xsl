@@ -31,6 +31,7 @@
 		=============================================================================
 	-->
 
+	<xsl:include href="addxlinks.xsl" />
 	<xsl:include href="resp-party.xsl" />
 	<xsl:include href="ref-system.xsl" />
 	<xsl:include href="identification.xsl" />
@@ -274,12 +275,39 @@
 								</CI_OnlineResource>
 							</onLine>
 							<xsl:apply-templates mode="onlineResource"/>
+							<xsl:if test="$parentmatch/@data!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
+								<xsl:variable name="dataurl" select="$parentmatch/@data"/>
+								<xsl:variable name="suffix" select="$parentmatch/@datasuffix"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="url" select="concat($dataurl,$datatitle,$suffix)"/>
+									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
+								</xsl:call-template>
+							</xsl:if>
 						</MD_DigitalTransferOptions>
 					</transferOptions>
 				</MD_Distribution>
 			</distributionInfo>
 
 			<!--dqInfo-->
+			
+		<xsl:variable name="dataQualityInfo" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:dataQualityInfo'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:choose>
+			<xsl:when test="count($dataQualityInfo) > 0">
+
+			<xsl:copy-of select="$dataQualityInfo"/>
+
+			</xsl:when>
+			<xsl:otherwise>
+
 			<dataQualityInfo>
 				<DQ_DataQuality>
 					<scope>
@@ -299,8 +327,17 @@
 					</lineage>
 				</DQ_DataQuality>
 			</dataQualityInfo>
+
+			</xsl:otherwise>
+		</xsl:choose>
 			<!--mdConst -->
 			<!--mdMaint-->
+
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'mcp:metadataContactInfo'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
 
 		</mcp:MD_Metadata>
 

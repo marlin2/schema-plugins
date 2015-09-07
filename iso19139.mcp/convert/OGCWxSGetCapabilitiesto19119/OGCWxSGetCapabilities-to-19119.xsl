@@ -39,6 +39,7 @@ Mapping between :
 	
 	<!-- ============================================================================= -->
 	
+	<xsl:include href="addxlinks.xsl" />
 	<xsl:include href="resp-party.xsl"/>
 	<xsl:include href="ref-system.xsl"/>
 	<xsl:include href="identification.xsl"/>

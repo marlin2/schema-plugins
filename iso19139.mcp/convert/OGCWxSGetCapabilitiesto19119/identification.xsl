@@ -22,8 +22,6 @@
 										xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0"
 										extension-element-prefixes="math exslt wcs ows wps wps1 ows11 wfs gml">
 
-	<xsl:include href="addxlinks.xsl" />
-
 	<!-- ============================================================================= -->
 
 	<xsl:template match="*" mode="SrvDataIdentification">
@@ -866,8 +864,18 @@
 
 
 		</xsl:for-each>
+		-->
 
-		  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		  
+		<!-- Add any supplementalInformation xlinks from the layer info to the record -->
+		<xsl:call-template name="addXlink">
+			<xsl:with-param name="element" select="'gmd:supplementalInformation'"/>
+			<xsl:with-param name="parentmatch" select="$parentmatch"/>
+			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+		</xsl:call-template>
+
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		  
 		<!-- Add any resource contact xlinks from the layer info to the record -->
 		<xsl:call-template name="addXlink">
