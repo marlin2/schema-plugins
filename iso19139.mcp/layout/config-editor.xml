@@ -212,7 +212,15 @@
   <!-- View configuration -->
   <views>
     <view name="default">
-      <tab id="resourceDescription" default="true" mode="flat">
+			<tab id="resourceCitation" default="true" mode="flat">
+				<section name=" ">
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle" or="alternateTitle" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation"/>
+          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
+				</section>
+			</tab>
+
+      <tab id="resourceDescription" mode="flat">
         <section name=" ">
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:abstract"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:purpose"/>
@@ -221,14 +229,6 @@
           <field xpath="/mcp:MD_Metadata/gmd:hierarchyLevelName" or="hierarchyLevelName" in="/mcp:MD_Metadata"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:supplementalInformation" or="supplementalInformation" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
           <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:resourceMaintenance"/>
-				</section>
-			</tab>
-
-			<tab id="resourceCitation" mode="flat">
-				<section name=" ">
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:alternateTitle" or="alternateTitle" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:citation/gmd:CI_Citation"/>
-          <field xpath="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification/gmd:credit" or="credit" in="/mcp:MD_Metadata/gmd:identificationInfo/mcp:MD_DataIdentification"/>
 				</section>
 			</tab>
 
@@ -596,8 +596,8 @@
 			</tab>
 
 			<tab id="distribution" mode="flat">
-				<section name=" ">
-          <field name="distributionFormat" templateModeOnly="true" isMissingLabel="notSpecified" xpath="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat" del=".">
+				<section name="distributionFormat">
+          <field name="distributionFormatNoTitle" templateModeOnly="true" isMissingLabel="notSpecified" xpath="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat" del=".">
             <template>
               <values>
                 <key label="distribution_name" xpath="gmd:MD_Format/gmd:name/gco:CharacterString" tooltip="gmd:name">
@@ -639,6 +639,8 @@
 							</snippet>
 						</template>
 					</action>
+				</section>
+				<section name=" ">
 					<text ref="useAssociatedResources"/>
           <field xpath="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine[gmd:CI_OnlineResource/gmd:protocol/gco:CharacterString!='WWW:LINK-1.0-http--metadata-URL']" in="/mcp:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions"/>
 				</section>
