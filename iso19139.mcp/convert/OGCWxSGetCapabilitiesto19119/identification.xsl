@@ -127,7 +127,7 @@
 				</CI_ResponsibleParty>
 			</pointOfContact>
 		</xsl:for-each>
-		
+
 		<!-- resMaint -->
 		<!-- graphOver -->
 		<!-- dsFormat-->
@@ -699,6 +699,39 @@
 			</descriptiveKeywords>
 		</xsl:for-each>
 		
+		<xsl:if test="$parentmatch/@group">
+			<descriptiveKeywords>
+				<MD_Keywords>
+					<keyword>
+						<gco:CharacterString>
+		<xsl:choose>
+			<xsl:when test="$parentmatch/@group='multipleuse'">
+				<xsl:text>Multiple Use Layer</xsl:text>
+			</xsl:when>
+			<xsl:when test="$parentmatch/@group='wavemodel'">
+				<xsl:text>Wave Model Layer</xsl:text>
+			</xsl:when>
+		</xsl:choose>
+						</gco:CharacterString>
+					</keyword>
+					<type>
+						<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+					</type>
+					<thesaurusName>
+						<CI_Citation>
+							<title>
+								<gco:CharacterString>Wave Energy Atlas Layer Grouping</gco:CharacterString>
+							</title>
+							<alternateTitle gco:nilReason="missing">
+								<gco:CharacterString/>
+							</alternateTitle>
+							<date gco:nilReason="missing"/>
+						</CI_Citation>
+					</thesaurusName>
+				</MD_Keywords>
+			</descriptiveKeywords>
+		</xsl:if>
+
 		<!-- Add any resourceConstraints xlink from the layer info to the record -->
 		<xsl:variable name="resourceConstraints" as="node()">
 			<xsl:call-template name="addXlink">

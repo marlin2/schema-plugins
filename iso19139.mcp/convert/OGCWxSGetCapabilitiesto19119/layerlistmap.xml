@@ -6,6 +6,7 @@
               uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
 							data="http://waveatlas.marine.csiro.au/data/te/"
 							datasuffix=".nc"
+							group="wavemodel"
               title="Mean Wave Energy Period Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -25,6 +26,7 @@
               uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
 							data="http://waveatlas.marine.csiro.au/data/CgE/"
 							datasuffix=".nc"
+							group="wavemodel"
               title="Mean Wave Energy Flux Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -44,6 +46,7 @@
               uuid="cb26e551-272c-4814-aa28-27ed6624378d"
 							data="http://waveatlas.marine.csiro.au/data/dir/"
 							datasuffix=".nc"
+							group="wavemodel"
               title="Mean Wave Direction Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -63,6 +66,7 @@
               uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
 							data="http://waveatlas.marine.csiro.au/data/hs/"
 							datasuffix=".nc"
+							group="wavemodel"
               title="Mean Significant Wave Height Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -78,70 +82,82 @@
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
-   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" checked="ok">
+   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" checked="ok">
+   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" checked="ok">
+   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" checked="ok">
+   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" buggered="No proper resourceContactInfo - just has Department of the Environment!" checked="doesnt exist">
+   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" buggered="No proper resourceContactInfo - just has Department of the Environment!" checked="doesnt exist" group="multipleuse">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" checked="ok">
+   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" checked="ok">
+   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" checked="ok">
+   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" checked="ok">
+   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" checked="ok">
+   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" checked="ok">
+   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" checked="ok">
+   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="multipleuse" checked="ok">
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    </parents>
    <layer>
