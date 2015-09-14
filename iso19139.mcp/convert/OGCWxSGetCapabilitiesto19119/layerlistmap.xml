@@ -83,43 +83,57 @@
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
       </parent>
    <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" buggered="No proper resourceContactInfo - just has Department of the Environment!" checked="doesnt exist" group="multipleuse">
+   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" checked="ok" group="multipleuse">
+      <xpathid id="#topicCategory1">gmd:topicCategory</xpathid>
+      <xpathid id="#topicCategory2">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
@@ -127,6 +141,8 @@
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
@@ -134,6 +150,8 @@
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
@@ -141,12 +159,16 @@
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints1">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceConstraints2">gmd:resourceConstraints</xpathid>
@@ -154,6 +176,8 @@
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="multipleuse" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
