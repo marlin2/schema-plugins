@@ -816,10 +816,6 @@
 			<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode" codeListValue=""/>
 		</characterSet>
 		
-		<topicCategory>
-			<MD_TopicCategoryCode><xsl:value-of select="$topic"/></MD_TopicCategoryCode>
-		</topicCategory>
-		
 		<!-- Add any topicCategory xlink from the layer info to the record -->
 		<xsl:variable name="topicCategory" as="node()">
 			<xsl:call-template name="addXlink">
@@ -832,6 +828,12 @@
 			<xsl:copy-of select="$topicCategory/*"/>
 		</xsl:if>
 
+		<xsl:if test="$topicCategory/gmd:topicCategory/gmd:MD_TopicCategoryCode!=$topic">
+			<topicCategory>
+				<MD_TopicCategoryCode><xsl:value-of select="$topic"/></MD_TopicCategoryCode>
+			</topicCategory>
+		</xsl:if>
+		
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<extent>
 				<EX_Extent>
