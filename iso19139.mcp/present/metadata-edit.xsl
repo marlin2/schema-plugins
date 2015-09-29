@@ -1806,6 +1806,11 @@
 			</xsl:for-each>
 
 		<xsl:if test="$useExperimentalContacts">
+			<xsl:apply-templates mode="elementEP" select="mcp:metadataContactInfo|geonet:child[string(@name)='metadataContactInfo']">
+				<xsl:with-param name="schema" select="$schema"/>
+				<xsl:with-param name="edit"   select="$edit"/>
+			</xsl:apply-templates>
+			<!--
 			<xsl:for-each select="mcp:metadataContactInfo/mcp:CI_Responsibility">
 
 			<xsl:call-template name="complexElementGuiWrapper">
@@ -1883,6 +1888,7 @@
 			</xsl:call-template>
 
 			</xsl:for-each>
+			-->
 		</xsl:if>
 
 		<!-- more metadata elements -->
