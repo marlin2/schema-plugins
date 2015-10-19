@@ -300,10 +300,11 @@
 			</xsl:call-template>
 		</xsl:variable>
 
-		<xsl:choose>
-			<xsl:when test="count($dataQualityInfo) > 0">
 
-			<xsl:copy-of select="$dataQualityInfo"/>
+		<xsl:choose>
+			<xsl:when test="count($dataQualityInfo/*)>0">
+
+			<xsl:copy-of select="$dataQualityInfo/*"/>
 
 			</xsl:when>
 			<xsl:otherwise>
@@ -333,11 +334,18 @@
 			<!--mdConst -->
 			<!--mdMaint-->
 
-		<xsl:call-template name="addXlink">
-			<xsl:with-param name="element" select="'mcp:metadataContactInfo'"/>
-			<xsl:with-param name="parentmatch" select="$parentmatch"/>
-			<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
-		</xsl:call-template>
+		<xsl:variable name="metadataContactInfo" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'mcp:metadataContactInfo'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:if test="count($metadataContactInfo/*)>0">
+			<xsl:copy-of select="$metadataContactInfo/*"/>
+		</xsl:if>
+
 
 		</mcp:MD_Metadata>
 
