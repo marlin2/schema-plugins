@@ -29,27 +29,27 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Areas of Interest</name>
-							<id>geonetwork.thesaurus.external.discipline.urn:marlin.csiro.au:keywords:cmarAOI</id>
+							<id>geonetwork.thesaurus.register.discipline.urn:marlin.csiro.au:keywords:cmarAOI</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Global Project List</name>
-							<id>geonetwork.thesaurus.external.project.urn:marlin.csiro.au:globalprojectregister</id>
+							<id>geonetwork.thesaurus.register.project.urn:marlin.csiro.au:globalprojectregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Project List</name>
-							<id>geonetwork.thesaurus.external.project.urn:marlin.csiro.au:projectregister</id>
+							<id>geonetwork.thesaurus.register.project.urn:marlin.csiro.au:projectregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Source List</name>
-							<id>geonetwork.thesaurus.external.dataSource.urn:marlin.csiro.au:keywords:sourceregister</id>
+							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:sourceregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Survey List</name>
-							<id>geonetwork.thesaurus.external.survey.urn:marlin.csiro.au:surveyregister</id>
+							<id>geonetwork.thesaurus.register.survey.urn:marlin.csiro.au:surveyregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
-							<id>geonetwork.thesaurus.external.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
+							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
