@@ -2139,7 +2139,8 @@
 
 				<xsl:variable name="organisationName" select="mcp:name/*"/>
 				<xsl:apply-templates mode="mcp-html" select="mcp:individual"/>
-				<xsl:apply-templates mode="mcp-html" select="mcp:contactInfo">
+				<!-- NOTE: Show only the first address in the contact info SP Nov. 2015 -->
+				<xsl:apply-templates mode="mcp-html" select="mcp:contactInfo[1]">
 					<xsl:with-param name="organisationName" select="$organisationName"/>
 				</xsl:apply-templates>
 
