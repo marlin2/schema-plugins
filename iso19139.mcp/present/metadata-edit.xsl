@@ -41,7 +41,7 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Source List</name>
-							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:sourceregister</id>
+							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:sourceregister</id>
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Survey List</name>
@@ -49,7 +49,7 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
-							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
+							<id>geonetwork.thesaurus.register.discipline.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
@@ -1597,10 +1597,27 @@
 
 					<!-- keywords is not part of MCP core elements but it should be -->
 
-					<xsl:apply-templates mode="elementEP" select="gmd:descriptiveKeywords|geonet:child[string(@name)='descriptiveKeywords']">
-						<xsl:with-param name="schema" select="$schema"/>
-						<xsl:with-param name="edit"   select="$edit"/>
-					</xsl:apply-templates>
+					<xsl:choose>
+						<xsl:when test="$edit">
+							<xsl:apply-templates mode="elementEP" select="gmd:descriptiveKeywords|geonet:child[string(@name)='descriptiveKeywords']">
+								<xsl:with-param name="schema" select="$schema"/>
+								<xsl:with-param name="edit"   select="$edit"/>
+							</xsl:apply-templates>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:variable name="theKeys" select="."/>
+							<!-- process keywords in order specified in variable $thesauri above -->
+							<xsl:for-each select="$thesauri/thesauri/thesaurus">
+								<xsl:variable name="currentThesaurus" select="id"/>
+								<xsl:apply-templates mode="elementEP" select="$theKeys/gmd:descriptiveKeywords[gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gmx:Anchor=$currentThesaurus]">
+									<xsl:with-param name="schema" select="$schema"/>
+									<xsl:with-param name="edit"   select="$edit"/>
+								</xsl:apply-templates>
+							</xsl:for-each>
+			
+						</xsl:otherwise>
+					</xsl:choose>
+
 				</xsl:if>
 
 				<xsl:if test="$core and $dataset">
