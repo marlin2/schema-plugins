@@ -263,6 +263,21 @@
 					<Field name="{$thesaurusId}" string="{replace($keywordId,'%23','#')}" store="true" index="true"/>
 					<Field name="keywordId" string="{replace($keywordId,'%23','#')}" store="true" index="true"/>
 				</xsl:if>
+
+				<xsl:choose>
+						<xsl:when test="contains($thesaurusId,'surveyregister')">
+							<Field name="survey" string="{string(.)}" store="true" index="true"/>
+						</xsl:when>
+						<xsl:when test="contains($thesaurusId,'projectregister')">
+							<Field name="project" string="{string(.)}" store="true" index="true"/>
+						</xsl:when>
+						<xsl:when test="contains($thesaurusId,'gcmd_keywords')">
+							<Field name="gcmd" string="{string(.)}" store="true" index="true"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<Field name="otherkeyword" string="{string(.)}" store="true" index="true"/>
+						</xsl:otherwise>
+				</xsl:choose>
 			</xsl:if>
 		</xsl:for-each>
 
