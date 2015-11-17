@@ -49,7 +49,7 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
-							<id>geonetwork.thesaurus.register.discipline.urn:marlin.csiro.au:keywords:standardDataType</id>
+							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
