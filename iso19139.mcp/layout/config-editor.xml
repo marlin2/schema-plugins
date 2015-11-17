@@ -139,6 +139,8 @@
     <name>gmd:processStep</name>
     <name>gmd:lineage</name>
 		<name>mcp:dataParameters</name>
+		<name>mcp:resourceContactInfo</name>
+		<name>mcp:metadataContactInfo</name>
   </fieldsWithFieldset>
 
   <multilingualFields>
