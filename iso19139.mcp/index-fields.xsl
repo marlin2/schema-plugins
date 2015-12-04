@@ -265,6 +265,9 @@
 				</xsl:if>
 
 				<xsl:choose>
+						<xsl:when test="contains($thesaurusId,'sourceregister')">
+							<Field name="source" string="{string(.)}" store="true" index="true"/>
+						</xsl:when>
 						<xsl:when test="contains($thesaurusId,'surveyregister')">
 							<Field name="survey" string="{string(.)}" store="true" index="true"/>
 						</xsl:when>
