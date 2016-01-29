@@ -167,8 +167,11 @@
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
    <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="multipleuse" checked="ok">
+      <xpathid id="#title">gmd:title</xpathid>
+      <xpathid id="#abstract">gmd:abstract</xpathid>
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
-      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#descriptiveKeywords1">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#descriptiveKeywords2">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
