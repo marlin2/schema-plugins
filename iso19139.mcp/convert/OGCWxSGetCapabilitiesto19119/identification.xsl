@@ -523,6 +523,20 @@
 
 		<citation>
 			<CI_Citation>
+
+		<xsl:variable name="titleOverride" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:title'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:choose>
+			<xsl:when test="count($titleOverride/*)>0">
+		<xsl:copy-of select="$titleOverride/*"/>
+			</xsl:when>
+			<xsl:otherwise>
 				<title>
 					<gco:CharacterString>
 						<xsl:choose>
@@ -541,6 +555,9 @@
 						</xsl:choose>
 					</gco:CharacterString>
 				</title>
+			</xsl:otherwise>
+		</xsl:choose>
+
 				<date>
 					<CI_Date>
 						<xsl:variable name="df">[Y0001]-[M01]-[D01]T[H01]:[m01]:[s01]</xsl:variable>
