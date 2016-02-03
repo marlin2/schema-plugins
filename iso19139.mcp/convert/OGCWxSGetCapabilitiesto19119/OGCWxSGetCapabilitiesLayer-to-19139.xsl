@@ -274,6 +274,7 @@
 									</description>
 								</CI_OnlineResource>
 							</onLine>
+							<!-- Put in the data download link if parent requires it -->
 							<xsl:apply-templates mode="onlineResource"/>
 							<xsl:if test="$parentmatch/@data!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
 								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
@@ -283,6 +284,18 @@
 									<xsl:with-param name="name" select="concat($datatitle,$suffix)"/>
 									<xsl:with-param name="title" select="concat('Download: ',$datatitle,$suffix)"/>
 									<xsl:with-param name="url" select="concat($dataurl,$datatitle,$suffix)"/>
+									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
+								</xsl:call-template>
+							</xsl:if>
+
+							<!-- Put in the colorbar legendurl link if parent requires it -->
+							<xsl:if test="$parentmatch/@colorbarUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
+								<xsl:variable name="url" select="$parentmatch/@colorbarUrl"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="title" select="'LegendUrl'"/>
+									<xsl:with-param name="url" select="$url"/>
 									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
 								</xsl:call-template>
 							</xsl:if>

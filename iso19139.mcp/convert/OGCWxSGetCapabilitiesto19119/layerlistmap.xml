@@ -5,6 +5,7 @@
       <parent prefix="awavea-interim:ww3.aus_4m.te"
               uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
 							data="http://waveatlas.marine.csiro.au/data/te/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_avg.png"
 							datasuffix=".nc"
 							group="wavemodel"
               title="Mean Wave Energy Period Parent Record">
@@ -25,6 +26,7 @@
       <parent prefix="awavea-interim:ww3.aus_4m.CgE"
               uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
 							data="http://waveatlas.marine.csiro.au/data/CgE/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg.png"
 							datasuffix=".nc"
 							group="wavemodel"
               title="Mean Wave Energy Flux Parent Record">
@@ -45,6 +47,7 @@
       <parent prefix="awavea-interim:ww3.aus_4m.dir"
               uuid="cb26e551-272c-4814-aa28-27ed6624378d"
 							data="http://waveatlas.marine.csiro.au/data/dir/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.dir_avg.png"
 							datasuffix=".nc"
 							group="wavemodel"
               title="Mean Wave Direction Parent Record">
@@ -65,6 +68,7 @@
       <parent prefix="awavea-interim:ww3.aus_4m.hs"
               uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
 							data="http://waveatlas.marine.csiro.au/data/hs/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg.png"
 							datasuffix=".nc"
 							group="wavemodel"
               title="Mean Significant Wave Height Parent Record">
