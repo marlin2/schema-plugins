@@ -280,7 +280,8 @@
 								<xsl:variable name="dataurl" select="$parentmatch/@data"/>
 								<xsl:variable name="suffix" select="$parentmatch/@datasuffix"/>
 								<xsl:call-template name="onlineResource">
-									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="name" select="concat($datatitle,$suffix)"/>
+									<xsl:with-param name="title" select="concat('Download: ',$datatitle,$suffix)"/>
 									<xsl:with-param name="url" select="concat($dataurl,$datatitle,$suffix)"/>
 									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
 								</xsl:call-template>
