@@ -3,6 +3,7 @@
 <xsl:stylesheet version="2.0" xmlns    ="http://www.isotc211.org/2005/gmd"
 										xmlns:gco="http://www.isotc211.org/2005/gco"
 										xmlns:gmd="http://www.isotc211.org/2005/gmd"
+										xmlns:gmx="http://www.isotc211.org/2005/gmx"
 										xmlns:gts="http://www.isotc211.org/2005/gts"
 										xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 										xmlns:srv="http://www.isotc211.org/2005/srv"
@@ -720,31 +721,38 @@
 			<descriptiveKeywords>
 				<MD_Keywords>
 					<keyword>
-						<gco:CharacterString>
-		<xsl:choose>
-			<xsl:when test="$parentmatch/@group='multipleuse'">
-				<xsl:text>Multiple Use Layer</xsl:text>
-			</xsl:when>
-			<xsl:when test="$parentmatch/@group='wavemodel'">
-				<xsl:text>Wave Model Layer</xsl:text>
-			</xsl:when>
-		</xsl:choose>
-						</gco:CharacterString>
+			<xsl:if test="$parentmatch/@group">
+						<!-- <gmx:Anchor xlink:href="http://waveatlas.marine.csiro.au/geonetwork/srv/eng/xml.keyword.get?thesaurus=external.theme.awavea-keywords&id=http://waveatlas.marine.csiro.au/thesaurus/awavea-keywords.rdf#6"> -->
+					  <gco:CharacterString><xsl:value-of select="$parentmatch/@group"/></gco:CharacterString>
+			</xsl:if>
 					</keyword>
-					<type>
-						<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
-					</type>
-					<thesaurusName>
-						<CI_Citation>
-							<title>
-								<gco:CharacterString>Wave Energy Atlas Layer Grouping</gco:CharacterString>
-							</title>
-							<alternateTitle gco:nilReason="missing">
-								<gco:CharacterString/>
-							</alternateTitle>
-							<date gco:nilReason="missing"/>
-						</CI_Citation>
-					</thesaurusName>
+          <type>
+        		<MD_KeywordTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+          </type>
+          <thesaurusName>
+              <CI_Citation>
+                  <title>
+                      <CharacterString>Australian Wave Energy Atlas (AWAVEA) Data Group Thesaurus</CharacterString>
+                  </title>
+                  <date>
+                      <CI_Date>
+                          <date>
+                              <gco:Date>2016-02-09</gco:Date>
+                          </date>
+                          <dateType>
+                              <CI_DateTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</CI_DateTypeCode>
+                          </dateType>
+                      </CI_Date>
+                  </date>
+                  <identifier>
+                      <MD_Identifier>
+                          <code>
+                              <gmx:Anchor xlink:href="http://localhost:8080/geonetwork/srv/eng/thesaurus.download?ref=external.theme.awavea-keywords">geonetwork.thesaurus.external.theme.awavea-keywords</gmx:Anchor>
+                          </code>
+                      </MD_Identifier>
+                  </identifier>
+              </CI_Citation>
+          </thesaurusName>
 				</MD_Keywords>
 			</descriptiveKeywords>
 		</xsl:if>
