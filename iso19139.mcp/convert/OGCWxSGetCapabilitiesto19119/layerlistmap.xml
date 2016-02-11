@@ -2,13 +2,39 @@
 <layers xmlns:gmd="http://www.isotc211.org/2005/gmd" url="http://oa-gis.csiro.au/geoserver/wms?SERVICE=WMS&amp;" workspace="proxy"
         metadatasubtemplateurl="local://xml.metadata.get?uuid=">
    <parents>
+      <parent prefix="awavea-interim:ww3.aus_4m.jthm"
+              uuid="d0661474-7984-4532-8173-03a335cfcf53"
+							data="http://waveatlas.marine.csiro.au/data/jthm/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jthm_avg.png"
+							datasuffix=".nc"
+							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power"
+              title="Direction of Maximum Directionally Resolved Wave Power Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+The direction of the maximum directionally resolved wave power is 0j and is used as the characteristic direction of the sea-state. Note, accurate determination of the directionally resolved wave power, J0, and its maximum, Jm, and hence 0j require spectral data, which was not archived at all grid points of the CAWCR wave hindcast. Here, we provide estimates of Jm using spectra reconstructed with archived gridded wave partition data, assuming a Pierson-Moskowitz spectra fit to each partition, with assumed spreading, and superimposed to produce a reconstructed spectra. Further details of the method used to estimate Jm are provided in the atlas report (Hemer et al., 2016).
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
+      </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.jm"
               uuid="6b845709-7e74-4a1e-94fd-0ff46fd5fd5f"
 							data="http://waveatlas.marine.csiro.au/data/jm/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
 							datasuffix=".nc"
-							group="Wave Models | Directionally Resolved Wave Power"
-              title="Directionally Resolved Wave Power Parent Record">
+							group="Wave Models | Maximum Directionally Resolved Wave Power"
+              title="Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
          <xpathid id="#credit2">gmd:credit</xpathid>
@@ -1664,5 +1690,83 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.jm_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_avg_mv.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
+   </layer>
+   <layer>
+			<gmd:title>Annual Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The annual mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+			<gmd:title>January Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The January mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.01</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>February Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The February mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.02</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>March Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The March mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.03</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>April Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The April mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.04</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>May Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The May mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.05</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>June Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The June mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.06</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>July Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The July mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.07</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>August Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The August mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.08</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>September Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The September mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.09</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>October Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The October mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.10</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>November Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The November mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.11</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>December Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
+      <gmd:abstract>The December mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
+      <name>awavea-interim:ww3.aus_4m.jthm_avg.12</name>
+      <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
    </layer>
 </layers>
