@@ -520,10 +520,19 @@
 		<xsl:param name="topic"/>		
 		<xsl:param name="ows"/>
 		<xsl:param name="parentmatch"/>
+		<xsl:param name="layermatch"/>
 		<xsl:param name="metadatasubtemplateurl"/>
 
 		<citation>
 			<CI_Citation>
+
+		<xsl:variable name="codedTitle" as="node()">
+			<xsl:call-template name="addCodedContent">
+				<xsl:with-param name="element" select="'gmd:title'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="layermatch" select="$layermatch"/>
+			</xsl:call-template>
+		</xsl:variable>
 
 		<xsl:variable name="titleOverride" as="node()">
 			<xsl:call-template name="addXlink">
@@ -534,6 +543,9 @@
 		</xsl:variable>
 
 		<xsl:choose>
+			<xsl:when test="count($codedTitle/*)>0">
+		<xsl:copy-of select="$codedTitle/*"/>
+			</xsl:when>
 			<xsl:when test="count($titleOverride/*)>0">
 		<xsl:copy-of select="$titleOverride/*"/>
 			</xsl:when>
@@ -575,6 +587,14 @@
 
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+		<xsl:variable name="codedAbstract" as="node()">
+			<xsl:call-template name="addCodedContent">
+				<xsl:with-param name="element" select="'gmd:abstract'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="layermatch" select="$layermatch"/>
+			</xsl:call-template>
+		</xsl:variable>
+
 		<xsl:variable name="abstract" as="node()">
 			<xsl:call-template name="addXlink">
 				<xsl:with-param name="element" select="'gmd:abstract'"/>
@@ -584,6 +604,9 @@
 		</xsl:variable>
 
 		<xsl:choose>
+			<xsl:when test="count($codedAbstract/*)>0">
+		<xsl:copy-of select="$codedAbstract/*"/>
+			</xsl:when>
 			<xsl:when test="count($abstract/*)>0">
 		<xsl:copy-of select="$abstract/*"/>
 			</xsl:when>

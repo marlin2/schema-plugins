@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layers url="http://oa-gis.csiro.au/geoserver/wms?SERVICE=WMS&amp;" workspace="proxy"
+<layers xmlns:gmd="http://www.isotc211.org/2005/gmd" url="http://oa-gis.csiro.au/geoserver/wms?SERVICE=WMS&amp;" workspace="proxy"
         metadatasubtemplateurl="local://xml.metadata.get?uuid=">
    <parents>
+      <parent prefix="awavea-interim:ww3.aus_4m.jm"
+              uuid="6b845709-7e74-4a1e-94fd-0ff46fd5fd5f"
+							data="http://waveatlas.marine.csiro.au/data/jm/"
+							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
+							datasuffix=".nc"
+							group="Wave Models | Directionally Resolved Wave Power"
+              title="Directionally Resolved Wave Power Parent Record">
+         <xpathid id="#abstract">gmd:abstract</xpathid>
+         <xpathid id="#credit1">gmd:credit</xpathid>
+         <xpathid id="#credit2">gmd:credit</xpathid>
+         <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+         <xpathid id="#status">gmd:status</xpathid>
+         <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+         <xpathid id="#spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+         <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+         <xpathid id="#supplementalInformation">gmd:supplementalInformation</xpathid>
+         <xpathid id="#resourceContactInfo1">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
+         <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
+         <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+The directionally resolved wave power propagating in direction 0, J0, can be calculated by resolving the wave power of each component in direction 0. An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016). 
+
+J0 is determined at for 0 at 15° intervals, and the maximum directionally resolved wave power, Jm, represents the maximum time-averaged wave power propagating in a single direction.  
+
+Note, accurate determination of J0 and Jm require spectral data, which was not archived at all grid points of the CAWCR wave hindcast. These data provide estimates of Jm whereby spectra are reconstructed using archived gridded wave partition data, with a Pierson-Moskowitz spectra fit to each partition, with assumed spreading, and superimposed to produce a reconstructed spectra. For consistency in this estimate, the omnidirectional wave power is determined from the reconstructed spectra, and not the archived CgE presented elsewhere. Further details of the method used to estimate Jm are provided in the atlas report (Hemer et al., 2016). 
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
+      </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.jdc"
               uuid="48afb695-c762-4864-ad28-819a2ab40e5e"
 							data="http://waveatlas.marine.csiro.au/data/jdc/"
@@ -22,6 +52,13 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+The directionality coefficient is the fraction of directionally resolved wave power Jm to the omnidirectional wave power (or total wave power, CgE). An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016).  
+
+Note, accurate determination of directionality coefficient and Jm require spectral data, which was not archived at all grid points of the CAWCR wave hindcast. These data provide estimates of directionality coefficient whereby spectra are reconstructed using archived gridded wave partition data, with a Pierson-Moskowitz spectra fit to each partition, with assumed spreading, and superimposed to produce a reconstructed spectra. For consistency in this estimate, the omnidirectional wave power is determined from the reconstructed spectra, and not the archived CgE presented elsewhere. Further details of the method used to estimate directionality coefficient are provided in the atlas report (Hemer et al., 2016). 
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.nu"
               uuid="c31b0a34-486f-4270-98c8-b4148fff7fd7"
@@ -42,6 +79,13 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+The spectral width characterises the relative spreading of energy along the wave spectrum. The spectral width is defined as the standard deviation of the period variance density, normalised by energy period. An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016).
+
+Spectral width is not standard output from the WaveWatch III model, but is determined from available parameters HS, T01 and T02, from which the moments m0, m1 and m2 can be determined. For further details on the calculation of the spectral width, please refer to the Atlas report (Hemer et al., 2016)
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.te"
               uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
@@ -63,6 +107,11 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+Wave energy period, Te is a measure of the length of a wave. The wave energy period is the mean period of the wave field with respect to the spectral distribution of energy in the wave field. An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016).
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.CgE"
               uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
@@ -84,6 +133,11 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+Wave energy flux, or wave power density, CgE, is a measure of the available power in the wave field, calculated as the kilowatts per meter (kW/m) of wave crest width.  CgE is a spectrally derived time-series. An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016).
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.dir"
               uuid="cb26e551-272c-4814-aa28-27ed6624378d"
@@ -105,6 +159,11 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+Mean wave direction, Dm, is obtained by averaging the mean wave angle over all frequencies with a weighting function defined by the wave spectrum, and is defined as the direction from which the wave field approaches. Units are in degrees clockwise measured from true north. An equation describing its calculation can be found in the the atlas report (Hemer et al., 2016).
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
       <parent prefix="awavea-interim:ww3.aus_4m.hs"
               uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
@@ -126,6 +185,11 @@
          <xpathid id="#resourceContactInfo2">mcp:resourceContactInfo</xpathid>
          <xpathid id="#dataQualityInfo">gmd:dataQualityInfo</xpathid>
          <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+				 <gmd:abstract>
+Significant wave height, Hs, represents the average height of the upper third of the waves in the wave-field, and roughly corresponds to the mean wave height as described by a trained observer. Hs is a spectrally derived time-series, calculated as Hs = 4√m0 , where m0 is the zero-th moment of the wave spectrum. More details can be found in the the atlas report (Hemer et al., 2016).
+
+For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
+				 </gmd:abstract>
       </parent>
    <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="Multiple Use | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
@@ -241,460 +305,460 @@
    </parent>
    </parents>
    <layer>
-			<title>Annual Mean Wave Energy Flux</title>
-			<abstract>The annual mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The annual mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>January Mean Wave Energy Flux</title>
-			<abstract>The January mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The January mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg01</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>February Mean Wave Energy Flux</title>
-			<abstract>The February mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The February mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg02</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>March Mean Wave Energy Flux</title>
-			<abstract>The March mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The March mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg03</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>April Mean Wave Energy Flux</title>
-			<abstract>The April mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The April mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg04</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>May Mean Wave Energy Flux</title>
-			<abstract>The May mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The May mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg05</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>June Mean Wave Energy Flux</title>
-			<abstract>The June mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The June mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg06</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>July Mean Wave Energy Flux</title>
-			<abstract>The July mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The July mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg07</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>August Mean Wave Energy Flux</title>
-			<abstract>The August mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The August mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg08</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>September Mean Wave Energy Flux</title>
-			<abstract>The September mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The September mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg09</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>October Mean Wave Energy Flux</title>
-			<abstract>The October mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The October mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg10</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>November Mean Wave Energy Flux</title>
-			<abstract>The November mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The November mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg11</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>December Mean Wave Energy Flux</title>
-			<abstract>The December mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Wave Energy Flux</gmd:title>
+			<gmd:abstract>The December mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg12</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>Maximum Wave Energy Flux</title>
-			<abstract>The maximum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum Wave Energy Flux</gmd:title>
+			<gmd:abstract>The maximum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_max.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>Minimum Wave Energy Flux</title>
-			<abstract>The minimum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum Wave Energy Flux</gmd:title>
+			<gmd:abstract>The minimum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_min.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Wave Energy Flux</title>
-			<abstract>The 10th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Wave Energy Flux</gmd:title>
+			<gmd:abstract>The 10th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_p10.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Wave Energy Flux</title>
-			<abstract>The 50th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Wave Energy Flux</gmd:title>
+			<gmd:abstract>The 50th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_p50.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Wave Energy Flux</title>
-			<abstract>The 90th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Wave Energy Flux</gmd:title>
+			<gmd:abstract>The 90th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_p90.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Wave Energy Flux</title>
-			<abstract>The standard deviation of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Wave Energy Flux</gmd:title>
+			<gmd:abstract>The standard deviation of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_std.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Wave Energy Flux</title>
-			<abstract>The monthly variability of wave energy flux provides a convenient measure of the variability of the mean monthly wave energy flux over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Wave Energy Flux</gmd:title>
+			<gmd:abstract>The monthly variability of wave energy flux provides a convenient measure of the variability of the mean monthly wave energy flux over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.CgE_avg_mv.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
    <layer>
-			<title>Annual Mean Wave Direction</title>
-			<abstract>The annual mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Wave Direction</gmd:title>
+			<gmd:abstract>The annual mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>January Mean Wave Direction</title>
-			<abstract>The January mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Wave Direction</gmd:title>
+			<gmd:abstract>The January mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg01</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>February Mean Wave Direction</title>
-			<abstract>The February mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Wave Direction</gmd:title>
+			<gmd:abstract>The February mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg02</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>March Mean Wave Direction</title>
-			<abstract>The March mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Wave Direction</gmd:title>
+			<gmd:abstract>The March mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg03</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>April Mean Wave Direction</title>
-			<abstract>The April mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Wave Direction</gmd:title>
+			<gmd:abstract>The April mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg04</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>May Mean Wave Direction</title>
-			<abstract>The May mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Wave Direction</gmd:title>
+			<gmd:abstract>The May mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg05</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>June Mean Wave Direction</title>
-			<abstract>The June mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Wave Direction</gmd:title>
+			<gmd:abstract>The June mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg06</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>July Mean Wave Direction</title>
-			<abstract>The July mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Wave Direction</gmd:title>
+			<gmd:abstract>The July mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg07</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>August Mean Wave Direction</title>
-			<abstract>The August mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Wave Direction</gmd:title>
+			<gmd:abstract>The August mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg08</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>September Mean Wave Direction</title>
-			<abstract>The September mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Wave Direction</gmd:title>
+			<gmd:abstract>The September mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg09</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>October Mean Wave Direction</title>
-			<abstract>The October mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Wave Direction</gmd:title>
+			<gmd:abstract>The October mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg10</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>November Mean Wave Direction</title>
-			<abstract>The November mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Wave Direction</gmd:title>
+			<gmd:abstract>The November mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg11</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>December Mean Wave Direction</title>
-			<abstract>The December mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Wave Direction</gmd:title>
+			<gmd:abstract>The December mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
    <layer>
-			<title>Annual Mean Significant Wave Height</title>
-			<abstract>The annual mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The annual mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>January Mean Significant Wave Height</title>
-			<abstract>The January mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The January mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg01</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>February Mean Significant Wave Height</title>
-			<abstract>The February mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The February mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg02</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>March Mean Significant Wave Height</title>
-			<abstract>The March mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The March mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg03</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>April Mean Significant Wave Height</title>
-			<abstract>The April mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The April mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg04</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>May Mean Significant Wave Height</title>
-			<abstract>The May mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The May mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg05</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>June Mean Significant Wave Height</title>
-			<abstract>The June mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The June mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg06</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>July Mean Significant Wave Height</title>
-			<abstract>The July mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The July mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg07</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>August Mean Significant Wave Height</title>
-			<abstract>The August mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The August mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg08</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>September Mean Significant Wave Height</title>
-			<abstract>The September mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The September mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg09</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>October Mean Significant Wave Height</title>
-			<abstract>The October mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The October mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg10</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>November Mean Significant Wave Height</title>
-			<abstract>The November mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The November mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg11</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>December Mean Significant Wave Height</title>
-			<abstract>The December mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Significant Wave Height</gmd:title>
+			<gmd:abstract>The December mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg12</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>Minimum Significant Wave Height</title>
-			<abstract>The minimum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum Significant Wave Height</gmd:title>
+			<gmd:abstract>The minimum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_min.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>Maximum Significant Wave Height</title>
-			<abstract>The maximum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum Significant Wave Height</gmd:title>
+			<gmd:abstract>The maximum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_max.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Significant Wave Height</title>
-			<abstract>The 10th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Significant Wave Height</gmd:title>
+			<gmd:abstract>The 10th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_p10.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Significant Wave Height</title>
-			<abstract>The 50th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Significant Wave Height</gmd:title>
+			<gmd:abstract>The 50th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_p50.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Significant Wave Height</title>
-			<abstract>The 90th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Significant Wave Height</gmd:title>
+			<gmd:abstract>The 90th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_p90.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Significant Wave Height</title>
-			<abstract>The standard deviation of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Significant Wave Height</gmd:title>
+			<gmd:abstract>The standard deviation of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_std.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Significant Wave Height</title>
-			<abstract>The monthly variability of significant wave height provides a convenient measure of the variability of the mean monthly wave height over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast. The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Significant Wave Height</gmd:title>
+			<gmd:abstract>The monthly variability of significant wave height provides a convenient measure of the variability of the mean monthly wave height over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast. The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.hs_avg_mv.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
    <layer>
-			<title>Annual Mean Wave Energy Period</title>
-			<abstract>The annual mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The annual mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>January Mean Wave Energy Period</title>
-			<abstract>The January mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The January mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg01</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>February Mean Wave Energy Period</title>
-			<abstract>The February mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The February mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg02</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>March Mean Wave Energy Period</title>
-			<abstract>The March mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The March mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg03</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>April Mean Wave Energy Period</title>
-			<abstract>The April mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The April mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg04</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>May Mean Wave Energy Period</title>
-			<abstract>The May mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The May mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg05</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>June Mean Wave Energy Period</title>
-			<abstract>The June mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The June mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg06</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>July Mean Wave Energy Period</title>
-			<abstract>The July mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The July mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg07</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>August Mean Wave Energy Period</title>
-			<abstract>The August mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The August mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg08</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>September Mean Wave Energy Period</title>
-			<abstract>The September mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The September mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg09</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>October Mean Wave Energy Period</title>
-			<abstract>The October mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The October mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg10</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>November Mean Wave Energy Period</title>
-			<abstract>The November mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The November mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg11</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>December Mean Wave Energy Period</title>
-			<abstract>The December mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Wave Energy Period</gmd:title>
+			<gmd:abstract>The December mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg12</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>Minimum Wave Energy Period</title>
-			<abstract>The minimum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum Wave Energy Period</gmd:title>
+			<gmd:abstract>The minimum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_min.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>Maximum Wave Energy Period</title>
-			<abstract>The maximum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum Wave Energy Period</gmd:title>
+			<gmd:abstract>The maximum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_max.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Wave Energy Period</title>
-			<abstract>The 10th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Wave Energy Period</gmd:title>
+			<gmd:abstract>The 10th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_p10.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Wave Energy Period</title>
-			<abstract>The 50th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Wave Energy Period</gmd:title>
+			<gmd:abstract>The 50th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_p50.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Wave Energy Period</title>
-			<abstract>The 90th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Wave Energy Period</gmd:title>
+			<gmd:abstract>The 90th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_p90.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Wave Energy Period</title>
-			<abstract>The standard deviation of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Wave Energy Period</gmd:title>
+			<gmd:abstract>The standard deviation of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_std.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Wave Energy Period</title>
-			<abstract>The monthly variability of wave energy period provides a convenient measure of the variability of the mean monthly wave energy period over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Wave Energy Period</gmd:title>
+			<gmd:abstract>The monthly variability of wave energy period provides a convenient measure of the variability of the mean monthly wave energy period over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.te_avg_mv.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
@@ -1292,311 +1356,311 @@
       <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
    </layer>
    <layer>
-			<title>Annual Mean Directionality Coefficient</title>
-			<abstract>The annual mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The annual mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>January Mean Directionality Coefficient</title>
-			<abstract>The January mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The January mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.01</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>February Mean Directionality Coefficient</title>
-			<abstract>The February mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The February mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.02</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>March Mean Directionality Coefficient</title>
-			<abstract>The March mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The March mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.03</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>April Mean Directionality Coefficient</title>
-			<abstract>The April mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The April mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.04</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>May Mean Directionality Coefficient</title>
-			<abstract>The May mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The May mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.05</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>June Mean Directionality Coefficient</title>
-			<abstract>The June mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The June mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.06</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>July Mean Directionality Coefficient</title>
-			<abstract>The July mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The July mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.07</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>August Mean Directionality Coefficient</title>
-			<abstract>The August mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The August mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.08</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>September Mean Directionality Coefficient</title>
-			<abstract>The September mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The September mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.09</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>October Mean Directionality Coefficient</title>
-			<abstract>The October mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The October mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.10</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>November Mean Directionality Coefficient</title>
-			<abstract>The November mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The November mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.11</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>December Mean Directionality Coefficient</title>
-			<abstract>The December mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Directionality Coefficient</gmd:title>
+			<gmd:abstract>The December mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg.12</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>Minimum Directionality Coefficient</title>
-			<abstract>The minimum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum Directionality Coefficient</gmd:title>
+			<gmd:abstract>The minimum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_min.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>Maximum Directionality Coefficient</title>
-			<abstract>The maximum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum Directionality Coefficient</gmd:title>
+			<gmd:abstract>The maximum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_max.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Directionality Coefficient</title>
-			<abstract>The 10th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Directionality Coefficient</gmd:title>
+			<gmd:abstract>The 10th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_p10.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Directionality Coefficient</title>
-			<abstract>The 50th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Directionality Coefficient</gmd:title>
+			<gmd:abstract>The 50th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_p50.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Directionality Coefficient</title>
-			<abstract>The 90th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Directionality Coefficient</gmd:title>
+			<gmd:abstract>The 90th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_p90.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Directionality Coefficient</title>
-			<abstract>The standard deviation of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Directionality Coefficient</gmd:title>
+			<gmd:abstract>The standard deviation of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_std.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Directionality Coefficient</title>
-			<abstract>The monthly variability of directionality coefficient provides a convenient measure of the variability of the mean monthly directionality coefficient over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Directionality Coefficient</gmd:title>
+			<gmd:abstract>The monthly variability of directionality coefficient provides a convenient measure of the variability of the mean monthly directionality coefficient over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jdc_avg_mv.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
    <layer>
-			<title>Annual Mean Spectral Width</title>
-			<abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Spectral Width</gmd:title>
+			<gmd:abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_avg</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>Minimum Spectral Width</title>
-			<abstract>The minimum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum Spectral Width</gmd:title>
+			<gmd:abstract>The minimum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_min.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>Maximum Spectral Width</title>
-			<abstract>The maximum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum Spectral Width</gmd:title>
+			<gmd:abstract>The maximum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_max.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Spectral Width</title>
-			<abstract>The 10th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Spectral Width</gmd:title>
+			<gmd:abstract>The 10th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_p10.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Spectral Width</title>
-			<abstract>The 50th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Spectral Width</gmd:title>
+			<gmd:abstract>The 50th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_p50.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Spectral Width</title>
-			<abstract>The 90th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Spectral Width</gmd:title>
+			<gmd:abstract>The 90th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_p90.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Spectral Width</title>
-			<abstract>The standard deviation of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Spectral Width</gmd:title>
+			<gmd:abstract>The standard deviation of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_std.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Spectral Width</title>
-			<abstract>The monthly variability of spectral width provides a convenient measure of the variability of the mean monthly spectral width over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Spectral Width</gmd:title>
+			<gmd:abstract>The monthly variability of spectral width provides a convenient measure of the variability of the mean monthly spectral width over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.nu_avg_mv.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer>
-			<title>Annual Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The annual mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Annual Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The annual mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>January Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The January mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</abstract>
+			<gmd:title>January Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The January mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using January data from January 1980 to January 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.01</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>February Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The February mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</abstract>
+			<gmd:title>February Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The February mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using February data from February 1980 to February 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.02</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>March Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The March mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</abstract>
+			<gmd:title>March Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The March mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using March data from March 1980 to March 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.03</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>April Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The April mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</abstract>
+			<gmd:title>April Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The April mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using April data from April 1980 to April 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.04</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>May Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The May mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</abstract>
+			<gmd:title>May Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The May mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using May data from May 1980 to May 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.05</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>June Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The June mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</abstract>
+			<gmd:title>June Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The June mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using June data from June 1980 to June 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.06</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>July Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The July mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</abstract>
+			<gmd:title>July Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The July mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using July data from July 1980 to July 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.07</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>August Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The August mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</abstract>
+			<gmd:title>August Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The August mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using August data from August 1980 to August 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.08</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>September Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The September mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</abstract>
+			<gmd:title>September Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The September mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using September data from September 1980 to September 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.09</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>October Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The October mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</abstract>
+			<gmd:title>October Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The October mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using October data from October 1980 to October 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.10</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>November Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The November mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</abstract>
+			<gmd:title>November Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The November mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using November data from November 1980 to November 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.11</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>December Mean Maximum Directionally Resolved Wave Power</title>
-			<abstract>The December mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</abstract>
+			<gmd:title>December Mean Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The December mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg.12</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>Minimum of the Maximum Directionally Resolved Wave Power</title>
-			<abstract>The minimum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Minimum of the Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The minimum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_min.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>Maximum of the Maximum Directionally Resolved Wave Power</title>
-			<abstract>The maximum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Maximum of the Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The maximum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_max.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>10th Percentile of Maximum Directionally Resolved Wave Power</title>
-			<abstract>The 10th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>10th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The 10th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_p10.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>50th Percentile of Maximum Directionally Resolved Wave Power</title>
-			<abstract>The 50th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>50th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The 50th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_p50.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>90th Percentile of Maximum Directionally Resolved Wave Power</title>
-			<abstract>The 90th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>90th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The 90th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_p90.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>Standard Deviation of Maximum Directionally Resolved Wave Power</title>
-			<abstract>The standard deviation of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Standard Deviation of Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The standard deviation of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_std.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
    <layer>
-			<title>Monthly Variability of Maximum Directionally Resolved Wave Power</title>
-			<abstract>The monthly variability of maximum directionally resolved wave power provides a convenient measure of the variability of the mean monthly maximum directionally resolved wave power over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</abstract>
+			<gmd:title>Monthly Variability of Maximum Directionally Resolved Wave Power</gmd:title>
+			<gmd:abstract>The monthly variability of maximum directionally resolved wave power provides a convenient measure of the variability of the mean monthly maximum directionally resolved wave power over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_awavea-interim:ww3.aus_4m.jm_avg_mv.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>

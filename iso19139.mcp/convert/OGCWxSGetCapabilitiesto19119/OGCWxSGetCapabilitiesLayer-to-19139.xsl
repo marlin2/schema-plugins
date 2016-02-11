@@ -66,6 +66,8 @@
 
 		<xsl:variable name="layermatch" select="$layermap/layers/layer/name[normalize-space()=$Name]"/>
 
+		<xsl:variable name="layerelement" select="$layermap/layers/layer[normalize-space(name)=$Name]"/>
+
 		<xsl:variable name="metadatasubtemplateurl" select="$layermap/layers/@metadatasubtemplateurl"/>
 
 		<xsl:variable name="parentuuid" select="$layermap/layers/layer[normalize-space(name)=$Name]/parent"/>
@@ -172,6 +174,7 @@
 						<xsl:with-param name="topic" select="$topic" />
 						<xsl:with-param name="ows" select="$ows" />
 						<xsl:with-param name="parentmatch" select="$parentmatch" />
+						<xsl:with-param name="layermatch" select="$layerelement" />
 						<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl" />
 					</xsl:apply-templates>
 				</mcp:MD_DataIdentification>
