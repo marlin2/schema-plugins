@@ -739,15 +739,24 @@
 				</MD_Keywords>
 			</descriptiveKeywords>
 		</xsl:for-each>
-		
-		<xsl:if test="$parentmatch/@group">
+	
+		<xsl:variable name="awGroup">
+			<xsl:choose>
+				<xsl:when test="$layermatch/@group">
+					<xsl:value-of select="$layermatch/@group"/>
+				</xsl:when>
+				<xsl:when test="$parentmatch/@group">
+					<xsl:value-of select="$parentmatch/@group"/>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:if test="normalize-space($awGroup)!=''">
 			<descriptiveKeywords>
 				<MD_Keywords>
 					<keyword>
-			<xsl:if test="$parentmatch/@group">
 						<!-- <gmx:Anchor xlink:href="http://waveatlas.marine.csiro.au/geonetwork/srv/eng/xml.keyword.get?thesaurus=external.theme.awavea-keywords&id=http://waveatlas.marine.csiro.au/thesaurus/awavea-keywords.rdf#6"> -->
-					  <gco:CharacterString><xsl:value-of select="$parentmatch/@group"/></gco:CharacterString>
-			</xsl:if>
+					  <gco:CharacterString><xsl:value-of select="$awGroup"/></gco:CharacterString>
 					</keyword>
           <type>
         		<MD_KeywordTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
