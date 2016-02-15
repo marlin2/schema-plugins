@@ -291,8 +291,23 @@
 								</xsl:call-template>
 							</xsl:if>
 
+							<xsl:choose>
+								<xsl:when test="$layerelement/colorbarUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+
+							<!-- Put in the colorbar legendurl link if layer requires it -->
+								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
+								<xsl:variable name="url" select="$layerelement/colorbarUrl"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="title" select="'LegendUrl'"/>
+									<xsl:with-param name="url" select="$url"/>
+									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
+								</xsl:call-template>
+
+								</xsl:when>
+								<xsl:when test="$parentmatch/@colorbarUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+
 							<!-- Put in the colorbar legendurl link if parent requires it -->
-							<xsl:if test="$parentmatch/@colorbarUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
 								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
 								<xsl:variable name="url" select="$parentmatch/@colorbarUrl"/>
 								<xsl:call-template name="onlineResource">
@@ -301,19 +316,9 @@
 									<xsl:with-param name="url" select="$url"/>
 									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
 								</xsl:call-template>
-							</xsl:if>
 
-							<!-- Put in the colorbar legendurl link if layer requires it -->
-							<xsl:if test="$layermatch/colorbarUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
-								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
-								<xsl:variable name="url" select="$layermatch/colorbarUrl"/>
-								<xsl:call-template name="onlineResource">
-									<xsl:with-param name="name" select="$datatitle"/>
-									<xsl:with-param name="title" select="'LegendUrl'"/>
-									<xsl:with-param name="url" select="$url"/>
-									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--link'"/>
-								</xsl:call-template>
-							</xsl:if>
+								</xsl:when>
+							</xsl:choose>
 						</MD_DigitalTransferOptions>
 					</transferOptions>
 				</MD_Distribution>
