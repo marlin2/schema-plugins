@@ -34,4 +34,19 @@
 		</elements>
 	</xsl:template>
 
+	<xsl:template name="addCodedContent">
+		<xsl:param name="element"/>
+		<xsl:param name="parentmatch"/>
+		<xsl:param name="layermatch"/>
+
+		<xsl:message>AddCodedContent: In parent <xsl:value-of select="count($parentmatch/*[name()=$element])"/> in Layer: <xsl:value-of select="count($layermatch/*[name()=$element])"/></xsl:message>
+		<elements>
+			<xsl:if test="count($layermatch/*[name()=$element])>0 or count($parentmatch/*[name()=$element])>0">
+				<xsl:element name="{$element}">
+					<gco:CharacterString><xsl:value-of select="concat($layermatch/*[name()=$element],' ',$parentmatch/*[name()=$element])"/></gco:CharacterString>
+				</xsl:element>
+			</xsl:if>
+		</elements>
+	</xsl:template>
+
 </xsl:stylesheet>

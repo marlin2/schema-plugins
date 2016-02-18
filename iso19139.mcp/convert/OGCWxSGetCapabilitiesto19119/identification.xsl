@@ -3,6 +3,7 @@
 <xsl:stylesheet version="2.0" xmlns    ="http://www.isotc211.org/2005/gmd"
 										xmlns:gco="http://www.isotc211.org/2005/gco"
 										xmlns:gmd="http://www.isotc211.org/2005/gmd"
+										xmlns:gmx="http://www.isotc211.org/2005/gmx"
 										xmlns:gts="http://www.isotc211.org/2005/gts"
 										xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 										xmlns:srv="http://www.isotc211.org/2005/srv"
@@ -519,10 +520,19 @@
 		<xsl:param name="topic"/>		
 		<xsl:param name="ows"/>
 		<xsl:param name="parentmatch"/>
+		<xsl:param name="layermatch"/>
 		<xsl:param name="metadatasubtemplateurl"/>
 
 		<citation>
 			<CI_Citation>
+
+		<xsl:variable name="codedTitle" as="node()">
+			<xsl:call-template name="addCodedContent">
+				<xsl:with-param name="element" select="'gmd:title'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="layermatch" select="$layermatch"/>
+			</xsl:call-template>
+		</xsl:variable>
 
 		<xsl:variable name="titleOverride" as="node()">
 			<xsl:call-template name="addXlink">
@@ -533,6 +543,9 @@
 		</xsl:variable>
 
 		<xsl:choose>
+			<xsl:when test="count($codedTitle/*)>0">
+		<xsl:copy-of select="$codedTitle/*"/>
+			</xsl:when>
 			<xsl:when test="count($titleOverride/*)>0">
 		<xsl:copy-of select="$titleOverride/*"/>
 			</xsl:when>
@@ -574,6 +587,14 @@
 
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+		<xsl:variable name="codedAbstract" as="node()">
+			<xsl:call-template name="addCodedContent">
+				<xsl:with-param name="element" select="'gmd:abstract'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="layermatch" select="$layermatch"/>
+			</xsl:call-template>
+		</xsl:variable>
+
 		<xsl:variable name="abstract" as="node()">
 			<xsl:call-template name="addXlink">
 				<xsl:with-param name="element" select="'gmd:abstract'"/>
@@ -583,6 +604,9 @@
 		</xsl:variable>
 
 		<xsl:choose>
+			<xsl:when test="count($codedAbstract/*)>0">
+		<xsl:copy-of select="$codedAbstract/*"/>
+			</xsl:when>
 			<xsl:when test="count($abstract/*)>0">
 		<xsl:copy-of select="$abstract/*"/>
 			</xsl:when>
@@ -715,36 +739,52 @@
 				</MD_Keywords>
 			</descriptiveKeywords>
 		</xsl:for-each>
-		
-		<xsl:if test="$parentmatch/@group">
+	
+		<xsl:variable name="awGroup">
+			<xsl:choose>
+				<xsl:when test="$layermatch/@group">
+					<xsl:value-of select="$layermatch/@group"/>
+				</xsl:when>
+				<xsl:when test="$parentmatch/@group">
+					<xsl:value-of select="$parentmatch/@group"/>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:if test="normalize-space($awGroup)!=''">
 			<descriptiveKeywords>
 				<MD_Keywords>
 					<keyword>
-						<gco:CharacterString>
-		<xsl:choose>
-			<xsl:when test="$parentmatch/@group='multipleuse'">
-				<xsl:text>Multiple Use Layer</xsl:text>
-			</xsl:when>
-			<xsl:when test="$parentmatch/@group='wavemodel'">
-				<xsl:text>Wave Model Layer</xsl:text>
-			</xsl:when>
-		</xsl:choose>
-						</gco:CharacterString>
+						<!-- <gmx:Anchor xlink:href="http://waveatlas.marine.csiro.au/geonetwork/srv/eng/xml.keyword.get?thesaurus=external.theme.awavea-keywords&id=http://waveatlas.marine.csiro.au/thesaurus/awavea-keywords.rdf#6"> -->
+					  <gco:CharacterString><xsl:value-of select="$awGroup"/></gco:CharacterString>
 					</keyword>
-					<type>
-						<MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
-					</type>
-					<thesaurusName>
-						<CI_Citation>
-							<title>
-								<gco:CharacterString>Wave Energy Atlas Layer Grouping</gco:CharacterString>
-							</title>
-							<alternateTitle gco:nilReason="missing">
-								<gco:CharacterString/>
-							</alternateTitle>
-							<date gco:nilReason="missing"/>
-						</CI_Citation>
-					</thesaurusName>
+          <type>
+        		<MD_KeywordTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</MD_KeywordTypeCode>
+          </type>
+          <thesaurusName>
+              <CI_Citation>
+                  <title>
+                      <CharacterString>Australian Wave Energy Atlas (AWAVEA) Data Group Thesaurus</CharacterString>
+                  </title>
+                  <date>
+                      <CI_Date>
+                          <date>
+                              <gco:Date>2016-02-09</gco:Date>
+                          </date>
+                          <dateType>
+                              <CI_DateTypeCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</CI_DateTypeCode>
+                          </dateType>
+                      </CI_Date>
+                  </date>
+                  <identifier>
+                      <MD_Identifier>
+                          <code>
+                              <gmx:Anchor xlink:href="http://localhost:8080/geonetwork/srv/eng/thesaurus.download?ref=external.theme.awavea-keywords">geonetwork.thesaurus.external.theme.awavea-keywords</gmx:Anchor>
+                          </code>
+                      </MD_Identifier>
+                  </identifier>
+              </CI_Citation>
+          </thesaurusName>
 				</MD_Keywords>
 			</descriptiveKeywords>
 		</xsl:if>
