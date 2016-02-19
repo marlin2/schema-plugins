@@ -39,9 +39,18 @@
 
 			<xsl:variable name="regions">
 				<regions>
-					<xsl:for-each select="//app:DefinedRegions">
-						<xsl:variable name="countSeps" select="string-length(app:defined_region_name) - string-length(translate(app:defined_region_name, '>', ''))"/>
-						<region id="{app:defined_region_id}" name="{app:defined_region_name}" count="{$countSeps}"/>
+					<region id="10000" name="Regional Seas" count="0"/>
+					<region id="10001" name="Coastal Waters (Global)" count="0"/>
+					<region id="10002" name="Coastal Waters (Australia)" count="0"/>
+					<region id="10003" name="States, Territories (Australia)" count="0"/>
+					<region id="10004" name="Marine Features (Australia)" count="0"/>
+					<region id="10005" name="Offshore Islands (Australia)" count="0"/>
+					<region id="10006" name="Continents" count="0"/>
+					<region id="10007" name="Countries" count="0"/>
+					<region id="10008" name="Global / Oceans" count="0"/>
+					<xsl:for-each select="//app:DefinedRegions[normalize-space(app:defined_region_name)!='']">
+						<xsl:variable name="countSeps" select="string-length(app:defined_region_name) - string-length(translate(app:defined_region_name, '|', ''))"/>
+						<region id="{app:defined_region_id}" name="{app:defined_region_name}" count="{$countSeps}" east="{app:east_bounding_coordinate}" west="{app:west_bounding_coordinate}" north="{app:north_bounding_coordinate}" south="{app:south_bounding_coordinate}"/>
 					</xsl:for-each>
 				</regions>
 			</xsl:variable>
@@ -51,11 +60,13 @@
 			<xsl:variable name="hierarchy">
 				<hierarchy>
 				<xsl:for-each-group select="$regions/regions/region" group-by="@count">
+					<xsl:message>Group: <xsl:value-of select="current-grouping-key()"/></xsl:message>
 					<xsl:for-each select="current-group()">
 						<xsl:variable name="starts" select="@name"/>
+						<xsl:message>Processing <xsl:value-of select="$starts"/></xsl:message>
 						<xsl:copy copy-namespaces="no">
 							<xsl:copy-of select="@*"/>
-							<xsl:if test="current-grouping-key() != 2">
+							<xsl:if test="current-grouping-key() != 1">
 								<xsl:for-each select="$regions/regions/region[@count=current-grouping-key()+1 and starts-with(@name,$starts)]">
 									<child id="{@id}" name="{@name}"/>
 								</xsl:for-each>
@@ -70,33 +81,26 @@
 
 			<record uuid="{$uuid}">
 				<replacementGroup id="register_item">
-					<xsl:apply-templates select="gml:featureMember">
+					<xsl:apply-templates select="$hierarchy/hierarchy/region">
 						<xsl:with-param name="uuid" select="$uuid"/>
-						<xsl:with-param name="hierarchy" select="$hierarchy"/>
 					</xsl:apply-templates>
 				</replacementGroup>
 			</record>
 		</records>
 	</xsl:template>
 
-	<xsl:template match="*[@xlink:href]" priority="20">
-		<xsl:variable name="linkid" select="substring-after(@xlink:href,'#')"/>
-		<xsl:apply-templates select="//*[@gml:id=$linkid]"/>
-	</xsl:template>
-
 	<!-- process a record from the MarLIN define_regions table -->
 	<xsl:template name="addDefineRegionsRegisterItem">
 		<xsl:param name="keywordUuid"/>
-		<xsl:param name="hierarchy" as="node()"/>
-		<fragment id="register_item" uuid="{$keywordUuid}" title="{app:defined_region_name}">
+		<fragment id="register_item" uuid="{$keywordUuid}" title="{@name}">
 			<grg:containedItem>
 				<gnreg:RE_RegisterItem>
 					<grg:itemIdentifier>
-						<gco:Integer><xsl:value-of select="app:defined_region_id"/></gco:Integer>
+						<gco:Integer><xsl:value-of select="@id"/></gco:Integer>
 					</grg:itemIdentifier>
 					<grg:name>
 						<gco:CharacterString>
-							<xsl:value-of select="app:defined_region_name"/>
+							<xsl:value-of select="@name"/>
 						</gco:CharacterString>
 					</grg:name>
 					<grg:status>
@@ -107,7 +111,7 @@
 					</grg:dateAccepted>
 					<grg:definition>
 						<gco:CharacterString>
-							<xsl:value-of select="app:defined_region_id"/>
+							<xsl:value-of select="@name"/>
 						</gco:CharacterString>
 					</grg:definition>
 					<grg:fieldOfApplication>
@@ -134,8 +138,7 @@
                <grg:sponsor xlink:href="#CMAR_Submitter"/>
             </grg:RE_AdditionInformation>
           </grg:additionInformation>
-					<xsl:variable name="id" select="app:defined_region_id"/>
-					<xsl:for-each select="$hierarchy/hierarchy/region[@id=$id]/child">
+					<xsl:for-each select="child">
 						<grg:specificationLineage>
               <grg:RE_Reference>
                	<grg:itemIdentifierAtSource>
@@ -157,16 +160,16 @@
 					<gmd:geographicElement>
             <gmd:EX_GeographicBoundingBox>
               <gmd:westBoundLongitude>
-                <gco:Decimal><xsl:value-of select="app:west_bounding_coordinate"/></gco:Decimal>
+                <gco:Decimal><xsl:value-of select="@west"/></gco:Decimal>
               </gmd:westBoundLongitude>
               <gmd:eastBoundLongitude>
-                <gco:Decimal><xsl:value-of select="app:east_bounding_coordinate"/></gco:Decimal>
+                <gco:Decimal><xsl:value-of select="@east"/></gco:Decimal>
               </gmd:eastBoundLongitude>
               <gmd:southBoundLatitude>
-                <gco:Decimal><xsl:value-of select="app:south_bounding_coordinate"/></gco:Decimal>
+                <gco:Decimal><xsl:value-of select="@south"/></gco:Decimal>
               </gmd:southBoundLatitude>
               <gmd:northBoundLatitude>
-                <gco:Decimal><xsl:value-of select="app:north_bounding_coordinate"/></gco:Decimal>
+                <gco:Decimal><xsl:value-of select="@north"/></gco:Decimal>
               </gmd:northBoundLatitude>
             </gmd:EX_GeographicBoundingBox>
           </gmd:geographicElement>	
@@ -178,26 +181,12 @@
 		</fragment>
 	</xsl:template>
 
-	<!-- process the featureMember elements in WFS response -->
-	<xsl:template match="gml:featureMember">
+	<!-- process the region in the hierarchy -->
+	<xsl:template match="region">
 		<xsl:param name="uuid"/>
-			<xsl:param name="hierarchy" as="node()"/>
 		
-		<xsl:apply-templates select="app:DefinedRegions">
-			<xsl:with-param name="uuid" select="$uuid"/>
-			<xsl:with-param name="hierarchy" select="$hierarchy"/>
-		</xsl:apply-templates>
-
-	</xsl:template>
-
-	<!-- process the DefinedRegions in WFS response -->
-	<xsl:template match="app:DefinedRegions">
-			<xsl:param name="uuid"/>
-			<xsl:param name="hierarchy" as="node()"/>
-
 			<xsl:call-template name="addDefineRegionsRegisterItem">
-				<xsl:with-param name="keywordUuid" select="concat($uuid,':concept:',app:defined_region_id)"/>
-				<xsl:with-param name="hierarchy" select="$hierarchy"/>
+				<xsl:with-param name="keywordUuid" select="concat($uuid,':concept:',@id)"/>
 			</xsl:call-template>
 
 	</xsl:template>
