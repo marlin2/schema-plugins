@@ -60,10 +60,10 @@
 			<xsl:variable name="hierarchy">
 				<hierarchy>
 				<xsl:for-each-group select="$regions/regions/region" group-by="@count">
-					<xsl:message>Group: <xsl:value-of select="current-grouping-key()"/></xsl:message>
+					<!-- <xsl:message>Group: <xsl:value-of select="current-grouping-key()"/></xsl:message> -->
 					<xsl:for-each select="current-group()">
 						<xsl:variable name="starts" select="@name"/>
-						<xsl:message>Processing <xsl:value-of select="$starts"/></xsl:message>
+						<!-- <xsl:message>Processing <xsl:value-of select="$starts"/></xsl:message> -->
 						<xsl:copy copy-namespaces="no">
 							<xsl:copy-of select="@*"/>
 							<xsl:if test="current-grouping-key() != 1">
