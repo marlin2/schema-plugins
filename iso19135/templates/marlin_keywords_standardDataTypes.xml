@@ -11,7 +11,7 @@
       <gco:CharacterString>CSIRO Standard Data Types</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
-      <gco:CharacterString>CSIRO Marine and Atmospheric Research list of Standard Data Type keywords</gco:CharacterString>
+      <gco:CharacterString>CSIRO Oceans and Atmosphere list of Standard Data Type keywords</gco:CharacterString>
    </grg:contentSummary>
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
@@ -69,12 +69,12 @@
    <grg:owner>
       <grg:RE_RegisterOwner>
          <grg:name>
-            <gco:CharacterString>CSIRO Marine and Atmospheric Research (CMAR) Data Centre</gco:CharacterString>
+            <gco:CharacterString>CSIRO Oceans and Atmosphere Data Centre</gco:CharacterString>
          </grg:name>
          <grg:contact>
             <gmd:CI_ResponsibleParty id="CMAR_Contact">
                <gmd:organisationName>
-                  <gco:CharacterString>CSIRO Marine and Atmospheric Research (CMAR) Data Centre</gco:CharacterString>
+                  <gco:CharacterString>CSIRO Oceans and Atmosphere Data Centre</gco:CharacterString>
                </gmd:organisationName>
                <gmd:contactInfo>
                   <gmd:CI_Contact>
@@ -113,13 +113,13 @@
                       <gmd:onlineResource>
                         <gmd:CI_OnlineResource>
                           <gmd:linkage>
-                            <gmd:URL>http://www.cmar.csiro.au/</gmd:URL>
+                            <gmd:URL>http://www.csiro.au/en/Research/OandA</gmd:URL>
                           </gmd:linkage>
                           <gmd:protocol>
                             <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
                           </gmd:protocol>
                           <gmd:description>
-                            <gco:CharacterString>Web address for organisation CSIRO Division of Marine and Atmospheric Research - Hobart</gco:CharacterString>
+                            <gco:CharacterString>Web address for organisation CSIRO Oceans and Atmosphere - Hobart</gco:CharacterString>
                           </gmd:description>
                         </gmd:CI_OnlineResource>
                       </gmd:onlineResource>
@@ -136,7 +136,7 @@
    <grg:submitter>
       <grg:RE_SubmittingOrganization>
          <grg:name>
-            <gco:CharacterString>CSIRO Marine and Atmospheric Research (CMAR) Data Centre</gco:CharacterString>
+            <gco:CharacterString>CSIRO Oceans and Atmosphere Data Centre</gco:CharacterString>
          </grg:name>
          <grg:contact xlink:href="#CMAR_Contact"/>
       </grg:RE_SubmittingOrganization>
@@ -172,7 +172,7 @@
    <grg:manager>
       <grg:RE_RegisterManager>
          <grg:name>
-            <gco:CharacterString>CSIRO Marine and Atmospheric Research (CMAR) Data Centre</gco:CharacterString>
+            <gco:CharacterString>CSIRO Oceans and Atmosphere Data Centre</gco:CharacterString>
          </grg:name>
          <grg:contact xlink:href="#CMAR_Contact"/>
       </grg:RE_RegisterManager>
