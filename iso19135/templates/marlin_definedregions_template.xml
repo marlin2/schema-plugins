@@ -8,7 +8,7 @@
                  uuid="065abe6e-c7e7-44ee-a8d3-03c09990b11a"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>CSIRO Oceans and Atmosphere Defined Regions</gco:CharacterString>
+      <gco:CharacterString>CSIRO Defined Regions</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
       <gco:CharacterString>CSIRO Oceans and Atmosphere List of Defined Regions with Bounding Box</gco:CharacterString>
@@ -16,7 +16,7 @@
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
          <gmd:linkage>
-            <gmd:URL>http://www.marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:DefinedRegions</gmd:URL>
+            <gmd:URL>http://marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:definedregions</gmd:URL>
          </gmd:linkage>
       </gmd:CI_OnlineResource>
    </grg:uniformResourceIdentifier>

@@ -39,6 +39,7 @@
 
 			<xsl:variable name="regions">
 				<regions>
+				<!-- Now added to table by Andres so not necessary any more
 					<region id="10000" name="Regional Seas" count="0"/>
 					<region id="10001" name="Coastal Waters (Global)" count="0"/>
 					<region id="10002" name="Coastal Waters (Australia)" count="0"/>
@@ -48,6 +49,7 @@
 					<region id="10006" name="Continents" count="0"/>
 					<region id="10007" name="Countries" count="0"/>
 					<region id="10008" name="Global / Oceans" count="0"/>
+					-->
 					<xsl:for-each select="//app:DefinedRegions[normalize-space(app:defined_region_name)!='']">
 						<xsl:variable name="countSeps" select="string-length(app:defined_region_name) - string-length(translate(app:defined_region_name, '|', ''))"/>
 						<region id="{app:defined_region_id}" name="{app:defined_region_name}" count="{$countSeps}" east="{app:east_bounding_coordinate}" west="{app:west_bounding_coordinate}" north="{app:north_bounding_coordinate}" south="{app:south_bounding_coordinate}"/>
@@ -66,9 +68,9 @@
 						<!-- <xsl:message>Processing <xsl:value-of select="$starts"/></xsl:message> -->
 						<xsl:copy copy-namespaces="no">
 							<xsl:copy-of select="@*"/>
-							<xsl:if test="current-grouping-key() != 1">
-								<xsl:for-each select="$regions/regions/region[@count=current-grouping-key()+1 and starts-with(@name,$starts)]">
-									<child id="{@id}" name="{@name}"/>
+							<xsl:if test="current-grouping-key() != 0">
+								<xsl:for-each select="$regions/regions/region[@count=current-grouping-key()-1 and starts-with($starts,@name)]">
+									<parent id="{@id}" name="{@name}"/>
 								</xsl:for-each>
 							</xsl:if>
 						</xsl:copy>
@@ -77,7 +79,7 @@
 				</hierarchy>
 			</xsl:variable>
 
-			<xsl:variable name="uuid" select="'urn:marlin.csiro.au:DefinedRegions'"/>
+			<xsl:variable name="uuid" select="'urn:marlin.csiro.au:definedregions'"/>
 
 			<record uuid="{$uuid}">
 				<replacementGroup id="register_item">
@@ -138,14 +140,14 @@
                <grg:sponsor xlink:href="#CMAR_Submitter"/>
             </grg:RE_AdditionInformation>
           </grg:additionInformation>
-					<xsl:for-each select="child">
+					<xsl:for-each select="parent">
 						<grg:specificationLineage>
               <grg:RE_Reference>
                	<grg:itemIdentifierAtSource>
                   <gco:CharacterString><xsl:value-of select="@id"/></gco:CharacterString>
                 </grg:itemIdentifierAtSource>
                 <grg:similarity>
-                  <grg:RE_SimilarityToSource codeListValue="specialization"
+                  <grg:RE_SimilarityToSource codeListValue="generalization"
                                              codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#RE_SimilarityToSource"/>
                 </grg:similarity>
               </grg:RE_Reference>
@@ -154,6 +156,9 @@
 					<gnreg:itemIdentifier>
 						<gco:CharacterString><xsl:value-of select="$keywordUuid"/></gco:CharacterString>
 					</gnreg:itemIdentifier>
+					<xsl:if test="@count=0">
+					<gnreg:topConcept/>
+					</xsl:if>
 					<gnreg:itemExtent>
 						<gmd:EX_Extent>
 
