@@ -88,6 +88,12 @@
       select="mcp:imageLink/gmd:URL"/>
     <xsl:variable name="licenseName"
       select="mcp:licenseName/gco:CharacterString"/>
+    <xsl:variable name="attributionConstraint"
+      select="mcp:attributionConstraints/gco:CharacterString"/>
+    <xsl:variable name="derivativeConstraint"
+      select="mcp:derivativeConstraints/gco:CharacterString"/>
+    <xsl:variable name="commercialUseConstraint"
+      select="mcp:commercialUseConstraints/gco:CharacterString"/>
 
 
     <xsl:variable name="parentName" select="name(..)"/>
@@ -102,6 +108,9 @@
             * licenseName: current license name
             * licenseUrl: current license url
             * licenseImageUrl: current license image url
+            * attributionConstraint: current attribution constraint
+            * derivativeConstraint: current derivative constraint
+            * commercialUseConstraint: current commercial use constraint
      -->
     <div data-gn-commons-jurisdiction-selector=""
           data-metadata-id="{$metadataId}"
@@ -110,7 +119,11 @@
           data-namespace="{namespace-uri()}"
           data-license-name="{$licenseName}"
           data-license-url="{$licenseUrl}"
-          data-license-image-url="{$licenseImageUrl}">
+          data-license-image-url="{$licenseImageUrl}"
+          data-attribution-constraint="{$attributionConstraint}"
+          data-derivative-constraint="{$derivativeConstraint}"
+          data-commercial-use-constraint="{$commercialUseConstraint}"
+					>
 		</div>
 
   </xsl:template>
