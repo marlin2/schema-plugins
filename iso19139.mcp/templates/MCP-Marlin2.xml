@@ -106,40 +106,6 @@
       </gmd:extent>
     </mcp:MD_DataIdentification>
   </gmd:identificationInfo>
-  <gmd:distributionInfo>
-    <gmd:MD_Distribution>
-      <gmd:distributionFormat>
-        <gmd:MD_Format>
-          <gmd:name gco:nilReason="missing">
-            <gco:CharacterString/>
-          </gmd:name>
-          <gmd:version gco:nilReason="missing">
-            <gco:CharacterString/>
-          </gmd:version>
-        </gmd:MD_Format>
-      </gmd:distributionFormat>
-      <gmd:transferOptions>
-        <gmd:MD_DigitalTransferOptions>
-          <gmd:onLine>
-            <gmd:CI_OnlineResource>
-              <gmd:linkage>
-                <gmd:URL>http://localhost:8080/geonetwork/srv/en/file.disclaimer?uuid=09e310cd-c2b3-43d4-9245-a2dc35c61544&amp;fname=&amp;access=private</gmd:URL>
-              </gmd:linkage>
-              <gmd:protocol>
-                <gco:CharacterString>WWW:DOWNLOAD-1.0-http--downloaddata</gco:CharacterString>
-              </gmd:protocol>
-              <gmd:name>
-                <gmx:MimeFileType xmlns:gmx="http://www.isotc211.org/2005/gmx" type=""/>
-              </gmd:name>
-              <gmd:description>
-                <gco:CharacterString>Short description of the data</gco:CharacterString>
-              </gmd:description>
-            </gmd:CI_OnlineResource>
-          </gmd:onLine>
-        </gmd:MD_DigitalTransferOptions>
-      </gmd:transferOptions>
-    </gmd:MD_Distribution>
-  </gmd:distributionInfo>
   <gmd:dataQualityInfo>
     <gmd:DQ_DataQuality>
       <gmd:scope>
