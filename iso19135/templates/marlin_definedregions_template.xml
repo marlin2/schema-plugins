@@ -5,18 +5,18 @@
                  xmlns:gnreg="http://geonetwork-opensource.org/register"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 uuid="341ba7be-add4-4540-98d1-7ea23f0b7abe"
+                 uuid="9c1cad8d-24eb-49e3-bf4a-f001cc460e2d"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>CSIRO Global Project List</gco:CharacterString>
+      <gco:CharacterString>CSIRO Defined Regions</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
-      <gco:CharacterString>CSIRO Oceans and Atmosphere List of Global Project codes and descriptions</gco:CharacterString>
+      <gco:CharacterString>CSIRO Oceans and Atmosphere List of Defined Regions with Bounding Box</gco:CharacterString>
    </grg:contentSummary>
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
          <gmd:linkage>
-            <gmd:URL>http://www.marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:globalprojectregister</gmd:URL>
+            <gmd:URL>http://marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:definedregions</gmd:URL>
          </gmd:linkage>
       </gmd:CI_OnlineResource>
    </grg:uniformResourceIdentifier>

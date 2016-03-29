@@ -75,6 +75,57 @@
     </xsl:call-template>
   </xsl:template>
 
+	<!-- Show xlink'd individuals and contacts -->
+	<xsl:template mode="mcp-html" match="mcp:individual">
+		<ul>
+			<li style="list-style-type: none;">
+				<xsl:value-of select="string(descendant::mcp:name/gco:CharacterString)"/>
+				<xsl:if test="normalize-space(descendant::mcp:positionName/gco:CharacterString)">
+					<xsl:value-of select="concat(', ',descendant::mcp:positionName/gco:CharacterString)"/>
+				</xsl:if>
+			</li>
+		</ul>
+	</xsl:template>
+
+	<xsl:template mode="mcp-html" match="mcp:contactInfo">
+		<xsl:param name="organisationName"/>
+
+		<ul>
+			<li style="list-style-type: none;"><xsl:value-of select="$organisationName"/></li>
+			<li style="list-style-type: none;"><xsl:value-of select="descendant::gmd:deliveryPoint/gco:CharacterString"/></li>
+			<li style="list-style-type: none;"><xsl:value-of select="descendant::gmd:city/gco:CharacterString"/></li>
+			<li style="list-style-type: none;"><xsl:value-of select="descendant::gmd:administrativeArea/gco:CharacterString"/></li>
+			<li style="list-style-type: none;"><xsl:value-of select="concat(descendant::gmd:country/gco:CharacterString,' ',descendant::gmd:postalCode/gco:CharacterString)"/></li>
+			<xsl:if test="normalize-space(descendant::gmd:electronicMailAddress/gco:CharacterString)">
+				<li style="list-style-type: none;"><xsl:value-of select="concat('Email: ',descendant::gmd:electronicMailAddress/gco:CharacterString)"/></li>
+			</xsl:if>
+			<xsl:if test="normalize-space(descendant::gmd:voice/gco:CharacterString)">
+				<li style="list-style-type: none;"><xsl:value-of select="concat('Phone: ',descendant::gmd:voice/gco:CharacterString)"/></li>
+			</xsl:if>
+		</ul>
+	</xsl:template>
+
+  <!-- XLINK'd mcp:party 
+	 eg. <mcp:party xlink:href="http://test.cmar.csiro.au:80/geonetwork/srv/eng/subtemplate?uuid=urn:marlin.csiro.au:person:958_person_organisation&amp;process=undefined">
+	       ....
+	     </mcp:party>
+	-->
+  <xsl:template mode="mode-iso19139" match="mcp:party[@xlink:href!='']" priority="33000">
+    <xsl:param name="schema" select="'iso19139.mcp'" required="no"/>
+    <xsl:param name="labels" select="$labels" required="no"/>
+
+		<xsl:variable name="organisationName" select="*/mcp:name/*"/>
+		<fieldset>
+			<legend>Party</legend>
+			<xsl:apply-templates mode="mcp-html" select="*/mcp:individual"/>
+				<!-- NOTE: Show only the first address in the contact info SP Nov. 2015 -->
+			<xsl:apply-templates mode="mcp-html" select="*/mcp:contactInfo[1]">
+				<xsl:with-param name="organisationName" select="$organisationName"/>
+			</xsl:apply-templates>
+		</fieldset>
+  </xsl:template>
+
+
   <!-- Creative Commons License Picker -->
   <xsl:template mode="mode-iso19139" match="mcp:MD_Commons" priority="33000">
     <xsl:param name="schema" select="'iso19139.mcp'" required="no"/>
@@ -88,6 +139,12 @@
       select="mcp:imageLink/gmd:URL"/>
     <xsl:variable name="licenseName"
       select="mcp:licenseName/gco:CharacterString"/>
+    <xsl:variable name="attributionConstraint"
+      select="mcp:attributionConstraints/gco:CharacterString"/>
+    <xsl:variable name="derivativeConstraint"
+      select="mcp:derivativeConstraints/gco:CharacterString"/>
+    <xsl:variable name="commercialUseConstraint"
+      select="mcp:commercialUseConstraints/gco:CharacterString"/>
 
 
     <xsl:variable name="parentName" select="name(..)"/>
@@ -102,6 +159,9 @@
             * licenseName: current license name
             * licenseUrl: current license url
             * licenseImageUrl: current license image url
+            * attributionConstraint: current attribution constraint
+            * derivativeConstraint: current derivative constraint
+            * commercialUseConstraint: current commercial use constraint
      -->
     <div data-gn-commons-jurisdiction-selector=""
           data-metadata-id="{$metadataId}"
@@ -110,7 +170,11 @@
           data-namespace="{namespace-uri()}"
           data-license-name="{$licenseName}"
           data-license-url="{$licenseUrl}"
-          data-license-image-url="{$licenseImageUrl}">
+          data-license-image-url="{$licenseImageUrl}"
+          data-attribution-constraint="{$attributionConstraint}"
+          data-derivative-constraint="{$derivativeConstraint}"
+          data-commercial-use-constraint="{$commercialUseConstraint}"
+					>
 		</div>
 
   </xsl:template>
