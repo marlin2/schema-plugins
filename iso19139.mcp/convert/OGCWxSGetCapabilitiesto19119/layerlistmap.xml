@@ -1512,7 +1512,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 			<gmd:title>Annual Mean Spectral Width</gmd:title>
 			<gmd:abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg</name>
-      <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg</colorbarUrl>
+      <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
    <layer group="Wave Models | Wave Spectral Width | Statistics">
