@@ -131,8 +131,55 @@
           <xsl:apply-templates select="mcp:revisionDate"/>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="mcp:metadataContactInfo"/>
+			<xsl:choose>
+			  <!-- if not metadataContactInfo or no metadataContactInfo[originator]
+				     then add it -->
+				<xsl:when test="not(mcp:metadataContactInfo) or not(mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode='originator'])">
+					<mcp:metadataContactInfo>
+						<mcp:CI_Responsibility>
+							<mcp:role>
+								<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+							</mcp:role>
+							<xsl:call-template name="addCurrentUserAsParty"/>
+						</mcp:CI_Responsibility>
+					</mcp:metadataContactInfo>
+				</xsl:when>
+			  <!-- Add current user as processor, then process everything except the 
+				     existing processor which will be excluded from the output
+						 document - this is to ensure that only the latest user is
+						 added as a processor -->
+				<xsl:otherwise>
+					<mcp:metadataContactInfo>
+						<mcp:CI_Responsibility>
+							<mcp:role>
+								<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+							</mcp:role>
+							<xsl:call-template name="addCurrentUserAsParty"/>
+						</mcp:CI_Responsibility>
+					</mcp:metadataContactInfo>
+      		<xsl:apply-templates select="mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='processor']"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</xsl:copy>
+	</xsl:template>
+
+	<!-- ================================================================= -->
+
+	<xsl:template name="addCurrentUserAsParty">
+							<mcp:party>
+								<mcp:CI_Organisation>
+									<mcp:name>
+										<gco:CharacterString><xsl:value-of select="/root/env/user/details/record/organisation"/></gco:CharacterString>
+									</mcp:name>
+									<mcp:individual>
+										<mcp:CI_Individual>
+									  	<mcp:name>
+												<gco:CharacterString><xsl:value-of select="concat(/root/env/user/details/record/surname,', ',/root/env/user/details/record/name)"/></gco:CharacterString>
+									  	</mcp:name>
+										</mcp:CI_Individual>
+									</mcp:individual>
+								</mcp:CI_Organisation>
+							</mcp:party>
 	</xsl:template>
 
 	<!-- ================================================================= -->
