@@ -132,9 +132,9 @@
         </xsl:otherwise>
       </xsl:choose>
 			<xsl:choose>
-			  <!-- if not metadataContactInfo or no metadataContactInfo[originator]
-				     then add it -->
-				<xsl:when test="not(mcp:metadataContactInfo) or not(mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode='originator'])">
+			  <!-- If new record then add current user as creator and remove all 
+				     processors and originators -->
+				<xsl:when test="/root/env/created">
 					<mcp:metadataContactInfo>
 						<mcp:CI_Responsibility>
 							<mcp:role>
@@ -143,6 +143,7 @@
 							<xsl:call-template name="addCurrentUserAsParty"/>
 						</mcp:CI_Responsibility>
 					</mcp:metadataContactInfo>
+      		<xsl:apply-templates select="mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='processor' and mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='originator']"/>
 				</xsl:when>
 			  <!-- Add current user as processor, then process everything except the 
 				     existing processor which will be excluded from the output
@@ -203,6 +204,23 @@
 				</xsl:choose>
 		 </xsl:copy>
 	</xsl:template>
+
+	<!-- ================================================================= -->
+
+	<!-- 
+	<gmd:identifier xlink:title="Marlin Record Number">
+		<gmd:MD_Identifier>
+		<gmd:code>
+			<gco:CharacterString>Marlin Record Number: 14564</gco:CharacterString>
+		</gmd:code>
+		..
+
+		Must not be copied on create/clone
+	-->
+	<xsl:template match="gmd:identifier[starts-with(gmd:MD_Identifier/gmd:code/gco:CharacterString,'Marlin Record Number') and /root/env/created]" priority="10000"/>
+
+	<xsl:template match="gmd:identifier[starts-with(gmd:MD_Identifier/gmd:code/gco:CharacterString,'Anzlic Identifier') and /root/env/created]" priority="10000"/>
+
 
 	<!-- ================================================================= -->
 	
