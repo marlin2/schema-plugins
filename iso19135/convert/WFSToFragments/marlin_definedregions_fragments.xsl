@@ -79,7 +79,7 @@
 				</hierarchy>
 			</xsl:variable>
 
-			<xsl:variable name="uuid" select="'urn:marlin.csiro.au:definedregions'"/>
+			<xsl:variable name="uuid" select="'urn:aodn.org.au:geographicextents'"/>
 
 			<record uuid="{$uuid}">
 				<replacementGroup id="register_item">

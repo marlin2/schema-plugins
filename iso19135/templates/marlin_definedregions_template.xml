@@ -8,15 +8,15 @@
                  uuid="9c1cad8d-24eb-49e3-bf4a-f001cc460e2d"
                  xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
    <grg:name>
-      <gco:CharacterString>CSIRO Defined Regions</gco:CharacterString>
+      <gco:CharacterString>AODN Geographic Extent Names</gco:CharacterString>
    </grg:name>
    <grg:contentSummary>
-      <gco:CharacterString>CSIRO Oceans and Atmosphere List of Defined Regions with Bounding Box</gco:CharacterString>
+      <gco:CharacterString>Australian Oceans Data Network List of Geographic Extent Names with Bounding Box</gco:CharacterString>
    </grg:contentSummary>
    <grg:uniformResourceIdentifier>
       <gmd:CI_OnlineResource>
          <gmd:linkage>
-            <gmd:URL>http://marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:marlin.csiro.au:definedregions</gmd:URL>
+            <gmd:URL>http://marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:aodn.org.au:geographicextents</gmd:URL>
          </gmd:linkage>
       </gmd:CI_OnlineResource>
    </grg:uniformResourceIdentifier>
