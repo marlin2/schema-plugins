@@ -156,17 +156,27 @@
 			  <!-- Add current user as processor, then process everything except the 
 				     existing processor which will be excluded from the output
 						 document - this is to ensure that only the latest user is
-						 added as a processor -->
+						 added as a processor - note: Marlin administrator is excluded from 
+						 this role -->
 				<xsl:otherwise>
-					<mcp:metadataContactInfo>
-						<mcp:CI_Responsibility>
-							<mcp:role>
-								<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
-							</mcp:role>
-							<xsl:call-template name="addCurrentUserAsParty"/>
-						</mcp:CI_Responsibility>
-					</mcp:metadataContactInfo>
-      		<xsl:apply-templates select="mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='processor']"/>
+					<xsl:choose>
+						<xsl:when test="/root/env/user/details/record/username!='admin'">
+							<!-- marlin admin does not replace a processor, so add it unless username!='admin' -->
+							<mcp:metadataContactInfo>
+								<mcp:CI_Responsibility>
+									<mcp:role>
+										<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+									</mcp:role>
+									<xsl:call-template name="addCurrentUserAsParty"/>
+								</mcp:CI_Responsibility>
+							</mcp:metadataContactInfo>
+      				<xsl:apply-templates select="mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='processor']"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<!-- marlin admin does not replace a processor, so grab all mcp:metadataContactInfo -->
+      				<xsl:apply-templates select="mcp:metadataContactInfo"/>
+						</xsl:otherwise>
+					</xsl:choose>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:copy>
