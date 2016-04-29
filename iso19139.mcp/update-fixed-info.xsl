@@ -148,7 +148,7 @@
          			<mcp:role>
             		<gmd:CI_RoleCode codeList="http://bluenet3.antcrc.utas.edu.au/mcp-1.5-experimental/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
          			</mcp:role>
-         			<mcp:party xlink:href="http://marlin.csiro.au:80/geonetwork/srv/eng/subtemplate?uuid=urn:marlin.csiro.au:person:125_person_organisation"/>
+         			<mcp:party xlink:href="{concat(/root/env/siteURL,'/subtemplate?uuid=urn:marlin.csiro.au:person:125_person_organisation')}"/>
       			</mcp:CI_Responsibility>
 					</mcp:metadataContactInfo>
       		<xsl:apply-templates select="mcp:metadataContactInfo[mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='processor' and mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='originator' and mcp:CI_Responsibility/mcp:role/gmd:CI_RoleCode!='pointOfContact']"/>
