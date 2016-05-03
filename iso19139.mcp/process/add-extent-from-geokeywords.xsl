@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:exslt="http://exslt.org/common" xmlns:geonet="http://www.fao.org/geonetwork"
+  xmlns:geonet="http://www.fao.org/geonetwork"
   xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv"
   xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" 
-  version="2.0" exclude-result-prefixes="exslt">
+  version="2.0">
 
   <xsl:import href="process-utility.xsl"/>
 
@@ -16,7 +16,7 @@
   </xsl:variable>
 
   <!-- GeoNetwork base url -->
-  <xsl:param name="gurl" select="'http://localhost:8080/geonetwork'"/>
+  <xsl:param name="gurl" select="'http://140.79.20.150:8080/geonetwork'"/>
 
   <!-- The UI language. Thesaurus search is made according to GUI language -->
   <xsl:param name="lang" select="'eng'"/>
@@ -127,6 +127,7 @@
       <!-- Keep existing extent and compute
             from keywords -->
 
+
       <!-- replace or add extent. Default mode is add. 
             All extent element are processed and if a geographicElement is found,
             it will be removed. Description, verticalElement and temporalElement 
@@ -182,6 +183,7 @@
   <!-- Loop on all non empty keywords -->
   <xsl:template name="add-extent">
     <xsl:param name="srv" select="false()"/>
+
     <xsl:for-each
       select="gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword[not(gco:CharacterString/@gco:nilReason)]">
 
@@ -201,12 +203,11 @@
     
     <xsl:if test="normalize-space($word)!=''">
       <!-- Get keyword information -->
-      <xsl:variable name="keyword" select="document(concat($serviceUrl, $word))"/>
-      <xsl:variable name="knode" select="exslt:node-set($keyword)"/>
-  
+      <xsl:variable name="keyword" select="document(concat($serviceUrl, encode-for-uri($word)))"/>
+
       <!-- It should be one but if one keyword is found in more
           thant one thesaurus, then each will be processed.-->
-      <xsl:for-each select="$knode/response/descKeys/keyword">
+      <xsl:for-each select="$keyword/response/descKeys/keyword">
         <xsl:if test="geo">
           <xsl:choose>
             <xsl:when test="$srv">
