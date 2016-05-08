@@ -49,7 +49,7 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
-							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
+							<id>geonetwork.thesaurus.register.discipline.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
@@ -66,6 +66,10 @@
 						<thesaurus>
 							<name>CSIRO Defined Regions</name>
 							<id>geonetwork.thesaurus.register.place.urn:marlin.csiro.au:definedregions</id>
+						</thesaurus>
+						<thesaurus>
+							<name>AODN Geographic Extent Names</name>
+							<id>geonetwork.thesaurus.register.place.urn:aodn.org.au:geographicextents</id>
 						</thesaurus>
 						<thesaurus>
 							<name>Australian National Species List</name>
