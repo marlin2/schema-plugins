@@ -55,9 +55,14 @@
 							<name>MCP Collection Methods</name>
 							<id>geonetwork.thesaurus.external.theme.mcp_collection_methods</id>
 						</thesaurus>
+						<!-- This is the old equipment list - to be deleted soon -->
 						<thesaurus>
 							<name>CSIRO Equipment List</name>
 							<id>geonetwork.thesaurus.register.equipment.urn:marlin.csiro.au:keywords:equipment</id>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Equipment List</name>
+							<id>geonetwork.thesaurus.register.equipment.urn:marlin.csiro.au:Equipment</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Geographic Extent Names</name>
