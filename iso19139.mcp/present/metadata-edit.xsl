@@ -49,15 +49,20 @@
 						</thesaurus>
 						<thesaurus>
 							<name>CSIRO Standard Data Types</name>
-							<id>geonetwork.thesaurus.register.dataSource.urn:marlin.csiro.au:keywords:standardDataType</id>
+							<id>geonetwork.thesaurus.register.discipline.urn:marlin.csiro.au:keywords:standardDataType</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Collection Methods</name>
 							<id>geonetwork.thesaurus.external.theme.mcp_collection_methods</id>
 						</thesaurus>
+						<!-- This is the old equipment list - to be deleted soon -->
 						<thesaurus>
 							<name>CSIRO Equipment List</name>
 							<id>geonetwork.thesaurus.register.equipment.urn:marlin.csiro.au:keywords:equipment</id>
+						</thesaurus>
+						<thesaurus>
+							<name>CSIRO Equipment List</name>
+							<id>geonetwork.thesaurus.register.equipment.urn:marlin.csiro.au:Equipment</id>
 						</thesaurus>
 						<thesaurus>
 							<name>MCP Geographic Extent Names</name>
@@ -66,6 +71,10 @@
 						<thesaurus>
 							<name>CSIRO Defined Regions</name>
 							<id>geonetwork.thesaurus.register.place.urn:marlin.csiro.au:definedregions</id>
+						</thesaurus>
+						<thesaurus>
+							<name>AODN Geographic Extent Names</name>
+							<id>geonetwork.thesaurus.register.place.urn:aodn.org.au:geographicextents</id>
 						</thesaurus>
 						<thesaurus>
 							<name>Australian National Species List</name>
