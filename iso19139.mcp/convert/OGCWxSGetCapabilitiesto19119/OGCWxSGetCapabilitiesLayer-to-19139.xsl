@@ -319,6 +319,36 @@
 
 								</xsl:when>
 							</xsl:choose>
+
+							<!-- Put in the WPS GetFeatureInfoUrl if layer or parent requires it -->
+							<xsl:choose>
+								<xsl:when test="$layerelement/getFeatureInfoUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+
+							<!-- Put in the getfeatureinfourl link if layer requires it -->
+								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
+								<xsl:variable name="url" select="$layerelement/getFeatureInfoUrl"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="title" select="'GetFeatureInfoUrl'"/>
+									<xsl:with-param name="url" select="$url"/>
+									<xsl:with-param name="protocol" select="'OGC:WPS'"/>
+								</xsl:call-template>
+
+								</xsl:when>
+								<xsl:when test="$parentmatch/@getFeatureInfoUrl!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+
+							<!-- Put in the getfeatureinfourl link if parent requires it -->
+								<xsl:variable name="datatitle" select="//wms:Layer[wms:Name=$Name]/wms:Title|//Layer[Name=$Name]/Title"/>
+								<xsl:variable name="url" select="$parentmatch/@getFeatureInfoUrl"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="$datatitle"/>
+									<xsl:with-param name="title" select="'GetFeatureInfoUrl'"/>
+									<xsl:with-param name="url" select="$url"/>
+									<xsl:with-param name="protocol" select="'OGC:WPS'"/>
+								</xsl:call-template>
+
+								</xsl:when>
+							</xsl:choose>
 						</MD_DigitalTransferOptions>
 					</transferOptions>
 				</MD_Distribution>
