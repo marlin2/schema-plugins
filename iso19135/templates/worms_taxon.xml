@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grg:RE_Register xmlns:grg="http://www.isotc211.org/2005/grg"
+                 xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 xmlns:gco="http://www.isotc211.org/2005/gco"
+                 xmlns:gnreg="http://geonetwork-opensource.org/register"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 uuid="742dfd28-f4d3-4d70-9414-0d1d8cc41dce"
+                 xsi:schemaLocation="http://www.isotc211.org/2005/grg http://www.isotc211.org/2005/grg/grg.xsd http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gco http://www.isotc211.org/2005/gco/gco.xsd">
+   <grg:name>
+      <gco:CharacterString>WoRMS - World Register of Marine Species</gco:CharacterString>
+   </grg:name>
+   <grg:contentSummary>
+      <gco:CharacterString>WoRMS - World Register of Marine Species</gco:CharacterString>
+   </grg:contentSummary>
+   <grg:uniformResourceIdentifier>
+      <gmd:CI_OnlineResource>
+         <gmd:linkage>
+            <gmd:URL>http://www.marlin.csiro.au/geonetwork/srv/eng/xml.metadata.get?uuid=urn:lsid:marinespecies.org:taxname</gmd:URL>
+         </gmd:linkage>
+      </gmd:CI_OnlineResource>
+   </grg:uniformResourceIdentifier>
+   <grg:operatingLanguage>
+      <grg:RE_Locale id="operating_lang">
+         <grg:name>
+            <gco:CharacterString>English</gco:CharacterString>
+         </grg:name>
+         <grg:language>
+            <gmd:LanguageCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_LanguageCode"
+                              codeListValue="eng"/>
+         </grg:language>
+         <grg:country>
+            <gco:CharacterString>AUS</gco:CharacterString>
+         </grg:country>
+         <grg:characterEncoding>
+            <gmd:MD_CharacterSetCode codeListValue="utf8"
+                                     codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode"/>
+         </grg:characterEncoding>
+      </grg:RE_Locale>
+   </grg:operatingLanguage>
+   <grg:alternativeLanguages>
+      <grg:RE_Locale>
+         <grg:name>
+            <gco:CharacterString>English</gco:CharacterString>
+         </grg:name>
+         <grg:language>
+            <gmd:LanguageCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_LanguageCode"
+                              codeListValue="eng"/>
+         </grg:language>
+         <grg:country>
+            <gco:CharacterString>AUS</gco:CharacterString>
+         </grg:country>
+         <grg:characterEncoding>
+            <gmd:MD_CharacterSetCode codeListValue="utf8"
+                                     codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode"/>
+         </grg:characterEncoding>
+      </grg:RE_Locale>
+   </grg:alternativeLanguages>
+   <grg:version>
+      <grg:RE_Version>
+         <grg:versionNumber>
+            <gco:CharacterString>1.0</gco:CharacterString>
+         </grg:versionNumber>
+         <grg:versionDate>
+            <gco:Date>2013-01-01</gco:Date>
+         </grg:versionDate>
+      </grg:RE_Version>
+   </grg:version>
+   <grg:owner>
+      <grg:RE_RegisterOwner>
+         <grg:name>
+            <gco:CharacterString>WoRMS Editorial Board (2016). World Register of Marine Species. Available from http://www.marinespecies.org at VLIZ. Accessed 2016-07-22. doi:10.14284/170</gco:CharacterString>
+         </grg:name>
+         <grg:contact>
+            <gmd:CI_ResponsibleParty id="WORMS_Contact">
+               <gmd:organisationName>
+                  <gco:CharacterString>World Register of Marine Species</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.marinespecies.org</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                          </gmd:protocol>
+                          <gmd:description>
+                            <gco:CharacterString>Web address for WoRMS</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                  </gmd:CI_Contact>
+               </gmd:contactInfo>
+               <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelist.xml#CI_RoleCode"
+                                   codeListValue="custodian">custodian</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </grg:contact>
+      </grg:RE_RegisterOwner>
+   </grg:owner>
+   <grg:submitter>
+      <grg:RE_SubmittingOrganization>
+         <grg:name>
+            <gco:CharacterString>WoRMS Editorial Board (2016). World Register of Marine Species. Available from http://www.marinespecies.org at VLIZ. Accessed 2016-07-22. doi:10.14284/170</gco:CharacterString>
+         </grg:name>
+         <grg:contact xlink:href="#WORMS_Contact"/>
+      </grg:RE_SubmittingOrganization>
+   </grg:submitter>
+   <grg:containedItemClass>
+      <grg:RE_ItemClass id="Item_Class">
+         <grg:name>
+            <gco:CharacterString>gnreg:RE_RegisterItem</gco:CharacterString>
+         </grg:name>
+         <grg:technicalStandard>
+            <gmd:CI_Citation>
+               <gmd:title>
+                  <gco:CharacterString>GeoNetwork Extension to RE_RegisterItem in ISO19135</gco:CharacterString>
+               </gmd:title>
+               <gmd:date>
+                  <gmd:CI_Date>
+                     <gmd:date>
+                        <gco:Date>2012-04-29</gco:Date>
+                     </gmd:date>
+                     <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
+                                             codeListValue="creation"/>
+                     </gmd:dateType>
+                  </gmd:CI_Date>
+               </gmd:date>
+               <gmd:edition>
+                  <gco:CharacterString>First</gco:CharacterString>
+               </gmd:edition>
+            </gmd:CI_Citation>
+         </grg:technicalStandard>
+      </grg:RE_ItemClass>
+   </grg:containedItemClass>
+   <grg:manager>
+      <grg:RE_RegisterManager>
+         <grg:name>
+            <gco:CharacterString>WoRMS Editorial Board (2016). World Register of Marine Species. Available from http://www.marinespecies.org at VLIZ. Accessed 2016-07-22. doi:10.14284/170</gco:CharacterString>
+         </grg:name>
+         <grg:contact xlink:href="#WORMS_Contact"/>
+      </grg:RE_RegisterManager>
+   </grg:manager>
+   <grg:containedItem id="register_item"/>
+</grg:RE_Register>
