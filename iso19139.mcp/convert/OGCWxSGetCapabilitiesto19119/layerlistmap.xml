@@ -6,6 +6,7 @@
               uuid="d0661474-7984-4532-8173-03a335cfcf53"
 							data="http://waveatlas.marine.csiro.au/data/jthm/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jthm_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Averages"
               title="Direction of Maximum Directionally Resolved Wave Power Parent Record">
@@ -32,6 +33,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="6b845709-7e74-4a1e-94fd-0ff46fd5fd5f"
 							data="http://waveatlas.marine.csiro.au/data/jm/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Maximum Directionally Resolved Wave Power | Averages"
               title="Maximum Directionally Resolved Wave Power Parent Record">
@@ -62,6 +64,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="48afb695-c762-4864-ad28-819a2ab40e5e"
 							data="http://waveatlas.marine.csiro.au/data/jdc/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Directionality Coefficient | Averages"
               title="Directionality Coefficient Parent Record">
@@ -89,6 +92,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <parent prefix="awavea-interim:ww3.aus_4m.nu"
               uuid="c31b0a34-486f-4270-98c8-b4148fff7fd7"
 							data="http://waveatlas.marine.csiro.au/data/nu/"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Spectral Width | Averages"
               title="Spectral Width Parent Record">
@@ -117,6 +121,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="5d866e4e-67b8-47ab-8a2e-4a44b7feaa89"
 							data="http://waveatlas.marine.csiro.au/data/te/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Period | Averages"
               title="Mean Wave Energy Period Parent Record">
@@ -143,6 +148,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="86a0f80a-a56c-45f8-9d83-1b9fc723aee3"
 							data="http://waveatlas.marine.csiro.au/data/CgE/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Energy Flux | Averages"
               title="Mean Wave Energy Flux Parent Record">
@@ -169,6 +175,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="cb26e551-272c-4814-aa28-27ed6624378d"
 							data="http://waveatlas.marine.csiro.au/data/dir/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.dir_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Direction | Averages"
               title="Mean Wave Direction Parent Record">
@@ -195,6 +202,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
               uuid="d95000fd-c4f7-4a23-bca6-1f93374f163d"
 							data="http://waveatlas.marine.csiro.au/data/hs/"
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg.png"
+							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
 							group="Wave Models | Wave Height | Averages"
               title="Mean Significant Wave Height Parent Record">
