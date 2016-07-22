@@ -81,8 +81,8 @@
 							<id>geonetwork.thesaurus.external.taxon.nsl_species_all</id>
 						</thesaurus>
 						<thesaurus>
-							<name>World Register of Marine Species - Algae</name>
-							<id>geonetwork.thesaurus.external.taxon.worms_algae_au</id>
+							<name>World Register of Marine Species</name>
+							<id>geonetwork.thesaurus.register.taxon.urn:lsid:marinespecies.org:taxname</id>
 						</thesaurus>
 					</thesauri>
 	</xsl:variable>
