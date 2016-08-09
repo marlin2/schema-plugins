@@ -665,6 +665,20 @@
 			</xsl:otherwise>
 		</xsl:choose>
 
+    <!-- pointOfContact -->
+    
+		<xsl:variable name="pointOfContact" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:pointOfContact'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:if test="count($pointOfContact/*)>0">
+			<xsl:copy-of select="$pointOfContact/*"/>
+		</xsl:if>
+
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		<!-- resMaint -->
