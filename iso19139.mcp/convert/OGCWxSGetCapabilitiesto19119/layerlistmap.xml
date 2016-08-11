@@ -225,7 +225,7 @@ Significant wave height, Hs, represents the average height of the upper third of
 For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
 				 </gmd:abstract>
       </parent>
-   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="Multiple Use | National" checked="ok">
+   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -233,7 +233,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="Multiple Use | National" checked="ok">
+   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -241,7 +241,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="Multiple Use | South Australia" checked="ok">
+   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="Multiple Use | Jurisdictions | South Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -249,7 +249,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="Multiple Use | Victoria" checked="ok">
+   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="Multiple Use | Jurisdictions | Victoria" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -258,7 +258,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" checked="ok" group="Multiple Use | National">
+   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" checked="ok" group="Multiple Use | Jurisdictions | National">
       <xpathid id="#topicCategory1">gmd:topicCategory</xpathid>
       <xpathid id="#topicCategory2">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
@@ -267,14 +267,14 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="Multiple Use | Victoria" checked="ok">
+   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="Multiple Use | Jurisdictions | Victoria" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="Multiple Use | Western Australia" checked="ok">
+   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="Multiple Use | Jurisdictions | Western Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -283,7 +283,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="Multiple Use | National" checked="ok">
+   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -292,7 +292,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="Multiple Use | National" checked="ok">
+   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -301,7 +301,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="Multiple Use | New South Wales" checked="ok">
+   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="Multiple Use | Jurisdictions | New South Wales" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -309,7 +309,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="Multiple Use | National" checked="ok">
+   <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="Multiple Use | Port Infrastructure" checked="ok">
       <xpathid id="#title">gmd:title</xpathid>
       <xpathid id="#abstract">gmd:abstract</xpathid>
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
@@ -320,7 +320,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="Multiple Use | Western Australia" checked="ok">
+   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="Multiple Use | Jurisdictions | Western Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -329,7 +329,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="Multiple Use | National" checked="ok">
+   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
