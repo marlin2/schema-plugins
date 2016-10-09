@@ -8,7 +8,7 @@
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jthm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Averages"
+							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Direction of Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -35,7 +35,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Maximum Directionally Resolved Wave Power | Averages"
+							group="Wave Models | Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -66,7 +66,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Directionality Coefficient | Averages"
+							group="Wave Models | Wave Directionality Coefficient | Monthly Means"
               title="Directionality Coefficient Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -94,7 +94,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							data="http://waveatlas.marine.csiro.au/data/nu/"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Spectral Width | Averages"
+							group="Wave Models | Wave Spectral Width | Monthly Means"
               title="Spectral Width Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -123,7 +123,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Period | Averages"
+							group="Wave Models | Wave Period | Monthly Means"
               title="Mean Wave Energy Period Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -150,7 +150,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Energy Flux | Averages"
+							group="Wave Models | Wave Energy Flux | Monthly Means"
               title="Mean Wave Energy Flux Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -177,7 +177,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.dir_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Direction | Averages"
+							group="Wave Models | Wave Direction | Monthly Means"
               title="Mean Wave Direction Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -204,7 +204,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Height | Averages"
+							group="Wave Models | Wave Height | Monthly Means"
               title="Mean Significant Wave Height Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -643,7 +643,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    </parents>
-   <layer>
+   <layer group="Wave Models | Wave Energy Flux | Statistics">
 			<gmd:title>Annual Mean Wave Energy Flux</gmd:title>
 			<gmd:abstract>The annual mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
@@ -770,7 +770,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg_mv.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Direction | Statistics">
 			<gmd:title>Annual Mean Wave Direction</gmd:title>
 			<gmd:abstract>The annual mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg</name>
@@ -848,7 +848,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Height | Statistics">
 			<gmd:title>Annual Mean Significant Wave Height</gmd:title>
 			<gmd:abstract>The annual mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg</name>
@@ -975,7 +975,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg_mv.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Period | Statistics">
 			<gmd:title>Annual Mean Wave Energy Period</gmd:title>
 			<gmd:abstract>The annual mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg</name>
@@ -1694,7 +1694,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:amrsma-fishery:sess_cgs</name>
       <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
    </layer>
-   <layer>
+   <layer  group="Wave Models | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Annual Mean Directionality Coefficient</gmd:title>
 			<gmd:abstract>The annual mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg</name>
@@ -1821,7 +1821,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg_mv.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Spectral Width | Statistics">
 			<gmd:title>Annual Mean Spectral Width</gmd:title>
 			<gmd:abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg</name>
@@ -1877,7 +1877,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg_mv.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer>
+   <layer  group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The annual mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg</name>
@@ -2004,7 +2004,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg_mv.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
       <gmd:abstract>The annual mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jthm_avg</name>
