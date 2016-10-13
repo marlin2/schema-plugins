@@ -8,7 +8,7 @@
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jthm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Averages"
+							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Direction of Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -35,7 +35,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Maximum Directionally Resolved Wave Power | Averages"
+							group="Wave Models | Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -66,7 +66,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Directionality Coefficient | Averages"
+							group="Wave Models | Wave Directionality Coefficient | Monthly Means"
               title="Directionality Coefficient Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -94,7 +94,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							data="http://waveatlas.marine.csiro.au/data/nu/"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Spectral Width | Averages"
+							group="Wave Models | Wave Spectral Width | Monthly Means"
               title="Spectral Width Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -123,7 +123,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Period | Averages"
+							group="Wave Models | Wave Period | Monthly Means"
               title="Mean Wave Energy Period Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -150,7 +150,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Energy Flux | Averages"
+							group="Wave Models | Wave Energy Flux | Monthly Means"
               title="Mean Wave Energy Flux Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -177,7 +177,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.dir_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Direction | Averages"
+							group="Wave Models | Wave Direction | Monthly Means"
               title="Mean Wave Direction Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -204,7 +204,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Height | Averages"
+							group="Wave Models | Wave Height | Monthly Means"
               title="Mean Significant Wave Height Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -225,7 +225,7 @@ Significant wave height, Hs, represents the average height of the upper third of
 For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. See DAP entry http://dx.doi.org/10.4225/08/523168703DCC5 for 1979-2010 data. Please note that the licensee/user is required to acknowledge the source of this data on the following terms: 'Source: Bureau of Meteorology and CSIRO © 2013'. Apart from dealings under the Copyright Act 1968, the licensee shall not reproduce (electronically or otherwise), modify or supply (by sale or otherwise) this data without written permission. Please contact us for more information.
 				 </gmd:abstract>
       </parent>
-   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="Multiple Use | National" checked="ok">
+   <parent uuid="b86c3aab-ec86-4671-95b6-3975156438bd" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -233,7 +233,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="Multiple Use | National" checked="ok">
+   <parent uuid="dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -241,7 +241,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="Multiple Use | South Australia" checked="ok">
+   <parent uuid="a03162fe-44bb-4e02-adc5-445920383ba7" group="Multiple Use | Jurisdictions | South Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -249,7 +249,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="Multiple Use | Victoria" checked="ok">
+   <parent uuid="126a17c7-d415-45b9-854b-c2e488736a5c" group="Multiple Use | Jurisdictions | Victoria" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -258,7 +258,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" checked="ok" group="Multiple Use | National">
+   <parent uuid="7f6dfe0b-c48a-4b7c-be84-c7859e224f5d" checked="ok" group="Multiple Use | Jurisdictions | National">
       <xpathid id="#topicCategory1">gmd:topicCategory</xpathid>
       <xpathid id="#topicCategory2">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
@@ -267,14 +267,14 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="Multiple Use | Victoria" checked="ok">
+   <parent uuid="fbca469f-0863-4b56-b47d-42cff75afe54" group="Multiple Use | Jurisdictions | Victoria" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
       <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="Multiple Use | Western Australia" checked="ok">
+   <parent uuid="ffbdb845-9b10-4c0c-a28e-3d76c6dd767f" group="Multiple Use | Jurisdictions | Western Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -283,7 +283,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="Multiple Use | National" checked="ok">
+   <parent uuid="63bb814b-be74-4ed6-bc67-0196dea8567c" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -292,7 +292,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="Multiple Use | National" checked="ok">
+   <parent uuid="13e01c59-78e9-4ce2-acf7-3e1bf541aecb" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -301,7 +301,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="Multiple Use | New South Wales" checked="ok">
+   <parent uuid="85e227ce-9826-41f0-bfa4-5c563e9146d9" buggered="No proper resourceContactInfo - how about going to the site and getting the contact info off there? NSW wrecks" group="Multiple Use | Jurisdictions | New South Wales" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -309,7 +309,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="Multiple Use | National" checked="ok">
+   <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="Multiple Use | Port Infrastructure" checked="ok">
       <xpathid id="#title">gmd:title</xpathid>
       <xpathid id="#abstract">gmd:abstract</xpathid>
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
@@ -320,7 +320,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="Multiple Use | Western Australia" checked="ok">
+   <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="Multiple Use | Jurisdictions | Western Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -329,7 +329,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="Multiple Use | National" checked="ok">
+   <parent uuid="fd81afed-3e24-415d-a5a9-ca6ad3ba841a" buggered="No attribution statement - this is a GA record you just be able to find out how they want it attributed - ring them" group="Multiple Use | Jurisdictions | National" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -337,8 +337,313 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
+   <parent uuid="aa53a4df-7fe6-46d1-93b7-2d3732f4883e" group="Multiple Use | Fisheries Effort" checked="ok">
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceMaintenance">gmd:resourceMaintenance</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:extent">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+<!--
+   <parent uuid="cables" group="Multiple Use | Cables" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#credit">gmd:credit</xpathid>
+      <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+      <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+   </parent>
+   <parent uuid="boatramps" group="Multiple Use | Boat Ramps" checked="ok">
+      <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#credit">gmd:credit</xpathid>
+      <xpathid id="#resourceConstraints">gmd:resourceConstraints</xpathid>
+      <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
+      <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
+   </parent>
+-->
+   <parent uuid="b8f48127-495e-42e6-8d53-db3c56ee3a7f" group="Multiple Use | Sea Surface Temperature" checked="ok">
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:resourceFormat">gmd:resourceFormat</xpathid>
+      <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:extent">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:metadataConstraints">gmd:metadataConstraints</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="17249677-2be0-43a0-a9b5-da01e0be3fa7" group="Multiple Use | Seismic Surveys" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceMaintenance">gmd:resourceMaintenance</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="b8135966-33c6-4a1c-bcbc-d797c2a1155f" group="Multiple Use | Shipping" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceFormat">gmd:resourceFormat</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="9fb32adf-f8e8-4b38-8e23-1c6e847b6a91" group="Multiple Use | Weather" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords[1]">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceFormat">gmd:resourceFormat</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="c8b09cef-c645-48aa-8658-22ece782365f" group="Multiple Use | Human Population" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceFormat">gmd:resourceFormat</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="2ff40822-a773-4788-aedd-232639142cde" group="Multiple Use | Pollution" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="c92fca4d-3d98-40ca-a7e3-e952aed53bfc" group="Multiple Use | Petroleum" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="e6f6db01-9910-49a2-b50e-b3dcb5a6dbf2" group="Multiple Use | Petroleum" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="2eddbe26-0276-4468-a210-0c00ada8bf39" group="Multiple Use | Petroleum" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:*//gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- NSW Oyster Leases -->
+   <parent uuid="a85d4633-e66e-48f0-b5c6-26756a9af9fe" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- NSW Aquaculture -->
+   <parent uuid="365b763c-c504-44b2-9a12-c455f1a0661a" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- VIC Aquaculture -->
+   <parent uuid="8ed3b949-a3e3-4de4-a308-d4a31088a211" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- NT Aquaculture -->
+   <parent uuid="ff99cc59-5f93-46a5-b1fe-a97a1548eff8" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- SA Aquaculture -->
+   <parent uuid="67c89c46-f0dc-418e-b3c8-63c9bdf14593" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <!-- TAS Aquaculture -->
+   <parent uuid="0b3886f8-daa3-40aa-97fe-78eba9e2eb6c" group="Multiple Use | Aquaculture" checked="ok">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[3]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
    </parents>
-   <layer>
+   <layer group="Wave Models | Wave Energy Flux | Statistics">
 			<gmd:title>Annual Mean Wave Energy Flux</gmd:title>
 			<gmd:abstract>The annual mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
@@ -465,7 +770,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg_mv.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Direction | Statistics">
 			<gmd:title>Annual Mean Wave Direction</gmd:title>
 			<gmd:abstract>The annual mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg</name>
@@ -543,7 +848,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Height | Statistics">
 			<gmd:title>Annual Mean Significant Wave Height</gmd:title>
 			<gmd:abstract>The annual mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg</name>
@@ -670,7 +975,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg_mv.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Period | Statistics">
 			<gmd:title>Annual Mean Wave Energy Period</gmd:title>
 			<gmd:abstract>The annual mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg</name>
@@ -1389,7 +1694,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:amrsma-fishery:sess_cgs</name>
       <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
    </layer>
-   <layer>
+   <layer  group="Wave Models | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Annual Mean Directionality Coefficient</gmd:title>
 			<gmd:abstract>The annual mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg</name>
@@ -1516,7 +1821,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg_mv.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Wave Spectral Width | Statistics">
 			<gmd:title>Annual Mean Spectral Width</gmd:title>
 			<gmd:abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg</name>
@@ -1572,7 +1877,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg_mv.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer>
+   <layer  group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The annual mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg</name>
@@ -1699,7 +2004,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg_mv.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer>
+   <layer group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
       <gmd:abstract>The annual mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jthm_avg</name>
@@ -1776,5 +2081,420 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <gmd:abstract>The December mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using December data from December 1980 to December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jthm_avg.12</name>
       <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
+   </layer>
+   <layer>
+      <gmd:title>Population Density 1991-1995</gmd:title>
+      <name>proxy:1996_enumeration_proj</name>
+      <parent>c8b09cef-c645-48aa-8658-22ece782365f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Population Density 1996-2000</gmd:title>
+      <name>proxy:1996_enumeration_proj</name>
+      <parent>c8b09cef-c645-48aa-8658-22ece782365f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Population Density 2001-2005</gmd:title>
+      <name>proxy:2001_enumeration_proj</name>
+      <parent>c8b09cef-c645-48aa-8658-22ece782365f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Population Density 2006-2010</gmd:title>
+      <name>proxy:2006_enumeration_proj</name>
+      <parent>c8b09cef-c645-48aa-8658-22ece782365f</parent>
+   </layer>
+   <layer>
+      <gmd:title>AMSA Oil Spill Events 1970-2015</gmd:title>
+      <name>proxy:oil_spills_sum</name>
+      <parent>2ff40822-a773-4788-aedd-232639142cde</parent>
+   </layer>
+<!--
+   <layer>
+      <gmd:title>AMSA Spills Other Substances</gmd:title>
+      <name>proxy:AMSA-spills-OtherSubstances</name>
+      <parent>pollution</parent>
+   </layer>
+   <layer>
+      <gmd:title>AMSA Oil Spills 2009-2013</gmd:title>
+      <name>proxy:AMSA-spills-Oil-2009-2013</name>
+      <parent>pollution</parent>
+   </layer>
+   <layer>
+      <gmd:title>AMSA Spills Harmful Substances 2009-2013</gmd:title>
+      <name>proxy:AMSA-spills_HarmfulSubstances-2009-2013</name>
+      <parent>pollution</parent>
+   </layer>
+   <layer>
+      <gmd:title>AMSA Spills Chemicals 2009-2013</gmd:title>
+      <name>proxy:AMSA-spills-Chemical-2009-2013</name>
+      <parent>pollution</parent>
+   </layer>
+   <layer>
+      <gmd:title>AMSA Spills Garbage 2009-2013</gmd:title>
+      <name>proxy:AMSA-spills-Garbage-2009-2013</name>
+      <parent>pollution</parent>
+   </layer>
+-->
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 1999</gmd:title>
+      <name>proxy:ausrep_shipping_1999</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2000</gmd:title>
+      <name>proxy:ausrep_shipping_2000</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2001</gmd:title>
+      <name>proxy:ausrep_shipping_2001</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2002</gmd:title>
+      <name>proxy:ausrep_shipping_2002</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2003</gmd:title>
+      <name>proxy:ausrep_shipping_2003</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2004</gmd:title>
+      <name>proxy:ausrep_shipping_2004</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2005</gmd:title>
+      <name>proxy:ausrep_shipping_2005</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2006</gmd:title>
+      <name>proxy:ausrep_shipping_2006</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2007</gmd:title>
+      <name>proxy:ausrep_shipping_2007</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2008</gmd:title>
+      <name>proxy:ausrep_shipping_2008</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2009</gmd:title>
+      <name>proxy:ausrep_shipping_2009</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2010</gmd:title>
+      <name>proxy:ausrep_shipping_2010</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2011</gmd:title>
+      <name>proxy:ausrep_shipping_2011</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2012</gmd:title>
+      <name>proxy:ausrep_shipping_2012</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2013</gmd:title>
+      <name>proxy:ausrep_shipping_2013</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2014</gmd:title>
+      <name>proxy:ausrep_shipping_2014</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2015</gmd:title>
+      <name>proxy:ausrep_shipping_2015</name>
+      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Long Term Trend SE - 1993-2013</gmd:title>
+      <name>proxy:ALTTSE_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Long Term Trend - 1993-2013</gmd:title>
+      <name>proxy:ALTT_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Trend RMSE - 1993-2013</gmd:title>
+      <name>proxy:trendRMSE_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Annual RMSE - 1993-2013</gmd:title>
+      <name>proxy:annualRMSE_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Efold - 1993-2013</gmd:title>
+      <name>proxy:efold_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>Sea Surface Temperature Residual SD - 1993-2013</gmd:title>
+      <name>proxy:residSD_31July2014</name>
+      <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1961 to 1965</gmd:title>
+      <name>proxy:seismic2d_sum_1961to1965</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1966 to 1970</gmd:title>
+      <name>proxy:seismic2d_sum_1966to1970</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1971 to 1975</gmd:title>
+      <name>proxy:seismic2d_sum_1970to1975</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1976 to 1980</gmd:title>
+      <name>proxy:seismic2d_sum_1976to1980</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1981 to 1985</gmd:title>
+      <name>proxy:seismic2d_sum_1981to1985</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1986 to 1990</gmd:title>
+      <name>proxy:seismic2d_sum_1986to1990</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1991 to 1995</gmd:title>
+      <name>proxy:seismic2d_sum_1991to1995</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 1996 to 2000</gmd:title>
+      <name>proxy:seismic2d_sum_1996to2000</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 2001 to 2005</gmd:title>
+      <name>proxy:seismic2d_sum_2001to2005</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 2006 to 2010</gmd:title>
+      <name>proxy:seismic2d_sum_2006to2010</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>2D Seismic Surveys 2011 to 2015</gmd:title>
+      <name>proxy:seismic2d_sum_2011to2015</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 1976 to 1980</gmd:title>
+      <name>proxy:seismic3d_sum_1976to1980</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 1981 to 1985</gmd:title>
+      <name>proxy:seismic3d_sum_1981to1985</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 1986 to 1990</gmd:title>
+      <name>proxy:seismic3d_sum_1986to1990</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 1991 to 1995</gmd:title>
+      <name>proxy:seismic3d_sum_1991to1995</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 1996 to 2000</gmd:title>
+      <name>proxy:seismic3d_sum_1996to2000</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 2001 to 2005</gmd:title>
+      <name>proxy:seismic3d_sum_2001to2005</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 2006 to 2010</gmd:title>
+      <name>proxy:seismic3d_sum_2006to2010</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>3D Seismic Surveys 2011 to 2015</gmd:title>
+      <name>proxy:seismic3d_sum_2011to2015</name>
+      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
+   </layer>
+   <layer>
+      <gmd:title>Petroleum and Gas Production Facilities 2016</gmd:title>
+      <!-- TODO: CHECK THIS LAYER! -->
+      <name>proxy:Data_All_Petroleum_Facilities_2013_GA-marine</name>
+      <parent>2eddbe26-0276-4468-a210-0c00ada8bf39</parent>
+   </layer>
+   <layer>
+      <gmd:title>Petroleum Offshore Acerage Releases 2013</gmd:title>
+      <name>proxy:Data_All_Petroleum_Releases_2013_GA</name>
+      <parent>c1065fa1-f33b-4c1c-b910-8d791c19db8c</parent>
+   </layer>
+   <layer>
+      <gmd:title>NOPTA Petroleum Titles 2013</gmd:title>
+      <name>proxy:Data_All_Petroleum_Titles_2013_NOPTA</name>
+      <parent>c92fca4d-3d98-40ca-a7e3-e952aed53bfc</parent>
+   </layer>
+   <layer>
+      <gmd:title>NOPTA Petroleum Wells 2013</gmd:title>
+      <name>proxy:Data_All_Petroleum_Wells_2013_NOPTA</name>
+      <parent>e6f6db01-9910-49a2-b50e-b3dcb5a6dbf2</parent>
+   </layer>
+   <layer>
+      <gmd:title>NSW Aquaculture Leases</gmd:title>
+      <name>proxy:Data_NSW_Aquaculture</name>
+      <parent>365b763c-c504-44b2-9a12-c455f1a0661a</parent>
+   </layer>
+   <layer>
+      <gmd:title>NSW Aquaculture Oyster Leases</gmd:title>
+      <name>proxy:Data_NSW_Aquaculture_Oysters</name>
+      <parent>a85d4633-e66e-48f0-b5c6-26756a9af9fe</parent>
+   </layer>
+   <layer>
+      <gmd:title>SA Aquaculture Leases</gmd:title>
+      <name>proxy:Data_SA_Aquaculture_Leases</name>
+      <parent>67c89c46-f0dc-418e-b3c8-63c9bdf14593</parent>
+   </layer>
+   <layer>
+      <gmd:title>SA Aquaculture Licenses</gmd:title>
+      <name>proxy:Data_SA_Aquaculture_Licenses</name>
+      <parent>67c89c46-f0dc-418e-b3c8-63c9bdf14593</parent>
+   </layer>
+   <layer>
+      <gmd:title>Tas Aquaculture Areas</gmd:title>
+      <name>proxy:Data_Tas_Aquaculture_polygon</name>
+      <parent>0b3886f8-daa3-40aa-97fe-78eba9e2eb6c</parent>
+   </layer>
+   <layer>
+      <gmd:title>Tas Aquaculture Sites</gmd:title>
+      <name>proxy:Data_Tas_Aquaculture_point</name>
+      <parent>0b3886f8-daa3-40aa-97fe-78eba9e2eb6c</parent>
+   </layer>
+   <layer>
+      <gmd:title>NT Aquaculture Leases</gmd:title>
+      <name>proxy:Data-NT-Aquaculture-Leases</name>
+      <parent>ff99cc59-5f93-46a5-b1fe-a97a1548eff8</parent>
+   </layer>
+   <layer>
+      <gmd:title>VIC Aquaculture Leases</gmd:title>
+      <name>proxy:Data-VIC-Aquaculture-leases</name>
+      <parent>8ed3b949-a3e3-4de4-a308-d4a31088a211"</parent>
+   </layer>
+<!--
+   <layer>
+      <gmd:title>NSW Boat Ramps</gmd:title>
+      <name>proxy:NSW-boat-ramps</name>
+      <parent>boatramps</parent>
+   </layer>
+   <layer>
+      <gmd:title>North QLD Boat Ramps</gmd:title>
+      <name>proxy:Data-North-QLD-boat-ramps</name>
+      <parent>boatramps</parent>
+   </layer>
+   <layer>
+      <gmd:title>VIC Boat Ramps</gmd:title>
+      <name>proxy:DAta-Vic-BoatRamps</name>
+      <parent>boatramps</parent>
+   </layer>
+   <layer>
+      <gmd:title>QLD Gold Coast Boat Ramps</gmd:title>
+      <name>proxy:Data_Qld_GoldCoast_BoatRamps_epsg4326</name>
+      <parent>boatramps</parent>
+   </layer>
+   <layer>
+      <gmd:title>WA Boat Ramps</gmd:title>
+      <name>proxy:Data_WA_BoatRamps</name>
+      <parent>boatramps</parent>
+   </layer>
+   <layer>
+      <gmd:title>Cables Active</gmd:title>
+      <name>proxy:cables_active_hydro_proj</name>
+      <parent>cables</parent>
+   </layer>
+   <layer>
+      <gmd:title>Cables Decommissioned</gmd:title>
+      <name>proxy:cables_deco_hydro_proj</name>
+      <parent>cables</parent>
+   </layer>
+-->
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Auto Long Line 2011 - 2014</gmd:title>
+      <name>proxy:csq_al_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Demersal Long Line 2011 - 2014</gmd:title>
+      <name>proxy:csq_bl_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Danish Seine 2011 - 2014</gmd:title>
+      <name>proxy:csq_ds_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Hand Line 2011 - 2014</gmd:title>
+      <name>proxy:csq_hl_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Pelagic Long Line 2011 - 2014</gmd:title>
+      <name>proxy:csq_llp_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Pole 2011 - 2014</gmd:title>
+      <name>proxy:csq_pl_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Purse Seine 2011 - 2014</gmd:title>
+      <name>proxy:csq_ps_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Trotline 2011 - 2014</gmd:title>
+      <name>proxy:csq_tl_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Trolling 2011 - 2014</gmd:title>
+      <name>proxy:csq_tr_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>AFMA Fisheries effort: Trawling 2011 - 2014</gmd:title>
+      <name>proxy:csq_tw_20112014</name>
+      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
+   </layer>
+   <layer>
+      <gmd:title>Cyclone Summaries 1900-2015</gmd:title>
+      <name>proxy:cyclones_sum_1900to2015</name>
+      <parent>9fb32adf-f8e8-4b38-8e23-1c6e847b6a91</parent>
    </layer>
 </layers>

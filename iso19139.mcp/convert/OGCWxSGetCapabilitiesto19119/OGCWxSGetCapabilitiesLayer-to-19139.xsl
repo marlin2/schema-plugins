@@ -117,6 +117,20 @@
 
 			<!-- mdHrLvName -->
 
+      <!-- contact -->
+		<xsl:variable name="contactInfo" as="node()">
+			<xsl:call-template name="addXlink">
+				<xsl:with-param name="element" select="'gmd:contact'"/>
+				<xsl:with-param name="parentmatch" select="$parentmatch"/>
+				<xsl:with-param name="metadatasubtemplateurl" select="$metadatasubtemplateurl"/>
+			</xsl:call-template>
+		</xsl:variable>
+
+		<xsl:if test="count($contactInfo/*)>0">
+			<xsl:copy-of select="$contactInfo/*"/>
+		</xsl:if>
+
+
 			<!--
 				- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 			-->
