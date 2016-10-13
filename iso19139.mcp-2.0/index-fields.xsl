@@ -144,9 +144,11 @@
 
 	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+	<!--
 	<xsl:template mode="index" match="gmd:geographicElement/gmd:EX_BoundingPolygon/gmd:polygon">
 		<xsl:variable name="gml" select="saxon:serialize(., 'serialisation-output-format')"/>
 		<Field name="geoPolygon" string="{java:gmlToWkt($gml)}" store="true" index="false"/>
 	</xsl:template>
+  -->
 
 </xsl:stylesheet>
