@@ -2430,6 +2430,11 @@
 			<xsl:with-param name="edit"   select="$edit"/>
 		</xsl:apply-templates>
 
+		<xsl:apply-templates mode="elementEP" select="gmd:supplementalInformation|geonet:child[string(@name)='supplementalInformation']">
+			<xsl:with-param name="schema" select="$schema"/>
+			<xsl:with-param name="edit"   select="$edit"/>
+		</xsl:apply-templates>
+
 		<xsl:apply-templates mode="elementEP" select="gmd:purpose|geonet:child[string(@name)='purpose']">
 			<xsl:with-param name="schema" select="$schema"/>
 			<xsl:with-param name="edit"   select="$edit"/>
@@ -2548,11 +2553,6 @@
 		</xsl:apply-templates>
 
 		<xsl:apply-templates mode="elementEP" select="gmd:extent|geonet:child[string(@name)='extent']">
-			<xsl:with-param name="schema" select="$schema"/>
-			<xsl:with-param name="edit"   select="$edit"/>
-		</xsl:apply-templates>
-
-		<xsl:apply-templates mode="elementEP" select="gmd:supplementalInformation|geonet:child[string(@name)='supplementalInformation']">
 			<xsl:with-param name="schema" select="$schema"/>
 			<xsl:with-param name="edit"   select="$edit"/>
 		</xsl:apply-templates>
