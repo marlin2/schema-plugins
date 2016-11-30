@@ -198,18 +198,31 @@
      		</gmd:CI_Contact>
 			</mcp:contactInfo>
 		</xsl:when>
-		<xsl:when test="normalize-space(app:email)!=''">
+		<xsl:when test="normalize-space(app:email)!='' or normalize-space(app:telephone)!=''">
 			<mcp:contactInfo>
 				<gmd:CI_Contact>
-					<gmd:address>
-						<gmd:CI_Address>
-							<gmd:electronicMailAddress>
-								<xsl:call-template name="doStr">
-           				<xsl:with-param name="value" select="app:email"/>
-         				</xsl:call-template>
-							</gmd:electronicMailAddress>
-						</gmd:CI_Address>
-     			</gmd:address>
+          <xsl:if test="normalize-space(app:telephone)!=''">
+					  <gmd:phone>
+						  <gmd:CI_Telephone>
+							  <gmd:voice>
+								  <xsl:call-template name="doStr">
+									  <xsl:with-param name="value" select="app:telephone"/>
+								  </xsl:call-template>
+							  </gmd:voice>
+						  </gmd:CI_Telephone>
+					  </gmd:phone>
+          </xsl:if>
+          <xsl:if test="normalize-space(app:email)!=''">
+					  <gmd:address>
+						  <gmd:CI_Address>
+							  <gmd:electronicMailAddress>
+								  <xsl:call-template name="doStr">
+           				  <xsl:with-param name="value" select="app:email"/>
+         				  </xsl:call-template>
+							  </gmd:electronicMailAddress>
+						  </gmd:CI_Address>
+     			  </gmd:address>
+          </xsl:if>
 				</gmd:CI_Contact>
 			</mcp:contactInfo>
 		</xsl:when>
