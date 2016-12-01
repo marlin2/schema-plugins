@@ -110,17 +110,20 @@
 
 		<!-- process in profile mode first -->
 		<xsl:variable name="mcpElements">
+      <!-- <xsl:message>SEARCHING FOR <xsl:value-of select="name()"/></xsl:message> -->
     	<xsl:apply-templates mode="iso19139.mcp" select="." >
      		<xsl:with-param name="schema" select="$schema"/>
      		<xsl:with-param name="edit"   select="$edit"/>
      		<xsl:with-param name="embedded" select="$embedded" />
     	</xsl:apply-templates>
 		</xsl:variable>
+  
 
 		<xsl:choose>
 
 			<!-- if we got a match in profile mode then show it -->
 			<xsl:when test="count($mcpElements/*)>0">
+        <!-- <xsl:message>FOUND MCP: <xsl:value-of select="name()"/></xsl:message> -->
 				<xsl:copy-of select="$mcpElements"/>
 			</xsl:when>
 
@@ -1678,7 +1681,7 @@
 				     core -->
 
 				<xsl:if test="$dataset and $core">
-					<xsl:apply-templates mode="elementEP" select="gmd:extent/*/gmd:EX_TemporalExtent|gmd:extent/*/geonet:child[string(@name)='EX_TemporalExtent']">
+					<xsl:apply-templates mode="elementEP" select="gmd:extent/*/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod|gmd:extent/*/geonet:child[string(@name)='EX_TemporalExtent']">
 						<xsl:with-param name="schema" select="$schema"/>
 						<xsl:with-param name="edit"   select="$edit"/>
 					</xsl:apply-templates>
@@ -2552,7 +2555,12 @@
 			<xsl:with-param name="edit"   select="$edit"/>
 		</xsl:apply-templates>
 
-		<xsl:apply-templates mode="elementEP" select="gmd:extent|geonet:child[string(@name)='extent']">
+		<xsl:apply-templates mode="elementEP" select="gmd:extent//gmd:EX_GeographicBoundingBox">
+			<xsl:with-param name="schema" select="$schema"/>
+			<xsl:with-param name="edit"   select="$edit"/>
+		</xsl:apply-templates>
+
+		<xsl:apply-templates mode="elementEP" select="gmd:extent//mcp:EX_TemporalExtent|gmd:extent//gmd:EX_TemporalExtent">
 			<xsl:with-param name="schema" select="$schema"/>
 			<xsl:with-param name="edit"   select="$edit"/>
 		</xsl:apply-templates>
@@ -2662,6 +2670,28 @@
       <xsl:with-param name="transformation" select="$transformation"/>
     </xsl:call-template>
     
+  </xsl:template>
+
+	<!-- ==================================================================== -->
+
+  <xsl:template match="mcp:EX_TemporalExtent|gmd:EX_TemporalExtent" 
+                mode="iso19139.mcp">
+    <xsl:param name="schema"/>
+    <xsl:param name="edit"/>
+
+		<xsl:apply-templates mode="complexElement" select=".">
+			<xsl:with-param name="schema" select="$schema"/>
+			<xsl:with-param name="edit"   select="$edit"/>
+			<xsl:with-param name="content">
+
+        <xsl:apply-templates mode="simpleElement" select="gmd:extent/gml:TimePeriod/gml:beginPosition|gmd:extent/gml:TimePeriod/gml:begin|gmd:extent/gml:TimePeriod/gml:endPosition|gmd:extent/gml:TimePeriod/gml:end">
+          <xsl:with-param name="schema"  select="$schema"/>
+			    <xsl:with-param name="edit"   select="$edit"/>
+        </xsl:apply-templates>
+
+      </xsl:with-param>
+		</xsl:apply-templates>
+
   </xsl:template>
 
 	<!-- match everything else and do nothing - leave that to iso19139 mode -->
