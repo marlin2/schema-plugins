@@ -8,7 +8,7 @@
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jthm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Monthly Means"
+							group="Wave Energy Resource | Direction of Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Direction of Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -35,7 +35,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Maximum Directionally Resolved Wave Power | Monthly Means"
+							group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Monthly Means"
               title="Maximum Directionally Resolved Wave Power Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -66,7 +66,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Directionality Coefficient | Monthly Means"
+							group="Wave Energy Resource | Wave Directionality Coefficient | Monthly Means"
               title="Directionality Coefficient Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -94,7 +94,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							data="http://waveatlas.marine.csiro.au/data/nu/"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Spectral Width | Monthly Means"
+							group="Wave Energy Resource | Wave Spectral Width | Monthly Means"
               title="Spectral Width Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -123,7 +123,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Period | Monthly Means"
+							group="Wave Energy Resource | Wave Period | Monthly Means"
               title="Mean Wave Energy Period Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -150,7 +150,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Energy Flux | Monthly Means"
+							group="Wave Energy Resource | Wave Energy Flux | Monthly Means"
               title="Mean Wave Energy Flux Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -177,7 +177,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.dir_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Direction | Monthly Means"
+							group="Wave Energy Resource | Wave Direction | Monthly Means"
               title="Mean Wave Direction Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -204,7 +204,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
 							colorbarUrl="http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg.png"
 							getFeatureInfoUrl="http://oa-gis.csiro.au/wps?version=1.0.0&amp;request=Execute&amp;service=WPS&amp;Identifier=get-value-at-point&amp;DataInputs=LonLatPosition={geojson_point};layerKey={layer}"
 							datasuffix=".nc"
-							group="Wave Models | Wave Height | Monthly Means"
+							group="Wave Energy Resource | Wave Height | Monthly Means"
               title="Mean Significant Wave Height Parent Record">
          <xpathid id="#abstract">gmd:abstract</xpathid>
          <xpathid id="#credit1">gmd:credit</xpathid>
@@ -309,6 +309,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
+<!--
    <parent uuid="d4f17a83-d546-4276-af8d-35a2339be788" group="Multiple Use | Port Infrastructure" checked="ok">
       <xpathid id="#title">gmd:title</xpathid>
       <xpathid id="#abstract">gmd:abstract</xpathid>
@@ -320,6 +321,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
+-->
    <parent uuid="3fed79ca-720e-4a4e-872e-52ed4e1150fa" group="Multiple Use | Jurisdictions | Western Australia" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
@@ -361,6 +363,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
+-->
    <parent uuid="boatramps" group="Multiple Use | Boat Ramps" checked="ok">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
@@ -369,7 +372,6 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
--->
    <parent uuid="b8f48127-495e-42e6-8d53-db3c56ee3a7f" group="Multiple Use | Sea Surface Temperature" checked="ok">
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
@@ -435,6 +437,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent">gmd:extent</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
+<!-- Remove Human Population - SP June 2016
    <parent uuid="c8b09cef-c645-48aa-8658-22ece782365f" group="Multiple Use | Human Population" checked="ok">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
@@ -452,6 +455,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
+-->
    <parent uuid="2ff40822-a773-4788-aedd-232639142cde" group="Multiple Use | Pollution" checked="ok">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
@@ -643,7 +647,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    </parents>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>Annual Mean Wave Energy Flux</gmd:title>
 			<gmd:abstract>The annual mean wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg</name>
@@ -721,56 +725,56 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.CgE_avg12</name>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>Maximum Wave Energy Flux</gmd:title>
 			<gmd:abstract>The maximum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_max.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>Minimum Wave Energy Flux</gmd:title>
 			<gmd:abstract>The minimum wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_min.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>10th Percentile of Wave Energy Flux</gmd:title>
 			<gmd:abstract>The 10th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_p10.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>50th Percentile of Wave Energy Flux</gmd:title>
 			<gmd:abstract>The 50th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_p50.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>90th Percentile of Wave Energy Flux</gmd:title>
 			<gmd:abstract>The 90th percentile of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_p90.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>Standard Deviation of Wave Energy Flux</gmd:title>
 			<gmd:abstract>The standard deviation of wave energy flux is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_std.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Energy Flux | Statistics">
+   <layer group="Wave Energy Resource | Wave Energy Flux | Statistics">
 			<gmd:title>Monthly Variability of Wave Energy Flux</gmd:title>
 			<gmd:abstract>The monthly variability of wave energy flux provides a convenient measure of the variability of the mean monthly wave energy flux over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.CgE_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.CgE_avg_mv.png</colorbarUrl>
       <parent>86a0f80a-a56c-45f8-9d83-1b9fc723aee3</parent>
    </layer>
-   <layer group="Wave Models | Wave Direction | Statistics">
+   <layer group="Wave Energy Resource | Wave Direction | Statistics">
 			<gmd:title>Annual Mean Wave Direction</gmd:title>
 			<gmd:abstract>The annual mean wave direction is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.dir_avg</name>
@@ -848,7 +852,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.dir_avg12</name>
       <parent>cb26e551-272c-4814-aa28-27ed6624378d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>Annual Mean Significant Wave Height</gmd:title>
 			<gmd:abstract>The annual mean significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg</name>
@@ -926,56 +930,56 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.hs_avg12</name>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>Minimum Significant Wave Height</gmd:title>
 			<gmd:abstract>The minimum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_min.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>Maximum Significant Wave Height</gmd:title>
 			<gmd:abstract>The maximum significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_max.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>10th Percentile of Significant Wave Height</gmd:title>
 			<gmd:abstract>The 10th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_p10.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>50th Percentile of Significant Wave Height</gmd:title>
 			<gmd:abstract>The 50th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_p50.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>90th Percentile of Significant Wave Height</gmd:title>
 			<gmd:abstract>The 90th percentile of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_p90.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>Standard Deviation of Significant Wave Height</gmd:title>
 			<gmd:abstract>The standard deviation of significant wave height is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_std.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Height | Statistics">
+   <layer group="Wave Energy Resource | Wave Height | Statistics">
 			<gmd:title>Monthly Variability of Significant Wave Height</gmd:title>
 			<gmd:abstract>The monthly variability of significant wave height provides a convenient measure of the variability of the mean monthly wave height over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast. The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.hs_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.hs_avg_mv.png</colorbarUrl>
       <parent>d95000fd-c4f7-4a23-bca6-1f93374f163d</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>Annual Mean Wave Energy Period</gmd:title>
 			<gmd:abstract>The annual mean wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg</name>
@@ -1053,49 +1057,49 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.te_avg12</name>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>Minimum Wave Energy Period</gmd:title>
 			<gmd:abstract>The minimum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_min.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>Maximum Wave Energy Period</gmd:title>
 			<gmd:abstract>The maximum wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_max.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>10th Percentile of Wave Energy Period</gmd:title>
 			<gmd:abstract>The 10th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_p10.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>50th Percentile of Wave Energy Period</gmd:title>
 			<gmd:abstract>The 50th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_p50.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>90th Percentile of Wave Energy Period</gmd:title>
 			<gmd:abstract>The 90th percentile of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_p90.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>Standard Deviation of Wave Energy Period</gmd:title>
 			<gmd:abstract>The standard deviation of wave energy period is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.te_std.png</colorbarUrl>
       <parent>5d866e4e-67b8-47ab-8a2e-4a44b7feaa89</parent>
    </layer>
-   <layer group="Wave Models | Wave Period | Statistics">
+   <layer group="Wave Energy Resource | Wave Period | Statistics">
 			<gmd:title>Monthly Variability of Wave Energy Period</gmd:title>
 			<gmd:abstract>The monthly variability of wave energy period provides a convenient measure of the variability of the mean monthly wave energy period over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.te_avg_mv</name>
@@ -1126,10 +1130,12 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:ambis:ambis-Coastal_Waters</name>
       <parent>b86c3aab-ec86-4671-95b6-3975156438bd</parent>
    </layer>
+<!--
    <layer>
       <name>proxy:amrsma:marine_region</name>
       <parent>dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6</parent>
    </layer>
+-->
    <layer>
       <name>proxy:amrsma:LANDSCAPE_MarineBioRegions_reproj2</name>
       <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
@@ -1159,50 +1165,31 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
    </layer>
    <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNetworkPoints_reproj2</name>
-      <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNetwork_reproj2</name>
-      <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWSpecPurpLine_reproj</name>
-      <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWSpecPurpArea_reproj2</name>
-      <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWZonePnt_reproj</name>
-      <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:CONSERVATION_StateMarineParkNWZoning_reproj2</name>
+      <name>proxy:SA_StateMarinePark</name>
       <parent>a03162fe-44bb-4e02-adc5-445920383ba7</parent>
    </layer>
    <layer>
       <name>proxy:amrsma:PPB_recreational_fishing_reefs_reproj</name>
       <parent>fbca469f-0863-4b56-b47d-42cff75afe54</parent>
    </layer>
+<!-- 
    <layer>
       <name>proxy:amrsma:CAPAD_2010_marine_external_V2_reproj</name>
       <parent>dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6</parent>
    </layer>
+-->
+<!--
    <layer>
       <name>proxy:amrsma-aus:SeWPAC_MARINE_RESERVES_2012</name>
       <parent>dd8c4e97-5e52-4d52-8d79-e8cc031dc5f6</parent>
    </layer>
-   <layer>
-      <name>proxy:amrsma-wa:CLOSURES_ALL_FISHING_ALL_YEAR</name>
-      <parent>ffbdb845-9b10-4c0c-a28e-3d76c6dd767f</parent>
-   </layer>
+-->
    <layer>
       <name>proxy:amrsma:FISH_HABITAT_PROTECTION_AREAS_reproj</name>
       <parent>ffbdb845-9b10-4c0c-a28e-3d76c6dd767f</parent>
    </layer>
-   <layer>
+   <layer group="Multiple Use | Aquaculture">
+      <gmd:title>WA Aquaculture Leases</gmd:title>
       <name>proxy:amrsma-wa:wa_aquaculture_licence</name>
       <parent>ffbdb845-9b10-4c0c-a28e-3d76c6dd767f</parent>
    </layer>
@@ -1210,10 +1197,12 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:amrsma-wa:wa_pearling_lease</name>
       <parent>ffbdb845-9b10-4c0c-a28e-3d76c6dd767f</parent>
    </layer>
+<!--
    <layer>
       <name>proxy:amrsma:off_pet_rel_2014</name>
       <parent>63bb814b-be74-4ed6-bc67-0196dea8567c</parent>
    </layer>
+-->
    <layer>
       <name>proxy:amrsma:national_native_title_register_reproj3</name>
       <parent>13e01c59-78e9-4ce2-acf7-3e1bf541aecb</parent>
@@ -1286,415 +1275,25 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:amrsma:nsw_wrecks_a1</name>
       <parent>85e227ce-9826-41f0-bfa4-5c563e9146d9</parent>
    </layer>
+<!--
    <layer>
       <name>backdrop:OZPI2</name>
       <parent>d4f17a83-d546-4276-af8d-35a2339be788</parent>
    </layer>
+-->
    <layer>
-      <name>proxy:amrsma:Abrolhos_MW_Trawl_Fishery_CEO_Notice_reproj</name>
+      <name>proxy:wa-fisheries</name>
       <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
    </layer>
-   <layer>
-      <name>proxy:amrsma:Broome_Prawn_Fishery_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Exmouth_Gulf_Prawn_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Kimberley_Prawn_Fishery_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Nickol_Bay_Prawn_Managed_Fishery_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Onslow_Prawn_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Prawn_Fishery_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Scallop_Fishery_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Rock_Lobster_CEO_Notice_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Beche_de_mer_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Cockles_and_Pipis_Fishery_IO_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Developing_Octopus_Fishery_I_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Exmouth_Gulf_Developing_Crab_Fishery_IOE_v2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Invertebrates_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Land_Hermit_Crab_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Mandurah_to_Bunbury_Developing_Crab_Fishery_IOE_v2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Mud_Crab_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Pilbara_Developing_Crab_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Trawl_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Trochus_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:WA_North_Coast_Shark_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Nearshore_Net_Fishery_IOE_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Finfish_trapping_in_oceanic_waters_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Kimberley_Gillnet_and_Barramundi_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Leatherjacket_Fish_Trapping_King_George_Sound_FBL_Condition_V2_</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Octopus_Fishery_FBL_Condition_20_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Purse_Seine_Net_Development_Zone_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Point_Maud_to_Tantabiddi_Closure_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Deep_Sea_Crab_Fishery_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Herring_Trap_Net_Fishery_FBL_Condition_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Hardy_Inlet_Lawful_Nets_Order_1996_Rivers_Tributaries_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:North_Coast_Shark_Fishing_Professional_Notice_1993_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_by_Net_Exmouth_Gulf_Order_200</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_for_Demersal_Scalefish_Pilbar</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Prohibition_on_Commercial_Fishing_South_West_Coast_Beach_Net_Or</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Prohibition_on_Fishing_by_Line_From_Fishing_Boats_Pilbara_Water</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Vasse_And_Wonnerup_Estuaries_Netting_Restrictions_Notice_1991_V</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Abalone_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Abrolhos_Islands_and_Mid_West_Trawl_Limited_Entry_Fishery_V2_re</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Broome_Prawn_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Cockburn_Sound_Crab_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Cockburn_Sound_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Cockburn_Sound_Line_and_Pot_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Cockburn_Sound_Mussel_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Esperance_Rock_Lobster_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Exmouth_Gulf_Prawn_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Gascoyne_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Kimberley_Gillnet_and_Barramundi_Limited_Entry_Fishery_V2_repro</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Kimberley_Prawn_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Mackerel_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Marine_Aquarium_Fish_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Nickol_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Northern_Demersal_Scalefish_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Northern_Demersal_Scalefish_Managed_Fishery_Lines_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Onslow_Prawn_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Pilbara_Fish_Trawl_Interim_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Pilbara_Trap_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Beach_Seine_and_Mesh_Net_Limited_Entry_Fishery_V2_rep</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Crab_Interim_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Prawn_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Shark_Bay_Scallop_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Estuarine_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_Coast_Salmon_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Southern_Demersal_Gillnet_and_Demersal_Longline_Managed_Fishery</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_West_Coast_Salmon_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:South_West_Trawl_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Specimen_Shell_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Warnbro_Sound_Crab_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Beach_Bait_Fish_Net_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Deep_Sea_Crustacean_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Demersal_Gillnet_and_Demersal_Longline_Interim_Manag</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Demersal_Scalefish_Interim_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Estuarine_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Purse_Seine_Limited_Entry_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Rock_Lobster_Managed_Fishery_V2_reproj</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:West_Coast_Rock_Lobster_Managed_Fishery_Weighing_Points_V2_repr</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma:Windy_Harbour_Augusta_Rock_Lobster_Limited_Entry_Fishery_V2_rep</name>
-      <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_bdmf</name>
+   <layer group="Multiple Use | Fisheries Effort">
+      <name>proxy:torres_strait</name>
       <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
    </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_cf</name>
+   <layer group="Multiple Use | Fisheries Effort">
+      <name>proxy:sess</name>
       <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
    </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_df</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_ff</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:tsf</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_psf</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_pf</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_smf</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_trochus</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_trlf</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:ts_turtle</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_zones</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_gz</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_cshs</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_cts</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_tas_rls</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_vic_cws</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_sa_cws</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_gabts</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_ecdts</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer>
-      <name>proxy:amrsma-fishery:sess_cgs</name>
-      <parent>fd81afed-3e24-415d-a5a9-ca6ad3ba841a</parent>
-   </layer>
-   <layer  group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer  group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Annual Mean Directionality Coefficient</gmd:title>
 			<gmd:abstract>The annual mean directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg</name>
@@ -1772,112 +1371,112 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.jdc_avg.12</name>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Minimum Directionality Coefficient</gmd:title>
 			<gmd:abstract>The minimum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_min.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Maximum Directionality Coefficient</gmd:title>
 			<gmd:abstract>The maximum directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_max.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>10th Percentile of Directionality Coefficient</gmd:title>
 			<gmd:abstract>The 10th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_p10.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>50th Percentile of Directionality Coefficient</gmd:title>
 			<gmd:abstract>The 50th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_p50.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>90th Percentile of Directionality Coefficient</gmd:title>
 			<gmd:abstract>The 90th percentile of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_p90.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Standard Deviation of Directionality Coefficient</gmd:title>
 			<gmd:abstract>The standard deviation of directionality coefficient is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_std.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Directionality Coefficient | Statistics">
+   <layer group="Wave Energy Resource | Wave Directionality Coefficient | Statistics">
 			<gmd:title>Monthly Variability of Directionality Coefficient</gmd:title>
 			<gmd:abstract>The monthly variability of directionality coefficient provides a convenient measure of the variability of the mean monthly directionality coefficient over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jdc_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jdc_avg_mv.png</colorbarUrl>
       <parent>48afb695-c762-4864-ad28-819a2ab40e5e</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>Annual Mean Spectral Width</gmd:title>
 			<gmd:abstract>The annual mean spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>Minimum Spectral Width</gmd:title>
 			<gmd:abstract>The minimum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_min.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>Maximum Spectral Width</gmd:title>
 			<gmd:abstract>The maximum spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_max.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>10th Percentile of Spectral Width</gmd:title>
 			<gmd:abstract>The 10th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_p10.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>50th Percentile of Spectral Width</gmd:title>
 			<gmd:abstract>The 50th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_p50.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>90th Percentile of Spectral Width</gmd:title>
 			<gmd:abstract>The 90th percentile of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_p90.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>Standard Deviation of Spectral Width</gmd:title>
 			<gmd:abstract>The standard deviation of spectral width is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_std.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer group="Wave Models | Wave Spectral Width | Statistics">
+   <layer group="Wave Energy Resource | Wave Spectral Width | Statistics">
 			<gmd:title>Monthly Variability of Spectral Width</gmd:title>
 			<gmd:abstract>The monthly variability of spectral width provides a convenient measure of the variability of the mean monthly spectral width over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.nu_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.nu_avg_mv.png</colorbarUrl>
       <parent>c31b0a34-486f-4270-98c8-b4148fff7fd7</parent>
    </layer>
-   <layer  group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer  group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The annual mean maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg</name>
@@ -1955,56 +1554,56 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.jm_avg.12</name>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Minimum of the Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The minimum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_min</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_min.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Maximum of the Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The maximum of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_max</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_max.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>10th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The 10th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p10</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_p10.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>50th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The 50th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p50</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_p50.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>90th Percentile of Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The 90th percentile of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_p90</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_p90.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Standard Deviation of Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The standard deviation of maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_std</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_std.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Monthly Variability of Maximum Directionally Resolved Wave Power</gmd:title>
 			<gmd:abstract>The monthly variability of maximum directionally resolved wave power provides a convenient measure of the variability of the mean monthly maximum directionally resolved wave power over a typical year. It is determined as maximum range of the mean monthly annual cycle calculated from the CAWCR global wave hindcast.  The mean monthly annual cycles were determined using the archived hourly 4’ Australian grid from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jm_avg_mv</name>
       <colorbarUrl>http://waveatlas.marine.csiro.au/images/layers/cb_ww3.aus_4m.jm_avg_mv.png</colorbarUrl>
       <parent>6b845709-7e74-4a1e-94fd-0ff46fd5fd5f</parent>
    </layer>
-   <layer group="Wave Models | Direction of Maximum Directionally Resolved Wave Power | Statistics">
+   <layer group="Wave Energy Resource | Direction of Maximum Directionally Resolved Wave Power | Statistics">
 			<gmd:title>Annual Mean Direction of the Maximum Directionally Resolved Wave Power</gmd:title>
       <gmd:abstract>The annual mean direction of the maximum directionally resolved wave power is derived from the CAWCR global wave hindcast, using data from the archived hourly 4’ Australian grid, using data from 1st January 1980 to 31st December 2010.</gmd:abstract>
       <name>awavea-interim:ww3.aus_4m.jthm_avg</name>
@@ -2082,6 +1681,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>awavea-interim:ww3.aus_4m.jthm_avg.12</name>
       <parent>d0661474-7984-4532-8173-03a335cfcf53</parent>
    </layer>
+<!-- Remove Human Population - SP June 2016
    <layer>
       <gmd:title>Population Density 1991-1995</gmd:title>
       <name>proxy:1996_enumeration_proj</name>
@@ -2102,12 +1702,13 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:2006_enumeration_proj</name>
       <parent>c8b09cef-c645-48aa-8658-22ece782365f</parent>
    </layer>
+-->
    <layer>
       <gmd:title>AMSA Oil Spill Events 1970-2015</gmd:title>
       <name>proxy:oil_spills_sum</name>
       <parent>2ff40822-a773-4788-aedd-232639142cde</parent>
    </layer>
-<!--
+<!-- The following are not required - but not sure when this decision was made?
    <layer>
       <gmd:title>AMSA Spills Other Substances</gmd:title>
       <name>proxy:AMSA-spills-OtherSubstances</name>
@@ -2135,88 +1736,8 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
    </layer>
 -->
    <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 1999</gmd:title>
-      <name>proxy:ausrep_shipping_1999</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2000</gmd:title>
-      <name>proxy:ausrep_shipping_2000</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2001</gmd:title>
-      <name>proxy:ausrep_shipping_2001</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2002</gmd:title>
-      <name>proxy:ausrep_shipping_2002</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2003</gmd:title>
-      <name>proxy:ausrep_shipping_2003</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2004</gmd:title>
-      <name>proxy:ausrep_shipping_2004</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2005</gmd:title>
-      <name>proxy:ausrep_shipping_2005</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2006</gmd:title>
-      <name>proxy:ausrep_shipping_2006</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2007</gmd:title>
-      <name>proxy:ausrep_shipping_2007</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2008</gmd:title>
-      <name>proxy:ausrep_shipping_2008</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2009</gmd:title>
-      <name>proxy:ausrep_shipping_2009</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2010</gmd:title>
-      <name>proxy:ausrep_shipping_2010</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2011</gmd:title>
-      <name>proxy:ausrep_shipping_2011</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2012</gmd:title>
-      <name>proxy:ausrep_shipping_2012</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2013</gmd:title>
-      <name>proxy:ausrep_shipping_2013</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2014</gmd:title>
-      <name>proxy:ausrep_shipping_2014</name>
-      <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
-   </layer>
-   <layer>
-      <gmd:title>Australian Ship Reporting System - Shipping Summaries 2015</gmd:title>
-      <name>proxy:ausrep_shipping_2015</name>
+      <gmd:title>Australian Ship Reporting System - Shipping Summaries 1999-2011</gmd:title>
+      <name>proxy:ausrep_shipping_summaries</name>
       <parent>b8135966-33c6-4a1c-bcbc-d797c2a1155f</parent>
    </layer>
    <layer>
@@ -2250,98 +1771,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <parent>b8f48127-495e-42e6-8d53-db3c56ee3a7f</parent>
    </layer>
    <layer>
-      <gmd:title>2D Seismic Surveys 1961 to 1965</gmd:title>
-      <name>proxy:seismic2d_sum_1961to1965</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1966 to 1970</gmd:title>
-      <name>proxy:seismic2d_sum_1966to1970</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1971 to 1975</gmd:title>
-      <name>proxy:seismic2d_sum_1970to1975</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1976 to 1980</gmd:title>
-      <name>proxy:seismic2d_sum_1976to1980</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1981 to 1985</gmd:title>
-      <name>proxy:seismic2d_sum_1981to1985</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1986 to 1990</gmd:title>
-      <name>proxy:seismic2d_sum_1986to1990</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1991 to 1995</gmd:title>
-      <name>proxy:seismic2d_sum_1991to1995</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 1996 to 2000</gmd:title>
-      <name>proxy:seismic2d_sum_1996to2000</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 2001 to 2005</gmd:title>
-      <name>proxy:seismic2d_sum_2001to2005</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 2006 to 2010</gmd:title>
-      <name>proxy:seismic2d_sum_2006to2010</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>2D Seismic Surveys 2011 to 2015</gmd:title>
-      <name>proxy:seismic2d_sum_2011to2015</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 1976 to 1980</gmd:title>
-      <name>proxy:seismic3d_sum_1976to1980</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 1981 to 1985</gmd:title>
-      <name>proxy:seismic3d_sum_1981to1985</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 1986 to 1990</gmd:title>
-      <name>proxy:seismic3d_sum_1986to1990</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 1991 to 1995</gmd:title>
-      <name>proxy:seismic3d_sum_1991to1995</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 1996 to 2000</gmd:title>
-      <name>proxy:seismic3d_sum_1996to2000</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 2001 to 2005</gmd:title>
-      <name>proxy:seismic3d_sum_2001to2005</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 2006 to 2010</gmd:title>
-      <name>proxy:seismic3d_sum_2006to2010</name>
-      <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
-   </layer>
-   <layer>
-      <gmd:title>3D Seismic Surveys 2011 to 2015</gmd:title>
-      <name>proxy:seismic3d_sum_2011to2015</name>
+      <name>proxy:seismic_surveys</name>
       <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
    </layer>
    <layer>
@@ -2418,7 +1848,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
    </layer>
    <layer>
       <gmd:title>VIC Boat Ramps</gmd:title>
-      <name>proxy:DAta-Vic-BoatRamps</name>
+      <name>proxy:Data-Vic-BoatRamps</name>
       <parent>boatramps</parent>
    </layer>
    <layer>
@@ -2443,58 +1873,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
    </layer>
 -->
    <layer>
-      <gmd:title>AFMA Fisheries effort: Auto Long Line 2011 - 2014</gmd:title>
-      <name>proxy:csq_al_20112014</name>
+      <name>proxy:fisheries_effort</name>
       <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Demersal Long Line 2011 - 2014</gmd:title>
-      <name>proxy:csq_bl_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Danish Seine 2011 - 2014</gmd:title>
-      <name>proxy:csq_ds_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Hand Line 2011 - 2014</gmd:title>
-      <name>proxy:csq_hl_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Pelagic Long Line 2011 - 2014</gmd:title>
-      <name>proxy:csq_llp_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Pole 2011 - 2014</gmd:title>
-      <name>proxy:csq_pl_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Purse Seine 2011 - 2014</gmd:title>
-      <name>proxy:csq_ps_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Trotline 2011 - 2014</gmd:title>
-      <name>proxy:csq_tl_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Trolling 2011 - 2014</gmd:title>
-      <name>proxy:csq_tr_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>AFMA Fisheries effort: Trawling 2011 - 2014</gmd:title>
-      <name>proxy:csq_tw_20112014</name>
-      <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
-   </layer>
-   <layer>
-      <gmd:title>Cyclone Summaries 1900-2015</gmd:title>
-      <name>proxy:cyclones_sum_1900to2015</name>
-      <parent>9fb32adf-f8e8-4b38-8e23-1c6e847b6a91</parent>
    </layer>
 </layers>
