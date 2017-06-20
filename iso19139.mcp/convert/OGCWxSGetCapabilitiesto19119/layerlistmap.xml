@@ -339,7 +339,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="aa53a4df-7fe6-46d1-93b7-2d3732f4883e" group="Multiple Use | Fisheries Effort" checked="ok">
+   <parent uuid="aa53a4df-7fe6-46d1-93b7-2d3732f4883e" group="Multiple Use | Fisheries Effort" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:status">gmd:status</xpathid>
@@ -355,7 +355,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
 <!--
-   <parent uuid="cables" group="Multiple Use | Cables" checked="ok">
+   <parent uuid="cables" group="Multiple Use | Cables" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -364,7 +364,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
 -->
-   <parent uuid="boatramps" group="Multiple Use | Boat Ramps" checked="ok">
+   <parent uuid="boatramps" group="Multiple Use | Boat Ramps" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#topicCategory">gmd:topicCategory</xpathid>
       <xpathid id="#descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
       <xpathid id="#credit">gmd:credit</xpathid>
@@ -372,7 +372,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#resourceContactInfo">mcp:resourceContactInfo</xpathid>
       <xpathid id="#metadataContactInfo">mcp:metadataContactInfo</xpathid>
    </parent>
-   <parent uuid="b8f48127-495e-42e6-8d53-db3c56ee3a7f" group="Multiple Use | Sea Surface Temperature" checked="ok">
+   <parent uuid="b8f48127-495e-42e6-8d53-db3c56ee3a7f" group="Multiple Use | Sea Surface Temperature" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//mcp:MD_DataIdentification/gmd:status">gmd:status</xpathid>
@@ -388,7 +388,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:metadataConstraints">gmd:metadataConstraints</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
-   <parent uuid="17249677-2be0-43a0-a9b5-da01e0be3fa7" group="Multiple Use | Seismic Surveys" checked="ok">
+   <parent uuid="17249677-2be0-43a0-a9b5-da01e0be3fa7" group="Multiple Use | Seismic Surveys" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -407,7 +407,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
-   <parent uuid="b8135966-33c6-4a1c-bcbc-d797c2a1155f" group="Multiple Use | Shipping" checked="ok">
+   <parent uuid="b8135966-33c6-4a1c-bcbc-d797c2a1155f" group="Multiple Use | Shipping" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -424,7 +424,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
-   <parent uuid="9fb32adf-f8e8-4b38-8e23-1c6e847b6a91" group="Multiple Use | Weather" checked="ok">
+   <parent uuid="9fb32adf-f8e8-4b38-8e23-1c6e847b6a91" group="Multiple Use | Weather" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
@@ -438,7 +438,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
 <!-- Remove Human Population - SP June 2016
-   <parent uuid="c8b09cef-c645-48aa-8658-22ece782365f" group="Multiple Use | Human Population" checked="ok">
+   <parent uuid="c8b09cef-c645-48aa-8658-22ece782365f" group="Multiple Use | Human Population" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -456,7 +456,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
 -->
-   <parent uuid="2ff40822-a773-4788-aedd-232639142cde" group="Multiple Use | Pollution" checked="ok">
+   <parent uuid="2ff40822-a773-4788-aedd-232639142cde" group="Multiple Use | Pollution" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -473,26 +473,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
-   <parent uuid="c92fca4d-3d98-40ca-a7e3-e952aed53bfc" group="Multiple Use | Petroleum" checked="ok">
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
-      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
-      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
-      <xpathid id="#xpath:gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
-      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
-   </parent>
-   <parent uuid="e6f6db01-9910-49a2-b50e-b3dcb5a6dbf2" group="Multiple Use | Petroleum" checked="ok">
+   <parent uuid="c92fca4d-3d98-40ca-a7e3-e952aed53bfc" group="Multiple Use | Petroleum" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -511,7 +492,26 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
-   <parent uuid="2eddbe26-0276-4468-a210-0c00ada8bf39" group="Multiple Use | Petroleum" checked="ok">
+   <parent uuid="e6f6db01-9910-49a2-b50e-b3dcb5a6dbf2" group="Multiple Use | Petroleum" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:pointOfContact">gmd:pointOfContact</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[1]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[2]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:topicCategory[3]">gmd:topicCategory</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:descriptiveKeywords">gmd:descriptiveKeywords</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:spatialRepresentationType">gmd:spatialRepresentationType</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[1]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:resourceConstraints[2]">gmd:resourceConstraints</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[1]">gmd:extent</xpathid>
+      <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:extent[2]">gmd:extent</xpathid>
+      <xpathid id="#xpath:gmd:dataQualityInfo">gmd:dataQualityInfo</xpathid>
+      <xpathid id="#xpath:gmd:metadataConstraints[1]">gmd:metadataConstraints</xpathid>
+      <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
+   </parent>
+   <parent uuid="2eddbe26-0276-4468-a210-0c00ada8bf39" group="Multiple Use | Petroleum" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:status">gmd:status</xpathid>
@@ -530,7 +530,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- NSW Oyster Leases -->
-   <parent uuid="a85d4633-e66e-48f0-b5c6-26756a9af9fe" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="a85d4633-e66e-48f0-b5c6-26756a9af9fe" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -550,7 +550,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- NSW Aquaculture -->
-   <parent uuid="365b763c-c504-44b2-9a12-c455f1a0661a" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="365b763c-c504-44b2-9a12-c455f1a0661a" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -570,7 +570,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- VIC Aquaculture -->
-   <parent uuid="8ed3b949-a3e3-4de4-a308-d4a31088a211" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="8ed3b949-a3e3-4de4-a308-d4a31088a211" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -590,7 +590,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- NT Aquaculture -->
-   <parent uuid="ff99cc59-5f93-46a5-b1fe-a97a1548eff8" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="ff99cc59-5f93-46a5-b1fe-a97a1548eff8" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -609,7 +609,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- SA Aquaculture -->
-   <parent uuid="67c89c46-f0dc-418e-b3c8-63c9bdf14593" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="67c89c46-f0dc-418e-b3c8-63c9bdf14593" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>
@@ -628,7 +628,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <xpathid id="#xpath:gmd:contact">gmd:contact</xpathid>
    </parent>
    <!-- TAS Aquaculture -->
-   <parent uuid="0b3886f8-daa3-40aa-97fe-78eba9e2eb6c" group="Multiple Use | Aquaculture" checked="ok">
+   <parent uuid="0b3886f8-daa3-40aa-97fe-78eba9e2eb6c" group="Multiple Use | Aquaculture" checked="ok" marlinpointer="http://www.marlin.csiro.au/geonetwork/srv/eng/search#!">
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:abstract">gmd:abstract</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:purpose">gmd:purpose</xpathid>
       <xpathid id="#xpath:*//gmd:MD_DataIdentification/gmd:credit">gmd:credit</xpathid>

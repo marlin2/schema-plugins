@@ -363,6 +363,18 @@
 
 								</xsl:when>
 							</xsl:choose>
+
+             <!-- Put in marlin metadata point of truth url if parent requires it -->
+							<xsl:if test="$parentmatch/@marlinpointer!='' and (//wms:Layer[wms:Name=$Name]/wms:Title or //Layer[Name=$Name]/Title)">
+								<xsl:variable name="url" select="concat($parentmatch/@marlinpointer,$parentuuid)"/>
+								<xsl:call-template name="onlineResource">
+									<xsl:with-param name="name" select="'Parent Metadata Record'"/>
+									<xsl:with-param name="title" select="'This is the Parent Metadata Record. Some elements of this metadata record are linked to elements in the parent metadata record. Please refer to the parent metadata record for a complete description of this dataset.'"/>
+									<xsl:with-param name="url" select="$url"/>
+									<xsl:with-param name="protocol" select="'WWW:LINK-1.0-http--metadata-URL'"/>
+								</xsl:call-template>
+							</xsl:if>
+
 						</MD_DigitalTransferOptions>
 					</transferOptions>
 				</MD_Distribution>
