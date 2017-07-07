@@ -95,7 +95,7 @@
 	     then make sure that this record has download indexed so that 
 			 quick search on data attached can be used
 	     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-	<xsl:template mode="index" match="gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource[gmd:linkage/gmd:URL!='' and contains(gmd:protocol/*,'http--csiro-oa-app')]">
+	<xsl:template mode="index" match="gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource[gmd:linkage/gmd:URL!='' and (contains(gmd:protocol/*,'http--csiro-oa-app') or contains(gmd:protocol/*,'download'))]">
 		<Field name="download" string="on" store="false" index="true"/>
 	</xsl:template>
 	

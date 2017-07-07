@@ -334,6 +334,7 @@ This is a link to an html description of a species name (or higher level ranks) 
 		<description>Connection protocol to be used</description>
 		<helper sort="true">
 			<option show="y" value="WWW:DOWNLOAD-1.0-http--csiro-oa-app">CSIRO Oceans and Atmosphere Data Delivery Application</option>
+			<option show="y" value="WWW:LINK-1.0-http--downloaddata">Web link (URL) to other data</option>
 			<option show="y" value="OGC:WMS-1.3.0-http-get-map">OGC-WMS Web Map Service</option>
 			<option show="y" value="WWW:DOWNLOAD-1.0-http--csiro-dap">HTTP Link to resource in CSIRO DAP</option>
 			<option show="y" value="WWW:LINK-1.0-http--link">Web link (URL) - use this if one of the above does not apply</option>
