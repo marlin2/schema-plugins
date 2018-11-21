@@ -1275,12 +1275,6 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:amrsma:nsw_wrecks_a1</name>
       <parent>85e227ce-9826-41f0-bfa4-5c563e9146d9</parent>
    </layer>
-<!--
-   <layer>
-      <name>backdrop:OZPI2</name>
-      <parent>d4f17a83-d546-4276-af8d-35a2339be788</parent>
-   </layer>
--->
    <layer>
       <name>proxy:wa-fisheries</name>
       <parent>3fed79ca-720e-4a4e-872e-52ed4e1150fa</parent>
@@ -1774,9 +1768,9 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:seismic_surveys</name>
       <parent>17249677-2be0-43a0-a9b5-da01e0be3fa7</parent>
    </layer>
+<!-- GONE Sept 2018
    <layer>
       <gmd:title>Petroleum and Gas Production Facilities 2016</gmd:title>
-      <!-- TODO: CHECK THIS LAYER! -->
       <name>proxy:Data_All_Petroleum_Facilities_2013_GA-marine</name>
       <parent>2eddbe26-0276-4468-a210-0c00ada8bf39</parent>
    </layer>
@@ -1795,6 +1789,8 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:Data_All_Petroleum_Wells_2013_NOPTA</name>
       <parent>e6f6db01-9910-49a2-b50e-b3dcb5a6dbf2</parent>
    </layer>
+-->
+<!-- GONE Sept 2018
    <layer>
       <gmd:title>NSW Aquaculture Leases</gmd:title>
       <name>proxy:Data_NSW_Aquaculture</name>
@@ -1835,6 +1831,7 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <name>proxy:Data-VIC-Aquaculture-leases</name>
       <parent>8ed3b949-a3e3-4de4-a308-d4a31088a211"</parent>
    </layer>
+-->
 <!--
    <layer>
       <gmd:title>NSW Boat Ramps</gmd:title>
@@ -1872,8 +1869,10 @@ For further information on the CAWCR wave hindcast, see Durrant et al (2014)**. 
       <parent>cables</parent>
    </layer>
 -->
+<!-- GONE Sept 2018
    <layer>
       <name>proxy:fisheries_effort</name>
       <parent>aa53a4df-7fe6-46d1-93b7-2d3732f4883e</parent>
    </layer>
+-->
 </layers>
