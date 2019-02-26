@@ -2167,7 +2167,7 @@
 	<!-- online resources: download -->
 	<!-- ===================================================================== -->
 
-	<xsl:template mode="iso19139.mcp" match="gmd:CI_OnlineResource[starts-with(gmd:protocol/gco:CharacterString,'WWW:DOWNLOAD-') and contains(gmd:protocol/gco:CharacterString,'http--download') and gmd:name]" priority="4">
+	<xsl:template mode="iso19139.mcp" match="gmd:CI_OnlineResource[starts-with(gmd:protocol/gco:CharacterString,'WWW:DOWNLOAD-') and contains(gmd:protocol/gco:CharacterString,'http--download') and (gmd:name or gmx:MimeFileType)]" priority="4">
 		<xsl:param name="schema"/>
 		<xsl:param name="edit"/>
 		<xsl:variable name="download_check"><xsl:text>&amp;fname=&amp;access</xsl:text></xsl:variable>
